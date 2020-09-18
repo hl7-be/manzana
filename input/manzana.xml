@@ -48,10 +48,10 @@
     </resource> -->
     <resource>
       <reference>
-        <reference value="StructureDefinition/manzana-model-1"/>
+        <reference value="StructureDefinition/manzana-score-results"/>
       </reference>
-      <name value="Logical Model 1"/>
-      <description value="Logical Model 1"/>
+      <name value="Manzana FINDRISC Score results"/>
+      <description value="Manzana FINDRISC Score results"/>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->

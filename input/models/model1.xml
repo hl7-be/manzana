@@ -1,25 +1,52 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <!--trial-->
-  <id value="manzana-model-1" />
-  <url value="https://www.hl7belgium.org/fhir/manzana/StructureDefinition/manzana-model-1" />
+  <id value="manzana-score-results" />
+  <url value="https://www.hl7belgium.org/fhir/manzana/StructureDefinition/manzana-score-results" />
   <version value="0.1.0" />
-  <name value="Model1" />
+  <name value="ManzanaScoreResult" />
   <status value="draft" />
   <description value="This is the logical model..." />
   <fhirVersion value="4.0.1" />
   <kind value="logical" />
   <abstract value="false" />
-  <type value="Model1" />
+  <type value="ManzanaScoreResult" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base" />
   <derivation value="specialization" />
   <differential>
-    <element id="Model1">
-      <path value="Model1" />
-      <short value="This is the entity - the top level element  of this model" />
+    <element id="ManzanaScoreResult">
+      <path value="ManzanaScoreResult" />
+      <short value="A FINDRISC score for a given patient..." />
       <min value="0" />
       <max value="*" />
     </element>
+    <element id="ManzanaScoreResult.identifier">
+      <path value="ManzanaScoreResult.identifier" />
+      <short value="A unique identifier for this score" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Identifier" />
+      </type>
+    </element>
+    <element id="ManzanaScoreResult.patient">
+      <path value="ManzanaScoreResult.patient" />
+      <short value="The patient that this score refers to" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+         <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+      </type>
+    </element>
 
+
+<!--
+    <element id="Model1">
+      <path value="Model1" />
+      <short value="A FINDRISC score for a given patient..." />
+      <min value="0" />
+      <max value="*" />
+    </element>
     <element id="Model1.attribute1">
       <path value="Model1.attribute1" />
       <short value="An attribute with a type (Identifier)" />
@@ -49,7 +76,7 @@
         <code value="Period" />
       </type>
     </element>
-
+-->
 
   </differential>
 </StructureDefinition>
