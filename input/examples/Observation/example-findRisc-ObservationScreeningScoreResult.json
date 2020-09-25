@@ -1,0 +1,112 @@
+{
+    "resourceType": "Observation",
+    "id": "example-findRisc-ObservationScreeningScoreResult",
+    "meta": {
+        "profile" : [
+            "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
+        ]
+    },
+    "status": "draft",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "763117005",
+                    "display": "FINDRISC"
+                }
+            ],
+            "text": "FINDRISC"
+        }
+    ],
+    "Patient": {
+        "reference": "BePatient/123a-44tb-667c",
+        "display": "K. ABD"
+    },
+    "Recorder": {
+        "reference": "BePractitioner/123a-456b-999d",
+        "display": "M. AAA"
+    },
+    "recordDate": "2020-09-25",
+    "observationCode": {
+        "coding": [
+            {
+                "system": "http://www.snomed.org/",
+                "code": "763117005", 
+                "display": "Finnish Diabetes Risk Score (obervable entity)"
+            }
+        ],
+        "text": "Finnish Diabetes Risk Score"
+    },
+    "valueInteger" : 15,
+    "referenceRange": [
+        {
+            "low": {
+                "value": 0
+            },
+            "high": {
+                "value": 3.0
+            },
+            "resultType": {
+                "text": "very low"
+            }
+        },
+        {
+            "low": {
+                "value": 4
+            },
+            "high": {
+                "value": 8
+            },
+            "resultType": {
+                "text": "Low"
+            }
+        },
+        {
+            "low": {
+                "value": 9
+            },
+            "high": {
+                "value": 12
+            },
+            "resultType": {
+                "text": "Moderate"
+            }
+        },
+        {
+            "low": {
+                "value": 13
+            },
+            "high": {
+                "value": 20
+            },
+            "resultType": {
+                "text": "High"
+            }
+        },
+        {
+            "low": {
+                "value": 21
+            },
+            "high": {
+                "value": 26
+            },
+            "resultType": {
+                "text": "Very high"
+            }
+        }
+    ],
+    "derivedFrom": [ 
+        {
+
+            "reference": "http://build.fhir.org/ig/hl7-be/manzana-ig/branches/master/output/Observation-example-findRisc-ObservationScreeningScoreResult",
+            "demander": "http://build.fhir.org/ig/hl7-be/manzana-ig/branches/master/output/QuestionnaireResponse-example-findRisc-questionnaireResponse"
+        }
+    ],
+    "conclusion": {
+        "text": "More sport"
+    },
+    "remark": {
+        "text": "More sport"
+    }
+}

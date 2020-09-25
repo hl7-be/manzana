@@ -1,0 +1,110 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id" : "example-findRisc-questionnaireResponse",
+    "status": "draft",
+    "questionnaire": "Questionnare/findRisc-questionnaire",
+    "subject": {
+        "reference": "Patient/2222a-45b-55c"
+    },
+    "source": {
+        "reference": "Practitioner/1111a-33a-555e"
+    },
+    "item": [
+        {
+            "linkId": "patientAge",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://www.snomed.org",
+                        "code": "105727008",
+                        "display": "Age"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "bmi",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://www.snomed.org",
+                        "code": "60621009",
+                        "display": "BMI"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "waistCircumference",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://www.snomed.org",
+                        "code": "276361009",
+                        "display": "Waist Circumference"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "medication-highBloodPressure",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://www.snomed.org",
+                        "code": "276361009",
+                        "display": "Taken blood pressure medication"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "history-highBloodGlucose",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://www.snomed.org",
+                        "code": "80394007",
+                        "display": "History of high blood glucose"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "physical-activity",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://www.snomed.org",
+                        "code": "68130003",
+                        "display": "Physical activity"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "daily-consume-veg-fruit",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://www.snomed.org",
+                        "code": "391129005",
+                        "display": "Consume of the vegetables/fruits/berries"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "family-history-diabetes",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://www.snomed.org",
+                        "code": "160303001",
+                        "display": "Family history of diabetes"
+                    }
+                }
+            ]
+        }
+    ]
+}

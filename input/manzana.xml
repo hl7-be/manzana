@@ -81,24 +81,30 @@
         <reference value="Questionnaire/findRisc-questionnaire" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Manzana FINDRISC Questionnaire profile"/>
-      <description value="The profile for manzana FINDRISC Questionnaire"/>
+      <name value="Example Manzana FINDRISC Questionnaire"/>
+      <exampleBoolean value="true" />
+      <description value="Manzana FINDRISC Questionnaire"/>
     </resource>
     <resource>
       <reference>
         <reference value="QuestionnaireResponse/findRisc-questionnaireResponse" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Manzana FINDRISC QuestionnaireResponse profile"/>
-      <description value="The profile for manzana FINDRISC Questionnaire Response"/>
+      <name value="Example Manzana FINDRISC QuestionnaireResponse"/>
+      <exampleBoolean value="true" />
+      <description value="Manzana FINDRISC Questionnaire Response"/>
     </resource>
     <resource>
       <reference>
+      <!--
+        <reference value="StructureDefinition/findRisc-ObservationScreeningScoreResult" />
+      -->
         <reference value="Observation/findRisc-ObservationScreeningScoreResult" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Manzana FINDRISC Score Result profile"/>
-      <description value="The profile for manzana FINDRISC Score Result"/>
+      <name value="Example Manzana FINDRISC Score Result"/>
+      <exampleBoolean value="true" />
+      <description value="Manzana FINDRISC Score Result"/>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
