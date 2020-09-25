@@ -48,10 +48,57 @@
     </resource> -->
     <resource>
       <reference>
-        <reference value="StructureDefinition/manzana-score-results"/>
+        <reference value="StructureDefinition/model-FindRisc-scoreResults"/>
       </reference>
-      <name value="Manzana FINDRISC Score results"/>
+      <name value="Logical model Manzana FINDRISC Score results"/>
       <description value="Manzana FINDRISC Score results"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/model-FindRisc-screeningResponse"/>
+      </reference>
+      <name value="Logical model Manzana FINDRISC Screening response"/>
+      <description value="Manzana FINDRISC screening response"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-findRisc-screening"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="ValueSet - Manzana FINDRISC Screening"/>
+      <description value="Value Set FINDRISC Screening Value Set"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/cs-findRisc-screening"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="CodeSystem - Manzana FINDRISC Screening"/>
+      <description value="Manzana FINDRISC Screening Code System"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/findRisc-questionnaire" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Manzana FINDRISC Questionnaire profile"/>
+      <description value="The profile for manzana FINDRISC Questionnaire"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/findRisc-questionnaireResponse" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Manzana FINDRISC QuestionnaireResponse profile"/>
+      <description value="The profile for manzana FINDRISC Questionnaire Response"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/findRisc-ObservationScreeningScoreResult" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Manzana FINDRISC Score Result profile"/>
+      <description value="The profile for manzana FINDRISC Score Result"/>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
