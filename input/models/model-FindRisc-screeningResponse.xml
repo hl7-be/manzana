@@ -1,0 +1,176 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <!--trial-->
+  <id value="model-FindRisc-screeningResponse" />
+  <url value="https://www.hl7belgium.org/fhir/manzana/StructureDefinition/model-FindRisc-screeningResponse" />
+  <version value="0.1.0" />
+  <name value="FindRiscScreeningResponse" />
+  <status value="draft" />
+  <description value="This is the logical model of the screening response." />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="FindRiscScreeningResponse" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Resource" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="FindRiscScreeningResponse.screeningDate">
+      <path value="FindRiscScreeningResponse.recordDate" />
+      <short value="The Date the answers were gathered" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value='dateTime' />
+        <profile value = "http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.recorder">
+      <path value="FindRiscScreeningResponse.recorder" />
+      <short value="Person who received the answers to the questions in the QuestionnaireResponse and recorded" />
+      <definition value = "Person who received the answers to the questions in the QuestionnaireResponse as &quot;true&quot;. (Reference)"/>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value='Reference' />
+        <targetProfile value = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.patient">
+      <path value="FindRiscScreeningResponse.patient" />
+      <short value="The unique patient identifier" />
+      <definition value = "the unique patient identifier (Reference)"/>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value='Reference' />
+        <targetProfile value = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.screeningName">
+      <path value="FindRiscScreeningResponse.screeningName" />
+      <short value="The name of the screening tool" />
+      <definition value = "The name of the screening tool (ex: FindRisc, name: ScreeningFindRisc)"/>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value='CodeableConcept' />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.status">
+      <path value="FindRiscScreeningResponse.status" />
+      <short value="The position of the questionnaire response within its overall lifecycle" />
+      <definition value = "The position of the questionnaire response within its overall lifecycle"/>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value='CodeableConcept' />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.item">
+      <path value="FindRiscScreeningResponse.item" />
+      <short value="Question item from the original questionnaire" />
+      <definition value = "Question item from the original questionnaire"/>
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value='CodeableConcept' />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.item.answer">
+      <path value="FindRiscScreeningResponse.item.answer" />
+      <short value="The answer of the question item" />
+      <definition value = "The answer of the question item"/>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value='CodeableConcept' />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.item.answer.answerValue">
+      <path value="FindRiscScreeningResponse.item.answer.answerValue" />
+      <short value="Value based answer of the question item" />
+      <definition value = "Value based answer of the question item"/>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value='integer' />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.item.answer.answerDate">
+      <path value="FindRiscScreeningResponse.item.answer.answerDate" />
+      <short value="The answer date of the question item" />
+      <definition value = "The answer date of the question item"/>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value='dateTime' />
+        <profile value = "http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.item.answer.answerQuantity">
+      <path value="FindRiscScreeningResponse.item.answer.answerQuantity" />
+      <short value="Quantity answer of the question item" />
+      <definition value = "Quantity answer of the question item"/>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value='decimal' />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.item.answer.answerCode">
+      <path value="FindRiscScreeningResponse.item.answer.answerCode" />
+      <short value="Quantity answer of the question item" />
+      <definition value = "Quantity answer of the question item"/>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value='code' />
+        <profile value = "http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.item.answer.answerBoolean">
+      <path value="FindRiscScreeningResponse.item.answer.answerBoolean" />
+      <short value="Boolean based answer of the question item" />
+      <definition value = "Boolean based answer of the question item"/>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value='boolean' />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.item.answer.answerString">
+      <path value="FindRiscScreeningResponse.item.answer.answerString" />
+      <short value="Text based answer of the question item" />
+      <definition value = "Text based answer of the question item"/>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value='string' />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.questionnaire">
+      <path value="FindRiscScreeningResponse.questionnaire" />
+      <short value="" />
+      <definition value = ""/>
+      <min value="1" />
+      <max value="1" />
+      <type>
+         <code value='Reference' />
+        <targetProfile value = "https://www.ehealth.fgov.be/standards/fhir/Questionnaire/findRisc-questionnaire"/>
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.remark">
+      <path value="FindRiscScreeningResponse.remark" />
+      <short value="Possible remarks" />
+      <definition value = "Possible remarks" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value='string' />
+      </type>
+    </element>
+</differential>
+</StructureDefinition>
