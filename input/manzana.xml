@@ -62,6 +62,22 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/findRisc-ScreeningResponse" />
+      </reference>
+        <fhirVersion value="4.0.1" />
+        <name value="FINDRISC Screening Response profile" />
+        <description value="The profile for FINDRISC screening response" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/findRisc-ObservationScreeningScoreResult" />
+      </reference>
+        <fhirVersion value="4.0.1" />
+        <name value="FINDRISC Screening Score Result profile" />
+        <description value="The profile for FINDRISC screening score result" />
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/vs-findRisc-screening"/>
       </reference>
       <fhirVersion value="4.0.1" />
@@ -78,7 +94,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Questionnaire/findRisc-questionnaire" />
+        <reference value="Questionnaire/example-findRisc-questionnaire" />
       </reference>
       <fhirVersion value="4.0.1" />
       <name value="Example Manzana FINDRISC Questionnaire"/>
@@ -87,7 +103,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="QuestionnaireResponse/findRisc-questionnaireResponse" />
+        <reference value="QuestionnaireResponse/example-findRisc-screeningResponse" />
       </reference>
       <fhirVersion value="4.0.1" />
       <name value="Example Manzana FINDRISC QuestionnaireResponse"/>
@@ -96,10 +112,7 @@
     </resource>
     <resource>
       <reference>
-      <!--
-        <reference value="StructureDefinition/findRisc-ObservationScreeningScoreResult" />
-      -->
-        <reference value="Observation/findRisc-ObservationScreeningScoreResult" />
+        <reference value="Observation/example-findRisc-ObservationScreeningScoreResult" />
       </reference>
       <fhirVersion value="4.0.1" />
       <name value="Example Manzana FINDRISC Score Result"/>

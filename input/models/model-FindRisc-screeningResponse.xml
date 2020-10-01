@@ -25,8 +25,8 @@
     </element>
     <element id="FindRiscScreeningResponse.recorder">
       <path value="FindRiscScreeningResponse.recorder" />
-      <short value="Person who received the answers to the questions in the QuestionnaireResponse and recorded" />
-      <definition value = "Person who received the answers to the questions in the QuestionnaireResponse as &quot;true&quot;. (Reference)"/>
+      <short value="Person who received the answers to the questions in the QuestionnaireResponse and recorded in the system." />
+      <definition value = "Person who received the answers to the questions in the QuestionnaireResponse (Reference)"/>
       <min value="1" />
       <max value="1" />
       <type>
@@ -69,8 +69,8 @@
     </element>
     <element id="FindRiscScreeningResponse.item">
       <path value="FindRiscScreeningResponse.item" />
-      <short value="Question item from the original questionnaire" />
-      <definition value = "Question item from the original questionnaire"/>
+      <short value="Question item from the original questionnaire for which answers are provided" />
+      <definition value = "Question item from the original questionnaire for which answers are provided. For the FindRiscEvaluation, here is the list of the item"/>
       <min value="1" />
       <max value="*" />
       <type>
@@ -81,7 +81,7 @@
     <element id="FindRiscScreeningResponse.item.answer">
       <path value="FindRiscScreeningResponse.item.answer" />
       <short value="The answer of the question item" />
-      <definition value = "The answer of the question item"/>
+      <definition value = "The answer of the question item. It is a value that can be an integer, a Boolean.."/>
       <min value="1" />
       <max value="1" />
       <type>
@@ -89,8 +89,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
       </type>
     </element>
-    <element id="FindRiscScreeningResponse.item.answer.answerValue">
-      <path value="FindRiscScreeningResponse.item.answer.answerValue" />
+    <element id="FindRiscScreeningResponse.item.answer.answerInteger">
+      <path value="FindRiscScreeningResponse.item.answer.answerInteger" />
       <short value="Value based answer of the question item" />
       <definition value = "Value based answer of the question item"/>
       <min value="0" />
@@ -99,8 +99,28 @@
         <code value='integer' />
       </type>
     </element>
-    <element id="FindRiscScreeningResponse.item.answer.answerDate">
-      <path value="FindRiscScreeningResponse.item.answer.answerDate" />
+    <element id="FindRiscScreeningResponse.item.answer.answerDecimal">
+      <path value="FindRiscScreeningResponse.item.answer.answerDecimal" />
+      <short value="Value based answer of the question item" />
+      <definition value = "Value based answer of the question item"/>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value='decimal' />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.item.answer.answerBoolean">
+      <path value="FindRiscScreeningResponse.item.answer.answerBoolean" />
+      <short value="Boolean value based answer of the question item" />
+      <definition value = "Boolean value based answer of the question item"/>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value='Boolean' />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.item.answer.answerDateTime">
+      <path value="FindRiscScreeningResponse.item.answer.answerDateTime" />
       <short value="The answer date of the question item" />
       <definition value = "The answer date of the question item"/>
       <min value="0" />
@@ -112,33 +132,24 @@
     </element>
     <element id="FindRiscScreeningResponse.item.answer.answerQuantity">
       <path value="FindRiscScreeningResponse.item.answer.answerQuantity" />
-      <short value="Quantity answer of the question item" />
-      <definition value = "Quantity answer of the question item"/>
+      <short value="Quantity based answer of the question item" />
+      <definition value = "Quantity based answer of the question item"/>
       <min value="0" />
       <max value="1" />
       <type>
-        <code value='decimal' />
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
       </type>
     </element>
     <element id="FindRiscScreeningResponse.item.answer.answerCode">
       <path value="FindRiscScreeningResponse.item.answer.answerCode" />
-      <short value="Quantity answer of the question item" />
-      <definition value = "Quantity answer of the question item"/>
+      <short value="SNOMED/LOINC code answer of the question item" />
+      <definition value = "SNOMED/LOINC code answer of the question item"/>
       <min value="0" />
       <max value="1" />
       <type>
         <code value='code' />
         <profile value = "http://hl7.org/fhir/StructureDefinition/code" />
-      </type>
-    </element>
-    <element id="FindRiscScreeningResponse.item.answer.answerBoolean">
-      <path value="FindRiscScreeningResponse.item.answer.answerBoolean" />
-      <short value="Boolean based answer of the question item" />
-      <definition value = "Boolean based answer of the question item"/>
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value='boolean' />
       </type>
     </element>
     <element id="FindRiscScreeningResponse.item.answer.answerString">

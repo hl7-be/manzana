@@ -36,7 +36,7 @@
     <element id="FindRiscScoreResult.recorder">
       <path value="FindRiscScoreResult.recorder" />
       <short value="Person that performed the recording of the screening" />
-      <definition value = "Who was responsible for asserting the observed value. (Reference)"/>
+      <definition value = "It is the unique identifier of the healthcare professional who encodes the information and takes responsibility for its content. The unique identifier schould be the National professional Registry Number (NISS), but in some cases, another unique identifier (NISS Bis) maybe authorized. Reference to the Practitioner for administrative information on the care provide (Reference)"/>
       <min value="1" />
       <max value="1" />
       <type>
@@ -47,7 +47,7 @@
     <element id="FindRiscScoreResult.patient">
       <path value="FindRiscScoreResult.patient" />
       <short value="The person being screened" />
-      <definition value = "Who has been asked for asserting the observation. (Reference)"/>
+      <definition value = " The unique patient identifier. The unique identifier should be the National Patient Registry Number (NISS) but in some cases another unique identifier maybe allowed. Reference to the Patient for administrative information about the patient (Reference)"/>
       <min value="1" />
       <max value="1" />
       <type>
@@ -58,7 +58,7 @@
     <element id="FindRiscScoreResult.category">
       <path value="FindRiscScoreResult.category" />
       <short value="Classification of type of the observation (Observation Category)" />
-      <definition value = "Classification of type of the observation (Observation Category) (Ref screening tool or questionnaire)" />
+      <definition value = "Classification of type of the observation (Observation Category) (Ref. screening tool or questionnaire)" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -69,7 +69,7 @@
     <element id="FindRiscScoreResult.observationCode">
       <path value="FindRiscScoreResult.observationCode" />
       <short value="The final result of the FINDRISC evaluation" />
-      <definition value = "The final result of the FINDRISC evaluation"/>
+      <definition value = "The final result of the FINDRISC evaluation. The code will be the same regardless the evaluation scale used"/>
       <min value="0" />
       <max value="1" />
       <type>
@@ -102,7 +102,7 @@
     <element id="FindRiscScoreResult.value[x]">
       <path value="FindRiscScoreResult.value[x]" />
       <short value="Final Score of the Evaluation Scale" />
-      <definition value = "The value of the final score of the FINDRISC evaluation that evaluates the risk for the patient to develop diabetes type 2"/>
+      <definition value = "The value of the final score of the FINDRISC evaluation that evaluates the risk for the patient to develop diabetes type 2. For FindRisc Evaluation, the value of the final score must be between 0 and 26. The final result is thus a number. The range depends of the scale evaluation used"/>
       <min value="1" />
       <max value="1" />
       <type>
@@ -112,21 +112,11 @@
     <element id="FindRiscScoreResult.referenceRange">
       <path value="FindRiscScoreResult.referenceRange" />
       <short value="Provides guide for interpretation of the screening result" />
-      <definition value = "Guidance on how to interpret the value by comparison to a normal/recommended range"/>
+      <definition value = "Guidance on how to interpret the value by comparison to a normal/recommended range. Multiple ranges are interpreted as an 'OR', in other words, to represent two distinct target polulations, two 'referenceRange' elements would be used. Knowing what values are considered 'normal' can help evaluate the significance of a particular result. In case of FindRisc, there are 5 ranges: low=0,high=3,resultType=Very Low |low=4, high=8, resultType=Low | low=9, high=12, resultType=Moderate | low=13, high=20, resultType=High | low=21, high=26, resultType=Very High"/>
       <min value="0" />
       <max value="*" />
       <type>
         <code value='' />
-      </type>
-    </element>
-    <element id="FindRiscScoreResult.referenceRange.veryLow">
-      <path value="FindRiscScoreResult.referenceRange.veryLow" />
-      <short value="Text based reference range in an observation" />
-      <definition value = "Text based reference range in an observation"/>
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value='string' />
       </type>
     </element>
     <element id="FindRiscScoreResult.referenceRange.low">
@@ -136,17 +126,7 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value='string' />
-      </type>
-    </element>
-    <element id="FindRiscScoreResult.referenceRange.moderate">
-      <path value="FindRiscScoreResult.referenceRange.moderate" />
-      <short value="Text based reference range in an observation" />
-      <definition value = "Text based reference range in an observation"/>
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value='string' />
+        <code value='integer' />
       </type>
     </element>
     <element id="FindRiscScoreResult.referenceRange.high">
@@ -156,13 +136,13 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value='string' />
+        <code value='integer' />
       </type>
     </element>
-    <element id="FindRiscScoreResult.referenceRange.VeryHigh">
-      <path value="FindRiscScoreResult.referenceRange.veryHigh" />
+    <element id="FindRiscScoreResult.referenceRange.resultType">
+      <path value="FindRiscScoreResult.referenceRange.resultType" />
       <short value="Text based reference range in an observation" />
-      <definition value = "Text based reference range in an observation" />
+      <definition value = "The range that is evaluated from the high/low ranges"/>
       <min value="0" />
       <max value="1" />
       <type>
@@ -211,43 +191,5 @@
         <code value='string' />
       </type>
     </element>
-<!--
-    <element id="Model1">
-      <path value="Model1" />
-      <short value="A FINDRISC score for a given patient..." />
-      <min value="0" />
-      <max value="*" />
-    </element>
-    <element id="Model1.attribute1">
-      <path value="Model1.attribute1" />
-      <short value="An attribute with a type (Identifier)" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Identifier" />
-      </type>
-    </element>
-
-    <element id="Model1.backbone">
-      <path value="Model1.backbone" />
-      <short value="A backbone element supporting other attributes" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="BackboneElement" />
-      </type>
-    </element>
-
-    <element id="Model1.backbone.attribute2">
-      <path value="Model1.backbone.attribute2" />
-      <short value="An attribute nested inside a backbone" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Period" />
-      </type>
-    </element>
--->
-
   </differential>
 </StructureDefinition>

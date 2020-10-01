@@ -1,0 +1,106 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://www.hl7belgium.org/fhir/manzana/StructureDefinition/findRisc-ScreeningResponse",
+  "name": "findRisc-ScreeningResponse",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "QuestionnaireResponse",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "QuestionnaireResponse.questionnaire",
+        "path": "QuestionnaireResponse.questionnaire",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "id": "QuestionnaireResponse.questionnaire.reference",
+        "path": "QuestionnaireResponse.questionnaire.reference",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "Questionnaire"
+            ]
+          }
+        ],
+        "min": 1,
+        "max": 1
+      },
+      {
+        "id": "QuestionnaireResponse.subject",
+        "path": "QuestionnaireResponse.subject",
+        "label": "Patient",
+        "comment": "The unique patient identifier. The unique identifier should be the National Patient Registry Number (NISS) but in some cases another unique identifier may be allowed. Reference to the Patient Care Set for administrative information about the patient.",
+        "min": 1
+      },
+      {
+        "id": "QuestionnaireResponse.authored",
+        "path": "QuestionnaireResponse.authored",
+        "label": "screeningDate",
+        "min": 1
+      },
+      {
+        "id": "QuestionnaireResponse.author",
+        "path": "QuestionnaireResponse.author",
+        "label": "recorder",
+        "min": 1
+      },
+      {
+        "id": "QuestionnaireResponse.item.text",
+        "path": "QuestionnaireResponse.item.text",
+        "label": "remark"
+      },
+      {
+        "id": "QuestionnaireResponse.item.answer.value[x]",
+        "path": "QuestionnaireResponse.item.answer.value[x]",
+        "label": "answer(value)",
+        "definition": "The answer (or one of the answers) provided by the respondent to the question. It is a value that can be an integer, a Boolean, a dateTime, …",
+        "type": [
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "Quantity"
+          }
+        ]
+      }
+    ]
+  }
+}

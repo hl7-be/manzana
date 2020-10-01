@@ -1,0 +1,170 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://www.hl7belgium.org/fhir/manzana/StructureDefinition/findRisc-ObservationScreeningScoreResult",
+  "name": "findRisc-ObservationScreeningScoreResult",
+  "version": "0.1.0",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "definition": "Classification of type of observation (Observation Category). In case of ObservationScreeningScoreResult, this is the reference of the screening tool or questionnaire used",
+        "max": "1"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "label": "observationCode",
+        "short": "Result of screening",
+        "definition": "Final result of the evaluation. The code will be the same regardless the evaluation scale used"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "label": "Patient",
+        "min": 1,
+        "patternReference": {
+          "type": "Patient"
+        }
+      },
+      {
+        "id": "Observation.subject.reference",
+        "path": "Observation.subject.reference",
+        "min": 1
+      },
+      {
+        "id": "Observation.subject.type",
+        "path": "Observation.subject.type",
+        "min": 1
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "short": "Date of the evaluation",
+        "definition": "The time or time-period the observed value is asserted as being true.",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.issued",
+        "path": "Observation.issued",
+        "label": "recordDate",
+        "short": "Date of recording of the observation",
+        "min": 1
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "label": "recorder",
+        "min": 1,
+        "max": "1",
+        "patternReference": {
+          "type": "PlanDefinition"
+        }
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "label": "conclusion",
+        "short": "Verylow, Low, Moderate, High, Veryhighetc.",
+        "definition": "A categorical assessment of an observation value. For example, high, low, normal. For some results, particularly numeric results, an interpretation is necessary to fully understand the significance of a result. \r\ne.g : in Case of FindRisc Evaluation, If final score < 4, the risk is very low; between 4 and 8, the risk is low; between 9 and 12, the risk is Moderate; between 13 and 20, the risk is high; > 21, the risk is very high."
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "label": "remark",
+        "short": "Possible remarks"
+      },
+      {
+        "id": "Observation.referenceRange.low",
+        "path": "Observation.referenceRange.low",
+        "definition": "The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9). If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is >= 2.3)."
+      },
+      {
+        "id": "Observation.referenceRange.type",
+        "path": "Observation.referenceRange.type",
+        "label": "resultType"
+      },
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "max": "1"
+      },
+      {
+        "id": "Observation.derivedFrom.reference",
+        "path": "Observation.derivedFrom.reference",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "findRisc-ScreeningResponse"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.derivedFrom.demander",
+        "path": "Observation.derivedFrom.demander",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "max": "1"
+      }
+    ]
+  }
+}
