@@ -6,7 +6,7 @@
     },
 
     "status": "draft",
-    "questionnaire": "Questionnare/example-findRisc-questionnaire",
+    "questionnaire": "Questionnaire/example-findRisc-questionnaire",
     "subject": {
         "reference": "Patient/2222a-45b-55c"
     },

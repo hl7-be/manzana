@@ -5,13 +5,13 @@
     "url": "https://www.ehealth.fgov.be/standards/fhir/examples/Questionnaire/example-findRisc-questionnaire",
     "version": "0.1.0",
     "name": "example-findRisc-questionnaire",
-    "subjectType": ["Patient"],
+    "subjectType": ["patient"],
     "date": "2020-09-23T02:57:56+00:00",
     "item": [
         {
             "linkId": "patientAge",
             "definition": "",
-            "text": "Patient's Age",
+            "text": "patient's Age",
             "type": "open-choice",
             "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening",      
             "code": [
@@ -24,7 +24,7 @@
         {
             "linkId": "bmi",
             "definition": "",
-            "text": "Please specify the customer's BMI (Kg/m²)?",
+            "text": "Please specify the patient's BMI (Kg/m²)?",
             "type": "open-choice",
             "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening",
             "code": [
@@ -37,7 +37,7 @@
         {
             "linkId": "waistCircumference",
             "definition": "",
-            "text": "Please specify the customer's waist circumference?",
+            "text": "Please specify the patient's waist circumference?",
             "type": "open-choice",
             "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening", 
             "code": [
@@ -50,7 +50,7 @@
         {
             "linkId": "medication-highBloodPressure",
             "definition": "",
-            "text": "Has the customer ever used drugs for high blood pressure?",
+            "text": "Has the patient ever used drugs for high blood pressure?",
             "type": "open-choice",
             "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening", 
             "code": [
@@ -63,7 +63,7 @@
         {
             "linkId": "history-highBloodGlucose",
             "definition": "",
-            "text": "Has the customer ever used drugs for high blood pressure?",
+            "text": "Has the patient ever used drugs for high blood pressure?",
             "type": "open-choice",
             "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening",   
             "code": [
@@ -76,7 +76,7 @@
         {
             "linkId": "physical-activity",
             "definition": "",
-            "text": "How much physical activity does the customer do?",
+            "text": "How much physical activity does the patient do?",
             "type": "open-choice",
             "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening", 
             "code": [
@@ -89,7 +89,7 @@
         {
             "linkId": "daily-consume-veg-fruit",
             "definition": "",
-            "text": "Does the customer consume daily vegetables, fruits, or berries?",
+            "text": "Does the patient consume daily vegetables, fruits, or berries?",
             "type": "open-choice",
             "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening",
             "code": [
@@ -102,7 +102,7 @@
         {
             "linkId": "family-history-diabetes",
             "definition": "",
-            "text": "Does the customer's family have a history of diabetes?",
+            "text": "Does the patient's family have a history of diabetes?",
             "type": "open-choice",
             "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening",
             "code": [

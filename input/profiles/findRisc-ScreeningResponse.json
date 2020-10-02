@@ -1,5 +1,6 @@
 {
   "resourceType": "StructureDefinition",
+  "id": "findRisc-ScreeningResponse",
   "url": "https://www.hl7belgium.org/fhir/manzana/StructureDefinition/findRisc-ScreeningResponse",
   "name": "findRisc-ScreeningResponse",
   "status": "draft",
@@ -31,29 +32,26 @@
       {
         "id": "QuestionnaireResponse.questionnaire",
         "path": "QuestionnaireResponse.questionnaire",
-        "min": 1,
-        "max": 1
-      },
-      {
-        "id": "QuestionnaireResponse.questionnaire.reference",
-        "path": "QuestionnaireResponse.questionnaire.reference",
-        "type": [
-          {
-            "code": "string",
-            "profile": [
-              "Questionnaire"
-            ]
-          }
-        ],
-        "min": 1,
-        "max": 1
+        "short": "The questionnaire of FindRisc screening",
+        "definition": "The questionnaire of FindRisc screening",
+        "min": 1
       },
       {
         "id": "QuestionnaireResponse.subject",
         "path": "QuestionnaireResponse.subject",
         "label": "Patient",
+        "short": "The unique identifier of the patient",
+        "definition": "The unique identifier of the patient. The unique identifier should be the National Patient Registry Number (NISS) but in some cases another unique identifier may be allowed. Reference to the patient.",
         "comment": "The unique patient identifier. The unique identifier should be the National Patient Registry Number (NISS) but in some cases another unique identifier may be allowed. Reference to the Patient Care Set for administrative information about the patient.",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+            ]
+          }
+        ]
       },
       {
         "id": "QuestionnaireResponse.authored",
@@ -62,15 +60,28 @@
         "min": 1
       },
       {
-        "id": "QuestionnaireResponse.author",
+        "id": "QuestionnaireResponse.recorder",
         "path": "QuestionnaireResponse.author",
         "label": "recorder",
-        "min": 1
+        "short": "Person who received and recorded the answers to the questions.",
+        "definition": "In the first time, the recorder will be a pharmacist but in the future the questionnaire can be answered by the patient himself. It is the unique identifier of the healthcare professional who encodes information and takes responsibility for its content. The unique identifier must be the professional's national register number (NISS) but in some cases, another unique identifier can be authorized OR the unique identification number of an instrument that automatically takes the measurement (e.g. a device for measuring blood sugar, a blood pressure monitor connected to a computer, etc.). Reference to the Care Set Practitioner for administrative information on the care provider.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
       },
       {
-        "id": "QuestionnaireResponse.item.text",
-        "path": "QuestionnaireResponse.item.text",
-        "label": "remark"
+        "id": "QuestionnaireResponse.item.answer",
+        "path": "QuestionnaireResponse.item.answer",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "QuestionnaireResponse.item.answer.value[x]",
@@ -88,16 +99,51 @@
             "code": "integer"
           },
           {
-            "code": "dateTime"
+            "code": "dateTime",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/dateTime"
+            ]
           },
           {
             "code": "string"
           },
           {
-            "code": "Coding"
+            "code": "Coding",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/code"
+            ]
           },
           {
-            "code": "Quantity"
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Quantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "QuestionnaireResponse.screeningName",
+        "path": "QuestionnaireResponse.screeningName",
+        "label": "screeningName",
+        "short": "The name of the screening (e.g. FINDRISC)",
+        "definition": "The name of the screeing",
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "QuestionnaireResponse.remark",
+        "path": "QuestionnaireResponse.remark",
+        "label": "remark",
+        "short": "Possible remars",
+        "definition": "Possible remarks",
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
           }
         ]
       }

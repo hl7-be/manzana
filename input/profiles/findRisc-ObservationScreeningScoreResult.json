@@ -1,8 +1,9 @@
 {
   "resourceType": "StructureDefinition",
+  "id": "findRisc-ObservationScreeningScoreResult",
   "url": "https://www.hl7belgium.org/fhir/manzana/StructureDefinition/findRisc-ObservationScreeningScoreResult",
-  "name": "findRisc-ObservationScreeningScoreResult",
   "version": "0.1.0",
+  "name": "findRisc-ObservationScreeningScoreResult",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -61,24 +62,23 @@
         "id": "Observation.subject",
         "path": "Observation.subject",
         "label": "Patient",
+        "short": "The unique identifier of the patient",
+        "definition": "The unique identifier of the patient. The unique identifier should be the National Patient Registry Number (NISS) but in some cases another unique identifier may be allowed. Reference to the Patient Care Set for administrative information about the patient.",
         "min": 1,
-        "patternReference": {
-          "type": "Patient"
-        }
-      },
-      {
-        "id": "Observation.subject.reference",
-        "path": "Observation.subject.reference",
-        "min": 1
-      },
-      {
-        "id": "Observation.subject.type",
-        "path": "Observation.subject.type",
-        "min": 1
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Device"
+            ]
+          }
+        ]
       },
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
+        "label": "evaluationDate",
         "short": "Date of the evaluation",
         "definition": "The time or time-period the observed value is asserted as being true.",
         "min": 1,
@@ -100,10 +100,7 @@
         "path": "Observation.performer",
         "label": "recorder",
         "min": 1,
-        "max": "1",
-        "patternReference": {
-          "type": "PlanDefinition"
-        }
+        "max": "1"
       },
       {
         "id": "Observation.value[x]",
@@ -119,38 +116,29 @@
         "id": "Observation.interpretation",
         "path": "Observation.interpretation",
         "label": "conclusion",
-        "short": "Verylow, Low, Moderate, High, Veryhighetc.",
         "definition": "A categorical assessment of an observation value. For example, high, low, normal. For some results, particularly numeric results, an interpretation is necessary to fully understand the significance of a result. \r\ne.g : in Case of FindRisc Evaluation, If final score < 4, the risk is very low; between 4 and 8, the risk is low; between 9 and 12, the risk is Moderate; between 13 and 20, the risk is high; > 21, the risk is very high."
       },
       {
         "id": "Observation.note",
         "path": "Observation.note",
         "label": "remark",
-        "short": "Possible remarks"
+        "short": "Possible remarks",
+        "definition": "Possible remarks"
       },
       {
-        "id": "Observation.referenceRange.low",
-        "path": "Observation.referenceRange.low",
+        "id": "Observation.referenceRange",
+        "path": "Observation.referenceRange",
         "definition": "The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9). If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is >= 2.3)."
-      },
-      {
-        "id": "Observation.referenceRange.type",
-        "path": "Observation.referenceRange.type",
-        "label": "resultType"
       },
       {
         "id": "Observation.derivedFrom",
         "path": "Observation.derivedFrom",
-        "max": "1"
-      },
-      {
-        "id": "Observation.derivedFrom.reference",
-        "path": "Observation.derivedFrom.reference",
+        "max": "1",
         "type": [
           {
-            "code": "string",
-            "profile": [
-              "findRisc-ScreeningResponse"
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.hl7belgium.org/fhir/manzana/StructureDefinition/findRisc-ScreeningResponse"
             ]
           }
         ]
@@ -158,12 +146,17 @@
       {
         "id": "Observation.derivedFrom.demander",
         "path": "Observation.derivedFrom.demander",
+        "short": "Recorder of the questionnaire response",
+        "definition": "Recorder of the questionnaire response (NISS)",
+        "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "string",
+            "profile": [
+              "https://www.hl7belgium.org/fhir/manzana/StructureDefinition/findRisc-ScreeningResponse"
+            ]
           }
-        ],
-        "max": "1"
+        ]
       }
     ]
   }

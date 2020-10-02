@@ -19,11 +19,11 @@
             "text": "FINDRISC"
         }
     ],
-    "Patient": {
+    "patient": {
         "reference": "BePatient/123a-44tb-667c",
         "display": "K. ABD"
     },
-    "Recorder": {
+    "recorder": {
         "reference": "BePractitioner/123a-456b-999d",
         "display": "M. AAA"
     },

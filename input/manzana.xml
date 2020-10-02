@@ -62,6 +62,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/model-parameter"/>
+      </reference>
+      <name value="Logical model Manzana T1D parameter"/>
+      <description value="Manzana T1D parameter"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/findRisc-ScreeningResponse" />
       </reference>
         <fhirVersion value="4.0.1" />
@@ -78,11 +85,27 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/manzanaT1D-ObservationParameter" />
+      </reference>
+        <fhirVersion value="4.0.1" />
+        <name value="Manzana T1D parameter profile" />
+        <description value="The profile for Manazan observation parameter" />
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/vs-findRisc-screening"/>
       </reference>
       <fhirVersion value="4.0.1" />
       <name value="ValueSet - Manzana FINDRISC Screening"/>
-      <description value="Value Set FINDRISC Screening Value Set"/>
+      <description value="Value Set FINDRISC Screening"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-manzanaT1D-parameter"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="ValueSet - Manzana Observation T1D"/>
+      <description value="Value Set Manzana Observation T1D"/>
     </resource>
     <resource>
       <reference>
@@ -90,7 +113,15 @@
       </reference>
       <fhirVersion value="4.0.1" />
       <name value="CodeSystem - Manzana FINDRISC Screening"/>
-      <description value="Manzana FINDRISC Screening Code System"/>
+      <description value="Code System Manzana FINDRISC Screening"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/cs-manzanaT1D-parameter"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="CodeSystem - Manzana T1D parameter"/>
+      <description value="Code System Manzana T1D parameter"/>
     </resource>
     <resource>
       <reference>

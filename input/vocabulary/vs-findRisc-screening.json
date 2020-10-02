@@ -1,10 +1,10 @@
 {
     "resourceType": "ValueSet",
-    "status": "draft",
+    "status": "active",
     "name": "VSFindRiscScreening",
     "id": "vs-findRisc-screening",
     "title": "Manzana FINDRISC screening Value Set",
-    "description": "Manzana FINnish Diabetes Screening Value Set",
+    "description": "Manzana Finnish Diabetes Screening Value Set",
     "version": "0.1.0",
     "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening",
     "compose": {

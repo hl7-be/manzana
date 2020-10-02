@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.hl7belgium.org/fhir/manzana/StructureDefinition/model-parameter" />
+  <id value="model-parameter" />
+  <name value="ManzanaParameter" />
+  <version value="0.1.0" />
+  <status value="draft" />
+  <description value="The purpose of this Care Set is to record a patient's observation for a given context.&#xD;&#xA;&#xD;&#xA;These observations constitute a central element to support a diagnosis, to follow the progress of the patient as well as these evolutions (ex: weight of a patient, level of glycemia,…),… most of the observations are simple assertions of pairs name / value with some metadata." />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="ManzanaParameter" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="ManzanaParameter.recordDate">
+      <path value="ManzanaParameter.recordDate" />
+      <short value="Date of recording of the observation" />
+      <definition value="Date of recording of the observation" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="ManzanaParameter.observationDate">
+      <path value="ManzanaParameter.observationDate" />
+      <short value="Date of taking the parameter/observation" />
+      <definition value="Date of taking the parameter / observation; clinically relevant time / timePeriod for observation (eg: today, 10th august, a general practitioner asks to a patient his weight, the patient answers: 10 days ago, my weight was 73 kg. Thus the record date is 10/08/2020 and the ObservationDate is 08/01/2020)" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="ManzanaParameter.recorder">
+      <path value="ManzanaParameter.recorder" />
+      <short value="The unique identifier of the healthcare professional who encodes the information and takes responsibility for its content" />
+      <definition value="This is the unique identifier of the healthcare professional who encodes the information and takes responsibility for its content. The unique identifier must be the professional's national register number (NISS) but in some cases, another unique identifier can be authorized OR the unique identification number of an instrument that automatically takes the measurement (e.g. a device for measuring blood sugar, a blood pressure monitor connected to a computer, etc.). Reference to the Care Set Practitioner for administrative information on the care provider." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+      </type>
+    </element>
+    <element id="ManzanaParameter.performer">
+      <path value="ManzanaParameter.performer" />
+      <short value="Person is responsible for asserting the observed value as &quot;true&quot;. That can be another practitioner, the patient or the device number." />
+      <definition value="Who is responsible for asserting the observed value as &quot;true&quot;. That can be another practitioner, the patient or the device number (e.g. in the sample: a general practitioner asks to a patient his weight, the patient answers: 10 days ago, my weight was 73 kg, the performer is the patient)." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
+      </type>
+    </element>
+    <element id="ManzanaParameter.patient">
+      <path value="ManzanaParameter.patient" />
+      <short value="The unique patient identifier." />
+      <definition value="The unique patient identifier. The unique identifier should be the National Patient Registry Number (NISS) but in some cases another unique identifier may be allowed. Reference to the patient Case Set for adminitrative information about the patient." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+      </type>
+    </element>
+    <element id="ManzanaParameter.category">
+      <path value="ManzanaParameter.category" />
+      <short value="Classification of type of observation (Observation Category)" />
+      <definition value="Classification of type of observation (Observation Category). (e.g. Frequency eating: category will be breakfast, lunch, diner, ... and ObservationCode will be quantity of meet taken, quantity of cereal taken, quantity of fruit taken, ...)" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="ManzanaParameter.observationCode">
+      <path value="ManzanaParameter.observationCode" />
+      <short value="Code of the recorded observation" />
+      <definition value="Code of the recorded observation (For the complete list see Value Set document)" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="ManzanaParameter.value">
+      <path value="ManzanaParameter.value" />
+      <short value="Result of the parameter" />
+      <definition value="This is the result of the measurement of the parameter in the form of a numerical value + the reference of the unit used (number of ° C for the temperature, number of Kg for the weight, ...). The units are expressed according to an international standard (UCUM)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="ManzanaParameter.value.valueQuantity">
+      <path value="ManzanaParameter.value.valueQuantity" />
+      <short value="Result of the parameter" />
+      <definition value="This is the result of the measurement of the parameter in the form of a numerical value + the reference of the unit used (number of ° C for the temperature, number of Kg for the weight, ...). The units are expressed according to an international standard (UCUM)." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+    </element>
+    <element id="ManzanaParameter.value.valueInteger">
+      <path value="ManzanaParameter.value.valueInteger" />
+      <short value="Integer based measurement of the parameter" />
+      <definition value="A signed integer in the range −2,147,483,648..2,147,483,647 (32-bit; for larger values, use decimal). Regex: [0]|[-+]?[1-9][0-9]*." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="integer" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/integer" />
+      </type>
+    </element>
+    <element id="ManzanaParameter.value.valueDateTime">
+      <path value="ManzanaParameter.value.valueDateTime" />
+      <short value="Datetime value based measurement of the parameter" />
+      <definition value="Datetime value based measurement of the parameter" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="ManzanaParameter.value.valueCodeableConcept">
+      <path value="ManzanaParameter.value.valueCodeableConcept" />
+      <short valu = "SNOMED/LOINC code and text based measurement of the parameter" />
+      <definition value="SNOMED/LOINC code and text based measurement of the parameter" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="ManzanaParameter.certitude">
+      <path value="ManzanaParameter.certitude" />
+      <short value="Degree of certainty concerning the information given" />
+      <definition value="degree of certainty concerning the information given (eg: duration of doing sport in week. What is the degree of certainty of this duration?)" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="ManzanaParameter.derivedFrom">
+      <path value="ManzanaParameter.derivedFrom" />
+      <short value="Related measurements the observation is made from. E.g. the final result of the evaluation screen FindRisk." />
+      <definition value="Related measurements the observation is made from. E.g. the final result of the blood glucose level." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/FindRiscScreeningResponse" />
+      </type>
+    </element>
+    <element id="ManzanaParameter.conclusion">
+      <path value="ManzanaParameter.conclusion" />
+      <short value="A categorical assessment of an observation value" />
+      <definition value="A categorical assessment of an observation value. For example, high, low, normal. For some results, particularly numeric results, an interpretation is necessary to fully understand the significance of a result." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="ManzanaParameter.remark">
+      <path value="ManzanaParameter.remark" />
+      <short value="Possible remarks" />
+      <definition value="Possible remarks" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value='string' />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

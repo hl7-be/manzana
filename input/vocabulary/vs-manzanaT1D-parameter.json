@@ -1,0 +1,17 @@
+{
+    "resourceType": "ValueSet",
+    "status": "active",
+    "name": "VSManzanaT1DParameter",
+    "id": "vs-manzanaT1D-parameter",
+    "title": "Manzana T1D parameter Value Set",
+    "description": "Manzana observation for Diabetes type 1 Value Set",
+    "version": "0.1.0",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-manzanaT1D-parameter",
+    "compose": {
+        "include": [
+            {
+                "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-manzanaT1D-parameter"
+            } 
+        ]
+    }
+}

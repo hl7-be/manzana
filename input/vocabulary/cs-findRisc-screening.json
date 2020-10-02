@@ -4,7 +4,7 @@
     "content": "complete",
     "name": "CSFindRiscScreening",
     "id": "cs-findRisc-screening",
-    "title": "Manzana findRisc screening Cody System",
+    "title": "Manzana findRisc screening Code System",
     "description": "Manzana findRisc screening Code System",
     "version": "0.1.0",
     "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening",
@@ -12,7 +12,7 @@
         {
             "code": "105727008",
             "display": "Patient's Age",
-            "definintion": "<35 years, between 45 and 54 years, between 55 and 65 year, >64 years",
+            "definition": "<35 years, between 45 and 54 years, between 55 and 65 year, >64 years",
             "designation": [
                 {
                     "language": "en-EN",
@@ -126,7 +126,7 @@
         {
             "code": "160303001",
             "display": "Family history of diabetes",
-            "defintion": "no, family 2d degree, family 1st degree",
+            "definition": "no, family 2d degree, family 1st degree",
             "designation": [
                 {
                     "language": "en-EN",
