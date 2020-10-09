@@ -1,0 +1,33 @@
+{
+    "resourceType": "CodeSystem",
+    "status": "draft",
+    "content": "complete",
+    "name": "CSFindRiscScreeningConsumeVegFrBa",
+    "id": "cs-findRisc-screening-consumeVegFrBa",
+    "title": "Code System Manzana findRisc screening daily consume of vegetabe, fruit and barries",
+    "description": "Code system for Manzana findRisc screening daily consume of vegetabe, fruit and barries",
+    "version": "0.1.0",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-consumeVegFrBa",
+    "concept": [
+        {
+            "code": "401070008",
+            "display": "Daily consume of vegetabe, fruit and barries",
+            "definition": "every data, not every day",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "Daily consume of vegetabe, fruit and barries"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Consumeer dagelijks groente, fruit en bessen"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Consommation quotidienne de légumes, fruits et baies"
+                }
+            ]
+        }
+    ],
+    "count": 1
+}

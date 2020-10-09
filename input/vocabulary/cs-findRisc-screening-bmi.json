@@ -1,0 +1,33 @@
+{
+    "resourceType": "CodeSystem",
+    "status": "draft",
+    "content": "complete",
+    "name": "CSFindRiscScreeningBmi",
+    "id": "cs-findRisc-screening-bmi",
+    "title": "Code System Manzana findRisc screening BMI",
+    "description": "Code system for Manzana findRisc screening BMI",
+    "version": "0.1.0",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-bmi",
+    "concept": [
+        {
+            "code": "60621009",
+            "display": "Body mass index",
+            "definition": "<25, between 25 and 30, >30",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "Body mass index"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Body mass index"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Indice de masse corporelle"
+                }
+            ]
+        }
+    ],
+    "count": 1
+}

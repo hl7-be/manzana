@@ -1,0 +1,33 @@
+{
+    "resourceType": "CodeSystem",
+    "status": "draft",
+    "content": "complete",
+    "name": "CSFindRiscScreeningMedicationHighBloodPressure",
+    "id": "cs-findRisc-screening-medicationHBP",
+    "title": "Code System Manzana findRisc screening medication high blood pressure",
+    "description": "Code system for Manzana findRisc screening medication high blood pressure",
+    "version": "0.1.0",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-medicationHBP",
+    "concept": [
+        {
+            "code": "302192008",
+            "display": "Medication for high blood pressure",
+            "definition": "yes, no",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "Medication for high blood pressure"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "médication contre l'hypertension artérielle"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Medicatie tegen hoge bloeddruk"
+                }
+            ]
+        }
+    ],
+    "count": 1
+}

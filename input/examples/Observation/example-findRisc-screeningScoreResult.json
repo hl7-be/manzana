@@ -1,0 +1,70 @@
+{
+    "resourceType" : "Observation",
+    "id": "example-findRisc-screeningScoreResult",
+    "meta": {
+        "profile" : [
+            "https://www.hl7belgium.be/fhir/StructureDefinition/be-scoreresult"
+        ]
+    },
+    "category": [
+        {
+            "text": "FINDRISC"
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://www.snomed.org/",
+                "code": "763117005", 
+                "display": "FINDRISC scole result"
+            }
+        ],
+        "text": "23.5"
+    },
+    "subject": {
+        "reference": "BePatient/111a-222b-333d",
+        "display": "M. BBB"
+    },
+    "issued": "2020-10-06T13:28:17.239+02:00",
+    "effective": [
+        {
+            "dateTime": "2020-10-06T13:28:17.239+02:00"
+        }
+    ],
+    "effectiveDateTime": "2020-10-06T13:28:17.239+02:00",
+    "performer": {
+        "reference": "BePatient/123a-44tb-667c",
+        "display": "K. ABD"
+    },
+    "value": [
+        {
+           "integer": 18
+        }
+    ],
+    "interpretation": [
+        {
+            "text": "Conclusion: More sport"
+        },
+        {
+            "text": "Remark: More sport"
+        }
+    ], 
+    "referenceRange": [
+        {
+            "low": {
+                "value": 10
+            },
+            "high": {
+                "value": 18
+            },
+            "type": {
+                "text": "High"
+            }
+        }
+    ],
+    "derivedFrom": [ 
+        {
+            "reference": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "resourceType": "ValueSet",
+    "status": "active",
+    "name": "VSFindRiscScreeningMedicationHBP",
+    "id": "vs-findRisc-screening-medicationHBP",
+    "title": "Manzana FINDRISC screening medication high blood pressure",
+    "description": "Value set of Manzana Finnish Diabetes screening medication high blood pressure",
+    "version": "0.1.0",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-medicationHBP",
+    "compose": {
+        "include": [
+            {
+                "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-medicationHBP"
+            }
+        ]
+    }
+}

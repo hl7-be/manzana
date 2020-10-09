@@ -1,0 +1,33 @@
+{
+    "resourceType": "CodeSystem",
+    "status": "draft",
+    "content": "complete",
+    "name": "CSFindRiscScreeningAge",
+    "id": "cs-findRisc-screening-age",
+    "title": "Code System Manzana findRisc screening age",
+    "description": "Code system for Manzana findRisc screening age",
+    "version": "0.1.0",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-age",
+    "concept": [
+        {
+            "code": "105727008",
+            "display": "Patient's Age",
+            "definition": "<35 years, between 45 and 54 years, between 55 and 65 year, >64 years",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "Patient's Age"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Leeftijd van de patiënt"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Âge du patient"
+                }
+            ]
+        }
+    ],
+    "count": 1
+}

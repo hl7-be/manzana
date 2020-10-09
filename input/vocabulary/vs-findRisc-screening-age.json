@@ -1,0 +1,17 @@
+{
+    "resourceType": "ValueSet",
+    "status": "active",
+    "name": "VSFindRiscScreeningAge",
+    "id": "vs-findRisc-screening-age",
+    "title": "Manzana FINDRISC screening age",
+    "description": "Value set of Manzana Finnish Diabetes screening age",
+    "version": "0.1.0",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-age",
+    "compose": {
+        "include": [
+            {
+                "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-age"
+            }
+        ]
+    }
+}

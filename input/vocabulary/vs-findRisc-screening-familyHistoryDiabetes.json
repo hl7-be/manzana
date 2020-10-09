@@ -1,0 +1,17 @@
+{
+    "resourceType": "ValueSet",
+    "status": "active",
+    "name": "VSFindRiscScreeningFamilyHistoryDiabetes",
+    "id": "vs-findRisc-screening-familyHistoryDiabetes",
+    "title": "Manzana FINDRISC screening family history diabetes",
+    "description": "Value set of Manzana Finnish Diabetes screening family history diabetes",
+    "version": "0.1.0",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-familyHistoryDiabetes",
+    "compose": {
+        "include": [
+            {
+                "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-familyHistoryDiabetes"
+            }
+        ]
+    }
+}

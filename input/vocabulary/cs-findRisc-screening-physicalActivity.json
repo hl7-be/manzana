@@ -1,0 +1,33 @@
+{
+    "resourceType": "CodeSystem",
+    "status": "draft",
+    "content": "complete",
+    "name": "CSFindRiscScreeningPhysicalActivity",
+    "id": "cs-findRisc-screening-physicalActivity",
+    "title": "Code System Manzana findRisc screening physical activity",
+    "description": "Code system for Manzana findRisc screening physical activity",
+    "version": "0.1.0",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-physicalActivity",
+    "concept": [
+        {
+            "code": "68130003",
+            "display": "Physical activity",
+            "definition": "yes, no",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "Physical activity"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Fysieke activiteit"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Activité physique"
+                }
+            ]
+        }
+    ],
+    "count": 1
+}

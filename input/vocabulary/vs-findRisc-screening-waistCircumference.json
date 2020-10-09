@@ -1,0 +1,17 @@
+{
+    "resourceType": "ValueSet",
+    "status": "active",
+    "name": "VSFindRiscScreeningWaistCircumference",
+    "id": "vs-findRisc-screening-waistCircumference",
+    "title": "Manzana FINDRISC screening waist circumference",
+    "description": "Value set of Manzana Finnish Diabetes screening Waist Circumference",
+    "version": "0.1.0",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-waistCircumference",
+    "compose": {
+        "include": [
+            {
+                "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-waistCircumference"
+            }
+        ]
+    }
+}

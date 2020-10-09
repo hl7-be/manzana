@@ -1,0 +1,17 @@
+{
+    "resourceType": "ValueSet",
+    "status": "active",
+    "name": "VSFindRiscScreeningGlucoseHbA1c",
+    "id": "vs-findRisc-screening-glucoseHbA1c",
+    "title": "Manzana FINDRISC screening glucose in blood/HbA1c",
+    "description": "Value set of Manzana Finnish Diabetes screening glucose in blood or HbA1c",
+    "version": "0.1.0",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-glucoseHbA1c",
+    "compose": {
+        "include": [
+            {
+                "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-glucoseHbA1c"
+            }
+        ]
+    }
+}

@@ -2,16 +2,16 @@
     "resourceType": "QuestionnaireResponse",
     "id" : "example-findRisc-screeningResponse",
     "meta": {
-        "profile": "https://www.ehealth.fgov.be/fhir/StructureDefinition/findRisc-ScreeningResponse"
+        "profile": "https://www.hl7.org/fhir/questionnaireresponse"
     },
 
-    "status": "draft",
-    "questionnaire": "Questionnaire/example-findRisc-questionnaire",
+    "status": "completed",
+    "questionnaire": "https://www.ehealth.fgov.be/standards/fhir/resources/rs-findRisc-questionnaire",
     "subject": {
-        "reference": "Patient/2222a-45b-55c"
+        "reference": "BePatient/2222a-45b-55c"
     },
     "source": {
-        "reference": "Practitioner/1111a-33a-555e"
+        "reference": "be-practitioner/1111a-33a-555e"
     },
     "item": [
         {
@@ -19,9 +19,9 @@
             "answer": [
                 {
                     "valueCoding": {
-                        "system": "http://www.snomed.org",
+                        "system": "http://www.snomed.org/",
                         "code": "105727008",
-                        "display": "Age"
+                        "display": "30"
                     }
                 }
             ]
@@ -31,9 +31,9 @@
             "answer": [
                 {
                     "valueCoding": {
-                        "system": "http://www.snomed.org",
+                        "system": "http://www.snomed.org/",
                         "code": "60621009",
-                        "display": "BMI"
+                        "display": "22,5"
                     }
                 }
             ]
@@ -43,9 +43,9 @@
             "answer": [
                 {
                     "valueCoding": {
-                        "system": "http://www.snomed.org",
+                        "system": "http://www.snomed.org/",
                         "code": "276361009",
-                        "display": "Waist Circumference"
+                        "display": "28.6"
                     }
                 }
             ]
@@ -55,9 +55,9 @@
             "answer": [
                 {
                     "valueCoding": {
-                        "system": "http://www.snomed.org",
+                        "system": "http://www.snomed.org/",
                         "code": "276361009",
-                        "display": "Taken blood pressure medication"
+                        "display": "false"
                     }
                 }
             ]
@@ -67,9 +67,9 @@
             "answer": [
                 {
                     "valueCoding": {
-                        "system": "http://www.snomed.org",
+                        "system": "http://www.snomed.org/",
                         "code": "80394007",
-                        "display": "History of high blood glucose"
+                        "display": "true"
                     }
                 }
             ]
@@ -79,9 +79,9 @@
             "answer": [
                 {
                     "valueCoding": {
-                        "system": "http://www.snomed.org",
+                        "system": "http://www.snomed.org/",
                         "code": "68130003",
-                        "display": "Physical activity"
+                        "display": "true"
                     }
                 }
             ]
@@ -91,9 +91,9 @@
             "answer": [
                 {
                     "valueCoding": {
-                        "system": "http://www.snomed.org",
+                        "system": "http://www.snomed.org/",
                         "code": "391129005",
-                        "display": "Consume of the vegetables/fruits/berries"
+                        "display": "false"
                     }
                 }
             ]
@@ -103,9 +103,9 @@
             "answer": [
                 {
                     "valueCoding": {
-                        "system": "http://www.snomed.org",
+                        "system": "http://www.snomed.org/",
                         "code": "160303001",
-                        "display": "Family history of diabetes"
+                        "display": "false"
                     }
                 }
             ]

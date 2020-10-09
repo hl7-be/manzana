@@ -48,14 +48,14 @@
     </resource> -->
     <resource>
       <reference>
-        <reference value="StructureDefinition/model-FindRisc-scoreResults"/>
+        <reference value="StructureDefinition/model-findRisc-scoreResult"/>
       </reference>
-      <name value="Logical model Manzana FINDRISC Score results"/>
-      <description value="Manzana FINDRISC Score results"/>
+      <name value="Logical model Manzana FINDRISC Score result"/>
+      <description value="Manzana FINDRISC Score result"/>
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/model-FindRisc-screeningResponse"/>
+        <reference value="StructureDefinition/model-findRisc-screeningResponse"/>
       </reference>
       <name value="Logical model Manzana FINDRISC Screening response"/>
       <description value="Manzana FINDRISC screening response"/>
@@ -69,22 +69,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/findRisc-ScreeningResponse" />
-      </reference>
-        <fhirVersion value="4.0.1" />
-        <name value="FINDRISC Screening Response profile" />
-        <description value="The profile for FINDRISC screening response" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/findRisc-ObservationScreeningScoreResult" />
-      </reference>
-        <fhirVersion value="4.0.1" />
-        <name value="FINDRISC Screening Score Result profile" />
-        <description value="The profile for FINDRISC screening score result" />
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/manzanaT1D-ObservationParameter" />
       </reference>
         <fhirVersion value="4.0.1" />
@@ -93,11 +77,75 @@
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/vs-findRisc-screening"/>
+        <reference value="Questionnaire/rs-findRisc-questionnaire" />
+      </reference>
+        <fhirVersion value="4.0.1" />
+        <name value="FINDRISC questionnaire instance" />
+        <description value="The questionnaire instance for FINDRISC screening" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-findRisc-screening-age"/>
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="ValueSet - Manzana FINDRISC Screening"/>
-      <description value="Value Set FINDRISC Screening"/>
+      <name value="ValueSet - Manzana FINDRISC Screening age"/>
+      <description value="Value Set FINDRISC Screening age"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-findRisc-screening-bmi"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="ValueSet - Manzana FINDRISC Screening body mass index"/>
+      <description value="Value Set FINDRISC Screening body mass index"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-findRisc-screening-consumeVegFrBa"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="ValueSet - Manzana FINDRISC Screening daily consume of vegetable, fruits and barries"/>
+      <description value="Value Set FINDRISC Screening daily consume of vegetables, fruits an barries"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-findRisc-screening-familyHistoryDiabetes"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="ValueSet - Manzana FINDRISC screening family history diabetes"/>
+      <description value="Value Set FINDRISC screening family history diabetes"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-findRisc-screening-glucoseHbA1c"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="ValueSet - Manzana FINDRISC screening glucose or HbA1c level"/>
+      <description value="Value Set FINDRISC screening glucose or HbA1c level"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-findRisc-screening-medicationHBP"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="ValueSet - Manzana FINDRISC screening medication for high blood pressure"/>
+      <description value="Value Set FINDRISC screening medication for high blood pressure"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-findRisc-screening-physicalActivity"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="ValueSet - Manzana FINDRISC screening physical activity"/>
+      <description value="Value Set FINDRISC screening physical activity"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-findRisc-screening-waistCircumference"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="ValueSet - Manzana FINDRISC screening waist circumference"/>
+      <description value="Value Set FINDRISC screening waist circumference"/>
     </resource>
     <resource>
       <reference>
@@ -109,11 +157,67 @@
     </resource>
     <resource>
       <reference>
-        <reference value="CodeSystem/cs-findRisc-screening"/>
+        <reference value="CodeSystem/cs-findRisc-screening-age"/>
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="CodeSystem - Manzana FINDRISC Screening"/>
-      <description value="Code System Manzana FINDRISC Screening"/>
+      <name value="CodeSystem - Manzana FINDRISC Screening age"/>
+      <description value="Code System Manzana FINDRISC Screening age"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/cs-findRisc-screening-bmi"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="CodeSystem - Manzana FINDRISC Screening body mass index"/>
+      <description value="Code System Manzana FINDRISC Screening body mass index"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/cs-findRisc-screening-consumeVegFrBa"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="CodeSystem - Manzana FINDRISC Screening daily consume of vegetables, fruits and barries"/>
+      <description value="Code System Manzana FINDRISC Screening daily consume of vegetables, fruits and barries"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/cs-findRisc-screening-familyHistoryDiabetes"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="CodeSystem - Manzana FINDRISC screening family history diabetes"/>
+      <description value="Code System Manzana FINDRISC screening family history diabetes"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/cs-findRisc-screening-glucoseHbA1c"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="CodeSystem - Manzana FINDRISC screening glucose or HbA1c level"/>
+      <description value="Code System Manzana FINDRISC screening glucose or HbA1c level"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/cs-findRisc-screening-physicalActivity"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="CodeSystem - Manzana FINDRISC screening physical activity"/>
+      <description value="Code System Manzana FINDRISC screening physical activity"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/cs-findRisc-screening-waistCircumference"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="CodeSystem - Manzana FINDRISC screening waist circumference"/>
+      <description value="Code System Manzana FINDRISC screening waist circumference"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/cs-findRisc-screening-medicationHBP"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="CodeSystem - Manzana FINDRISC screening medication for high blood pressure"/>
+      <description value="Code System Manzana FINDRISC screening medication for high blood pressure"/>
     </resource>
     <resource>
       <reference>
@@ -125,30 +229,21 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Questionnaire/example-findRisc-questionnaire" />
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="Example Manzana FINDRISC Questionnaire"/>
-      <exampleBoolean value="true" />
-      <description value="Manzana FINDRISC Questionnaire"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="QuestionnaireResponse/example-findRisc-screeningResponse" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Example Manzana FINDRISC QuestionnaireResponse"/>
+      <name value="Example Manzana FINDRISC screening response "/>
       <exampleBoolean value="true" />
-      <description value="Manzana FINDRISC Questionnaire Response"/>
+      <description value="Manzana FINDRISC screening response (QuestionnaireResponse)"/>
     </resource>
     <resource>
       <reference>
-        <reference value="Observation/example-findRisc-ObservationScreeningScoreResult" />
+        <reference value="Observation/example-findRisc-screeningScoreResult" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Example Manzana FINDRISC Score Result"/>
+      <name value="Example Manzana FINDRISC screening score result"/>
       <exampleBoolean value="true" />
-      <description value="Manzana FINDRISC Score Result"/>
+      <description value="Manzana FINDRISC screening score result"/>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->

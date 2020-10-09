@@ -1,0 +1,33 @@
+{
+    "resourceType": "CodeSystem",
+    "status": "draft",
+    "content": "complete",
+    "name": "CSFindRiscScreeningWaistCircumference",
+    "id": "cs-findRisc-screening-waistCircumference",
+    "title": "Code System Manzana findRisc screening waist Circumference",
+    "description": "Code system for Manzana findRisc screening waist circumference",
+    "version": "0.1.0",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-waistCircumference",
+    "concept": [
+        {
+            "code": "276361009",
+            "definition": "man: <94cm, between 94 and 102cm, >102cm. woman: <80cm, between 80 and 88cm, >88cm",
+            "display": "Waist circumference",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "Waist circumference"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Tailleomtrek"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Tour de taille"
+                }
+            ]
+        }
+    ],
+    "count": 1
+}

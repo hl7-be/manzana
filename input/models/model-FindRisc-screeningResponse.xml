@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <!--trial-->
-  <id value="model-FindRisc-screeningResponse" />
-  <url value="https://www.hl7belgium.org/fhir/manzana/StructureDefinition/model-FindRisc-screeningResponse" />
+  <id value="model-findRisc-screeningResponse" />
+  <url value="https://www.hl7belgium.org/fhir/manzana/StructureDefinition/model-findRisc-screeningResponse" />
   <version value="0.1.0" />
   <name value="FindRiscScreeningResponse" />
   <status value="draft" />
@@ -67,101 +67,6 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
       </type>
     </element>
-    <element id="FindRiscScreeningResponse.item">
-      <path value="FindRiscScreeningResponse.item" />
-      <short value="Question item from the original questionnaire for which answers are provided" />
-      <definition value = "Question item from the original questionnaire for which answers are provided. For the FindRiscEvaluation, here is the list of the item"/>
-      <min value="1" />
-      <max value="*" />
-      <type>
-        <code value='CodeableConcept' />
-        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
-      </type>
-    </element>
-    <element id="FindRiscScreeningResponse.item.answer">
-      <path value="FindRiscScreeningResponse.item.answer" />
-      <short value="The answer of the question item" />
-      <definition value = "The answer of the question item. It is a value that can be an integer, a Boolean.."/>
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value='CodeableConcept' />
-        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
-      </type>
-    </element>
-    <element id="FindRiscScreeningResponse.item.answer.answerInteger">
-      <path value="FindRiscScreeningResponse.item.answer.answerInteger" />
-      <short value="Value based answer of the question item" />
-      <definition value = "Value based answer of the question item"/>
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value='integer' />
-      </type>
-    </element>
-    <element id="FindRiscScreeningResponse.item.answer.answerDecimal">
-      <path value="FindRiscScreeningResponse.item.answer.answerDecimal" />
-      <short value="Value based answer of the question item" />
-      <definition value = "Value based answer of the question item"/>
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value='decimal' />
-      </type>
-    </element>
-    <element id="FindRiscScreeningResponse.item.answer.answerBoolean">
-      <path value="FindRiscScreeningResponse.item.answer.answerBoolean" />
-      <short value="Boolean value based answer of the question item" />
-      <definition value = "Boolean value based answer of the question item"/>
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value='boolean' />
-      </type>
-    </element>
-    <element id="FindRiscScreeningResponse.item.answer.answerDateTime">
-      <path value="FindRiscScreeningResponse.item.answer.answerDateTime" />
-      <short value="The answer date of the question item" />
-      <definition value = "The answer date of the question item"/>
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value='dateTime' />
-        <profile value = "http://hl7.org/fhir/StructureDefinition/dateTime" />
-      </type>
-    </element>
-    <element id="FindRiscScreeningResponse.item.answer.answerQuantity">
-      <path value="FindRiscScreeningResponse.item.answer.answerQuantity" />
-      <short value="Quantity based answer of the question item" />
-      <definition value = "Quantity based answer of the question item"/>
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Quantity" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
-      </type>
-    </element>
-    <element id="FindRiscScreeningResponse.item.answer.answerCode">
-      <path value="FindRiscScreeningResponse.item.answer.answerCode" />
-      <short value="SNOMED/LOINC code answer of the question item" />
-      <definition value = "SNOMED/LOINC code answer of the question item"/>
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value='code' />
-        <profile value = "http://hl7.org/fhir/StructureDefinition/code" />
-      </type>
-    </element>
-    <element id="FindRiscScreeningResponse.item.answer.answerString">
-      <path value="FindRiscScreeningResponse.item.answer.answerString" />
-      <short value="Text based answer of the question item" />
-      <definition value = "Text based answer of the question item"/>
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value='string' />
-      </type>
-    </element>
     <element id="FindRiscScreeningResponse.questionnaire">
       <path value="FindRiscScreeningResponse.questionnaire" />
       <short value="" />
@@ -170,9 +75,96 @@
       <max value="1" />
       <type>
          <code value='Reference' />
-        <targetProfile value = "https://www.ehealth.fgov.be/standards/fhir/Questionnaire/findRisc-questionnaire"/>
+        <targetProfile value = "https://www.ehealth.fgov.be/standards/fhir/resources/rs-findRisc-questionnaire"/>
       </type>
     </element>
+
+    <!-- Start here -->
+    <element id="FindRiscScreeningResponse.age">
+      <path value="FindRiscScreeningResponse.age" />
+      <short value="Question - Age" />
+      <definition value = "The patient age"/>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value='Quantity' />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.bmi">
+      <path value="FindRiscScreeningResponse.bmi" />
+      <short value="Question - Body mass index" />
+      <definition value = "The patient body mass index"/>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value='decimal' />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.waistCircumference">
+      <path value="FindRiscScreeningResponse.waistCircumference" />
+      <short value="Question - Waist circumference" />
+      <definition value = "The patient circumference"/>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value='decimal' />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.physicalActivity">
+      <path value="FindRiscScreeningResponse.physicalActivity" />
+      <short value="Question - Physical activity" />
+      <definition value = "How much physical activity does the patient do"/>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value='boolean' />
+
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.fooding">
+      <path value="FindRiscScreeningResponse.fooding" />
+      <short value="Question - Consume vegetables, fruits or barries" />
+      <definition value = "Whether patient consumes daily vegetables, fruits or barries"/>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value='boolean' />
+      </type>
+    </element>
+
+    <element id="FindRiscScreeningResponse.medicationBloodPressure">
+      <path value="FindRiscScreeningResponse.medicationBloodPressure" />
+      <short value="Question - Medication for blood pressure" />
+      <definition value = "Whether the patient has used drugs for high blood pressure"/>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value='boolean' />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.glycemyOrHbA1c">
+      <path value="FindRiscScreeningResponse.glycemyOrHbA1c" />
+      <short value="Question - Patient's history of high blood glucose" />
+      <definition value = "Does the patient have a history of high blood glucose"/>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="FindRiscScreeningResponse.familyHistory">
+      <path value="FindRiscScreeningResponse.familyHistory" />
+      <short value="Question - Patient's family history of diabetes" />
+      <definition value = "Does the patient's family have a history of diabetes"/>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value='boolean' />
+      </type>
+    </element>
+
+    <!-- stop here -->
     <element id="FindRiscScreeningResponse.remark">
       <path value="FindRiscScreeningResponse.remark" />
       <short value="Possible remarks" />

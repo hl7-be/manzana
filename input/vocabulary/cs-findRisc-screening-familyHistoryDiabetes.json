@@ -1,0 +1,33 @@
+{
+    "resourceType": "CodeSystem",
+    "status": "draft",
+    "content": "complete",
+    "name": "CSFindRiscScreeningFamilyHistoryDiabetes",
+    "id": "cs-findRisc-screening-familyHistoryDiabetes",
+    "title": "Code System Manzana findRisc screening family history diabetes",
+    "description": "Code system for Manzana findRisc screening family history diabetes",
+    "version": "0.1.0",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-familyHistoryDiabetes",
+    "concept": [
+        {
+            "code": "160303001",
+            "display": "Family history of diabetes",
+            "definition": "no, family 2d degree, family 1st degree",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "Family history of diabetes"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Familiegeschiedenis van diabetes"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Antécédents familiaux de diabète"
+                }
+            ]
+        }
+    ],
+    "count": 1
+}

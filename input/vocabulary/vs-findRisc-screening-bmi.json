@@ -1,0 +1,17 @@
+{
+    "resourceType": "ValueSet",
+    "status": "active",
+    "name": "VSFindRiscScreeningBmi",
+    "id": "vs-findRisc-screening-bmi",
+    "title": "Manzana FINDRISC screening BMI",
+    "description": "Value set of Manzana Finnish Diabetes screening body mass index",
+    "version": "0.1.0",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-bmi",
+    "compose": {
+        "include": [
+            {
+                "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-bmi"
+            }
+        ]
+    }
+}
