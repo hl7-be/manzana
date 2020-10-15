@@ -12,7 +12,7 @@
         {
             "code": "401070008",
             "display": "Daily consume of vegetabe, fruit and barries",
-            "definition": "every data, not every day",
+            "definition": ">= 5 per day, < 5 per day",
             "designation": [
                 {
                     "language": "en-EN",

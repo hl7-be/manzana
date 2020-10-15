@@ -9,11 +9,11 @@
     "item": [
         {
             "linkId": "patientAge",
-            "definition": "Patient's Age",
+            "definition": "PatientAge",
             "text": "Please specify the patient's age?",
-            "required": "true",
+            "required": true,
             "type": "open-choice",
-            "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-age",      
+            "answerValueSet": "https://www.hl7.org/fhir/valueset-age-units",      
             "code": [
                 {
                     "system": "http://www.snomed.org",
@@ -23,9 +23,9 @@
         },
         {
             "linkId": "bmi",
-            "definition": "Patient's BMI",
+            "definition": "PatientBMI",
             "text": "Please specify the patient's BMI (Kg/m²)?",
-            "required": "true",
+            "required": true,
             "type": "open-choice",
             "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-bmi",
             "code": [
@@ -37,9 +37,9 @@
         },
         {
             "linkId": "waistCircumference",
-            "definition": "Patient's waist circumference",
+            "definition": "PatientWaistCircumference",
             "text": "Please specify the patient's waist circumference?",
-            "required": "true",
+            "required": true,
             "type": "open-choice",
             "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-waistCircumference", 
             "code": [
@@ -51,9 +51,9 @@
         },
         {
             "linkId": "medication-highBloodPressure",
-            "definition": "Take medication for high blood pressure",
+            "definition": "MedicationHighBloodPressure",
             "text": "Has the patient ever used drugs for high blood pressure?",
-            "required": "true",
+            "required": true,
             "type": "open-choice",
             "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-medicationHBP", 
             "code": [
@@ -65,9 +65,9 @@
         },
         {
             "linkId": "history-highBloodGlucose",
-            "definition": "Patient's history of high blood glucose",
+            "definition": "HistoryHighBloodGlucose",
             "text": "Has the patient ever used drugs for high blood pressure?",
-            "required": "true",
+            "required": true,
             "type": "open-choice",
             "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-glucoseHbA1c",   
             "code": [
@@ -79,9 +79,9 @@
         },
         {
             "linkId": "physical-activity",
-            "definition": "Physical activity",
+            "definition": "PhysicalActivity",
             "text": "How much physical activity does the patient do?",
-            "required": "true",
+            "required": true,
             "type": "open-choice",
             "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-physicalActivity", 
             "code": [
@@ -93,9 +93,9 @@
         },
         {
             "linkId": "daily-consume-veg-fruit",
-            "definition": "Consume vegetables, fruits or barries",
+            "definition": "ConsumeVegetablesFruitsBarries",
             "text": "Does the patient consume daily vegetables, fruits, or berries?",
-            "required": "true",
+            "required": true,
             "type": "open-choice",
             "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-consumeVegFrBa",
             "code": [
@@ -107,9 +107,9 @@
         },
         {
             "linkId": "family-history-diabetes",
-            "definition": "Patient's family history of diabetes",
+            "definition": "FamilyHistoryDiabetes",
             "text": "Does the patient's family have a history of diabetes?",
-            "required": "true",
+            "required": true,
             "type": "open-choice",
             "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-familyHistoryDiabetes",
             "code": [

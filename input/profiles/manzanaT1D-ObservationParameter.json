@@ -74,7 +74,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Device",
+              "https://www.hl7.org/fhir/device",
               "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
             ]
           }
@@ -111,7 +111,7 @@
             "code": "Reference",
             "targetProfile": [
               "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient",
-              "http://hl7.org/fhir/stu3/device",
+              "https://www.hl7.org/fhir/device",
               "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"
             ]
           }

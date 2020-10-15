@@ -77,19 +77,19 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ext-findRisc-device" />
+      </reference>
+        <fhirVersion value="4.0.1" />
+        <name value="Extension - FINDRISC screening device" />
+        <description value="Extension FINDRISC screening device" />
+    </resource>
+    <resource>
+      <reference>
         <reference value="Questionnaire/rs-findRisc-questionnaire" />
       </reference>
         <fhirVersion value="4.0.1" />
         <name value="FINDRISC questionnaire instance" />
         <description value="The questionnaire instance for FINDRISC screening" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/vs-findRisc-screening-age"/>
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="ValueSet - Manzana FINDRISC Screening age"/>
-      <description value="Value Set FINDRISC Screening age"/>
     </resource>
     <resource>
       <reference>
@@ -154,14 +154,6 @@
       <fhirVersion value="4.0.1" />
       <name value="ValueSet - Manzana Observation T1D"/>
       <description value="Value Set Manzana Observation T1D"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/cs-findRisc-screening-age"/>
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="CodeSystem - Manzana FINDRISC Screening age"/>
-      <description value="Code System Manzana FINDRISC Screening age"/>
     </resource>
     <resource>
       <reference>

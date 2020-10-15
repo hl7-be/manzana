@@ -1,17 +1,13 @@
 {
     "resourceType": "QuestionnaireResponse",
     "id" : "example-findRisc-screeningResponse",
-    "meta": {
-        "profile": "https://www.hl7.org/fhir/questionnaireresponse"
-    },
-
     "status": "completed",
     "questionnaire": "https://www.ehealth.fgov.be/standards/fhir/resources/rs-findRisc-questionnaire",
     "subject": {
-        "reference": "BePatient/2222a-45b-55c"
+        "reference": "Patient/2222a-45b-55c"
     },
     "source": {
-        "reference": "be-practitioner/1111a-33a-555e"
+        "reference": "Practitioner/1111a-33a-555e"
     },
     "item": [
         {
