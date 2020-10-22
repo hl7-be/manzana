@@ -4,21 +4,17 @@
     "status": "completed",
     "questionnaire": "https://www.ehealth.fgov.be/standards/fhir/resources/rs-findRisc-questionnaire",
     "subject": {
-        "reference": "Patient/2222a-45b-55c"
+        "reference": "BePatient/2222a-45b-55c"
     },
     "source": {
-        "reference": "Practitioner/1111a-33a-555e"
+        "reference": "BePractitioner/1111a-33a-555e"
     },
     "item": [
         {
             "linkId": "patientAge",
             "answer": [
                 {
-                    "valueCoding": {
-                        "system": "http://www.snomed.org/",
-                        "code": "105727008",
-                        "display": "30"
-                    }
+                    "valueString": "45 - 54 years"
                 }
             ]
         },
@@ -26,11 +22,7 @@
             "linkId": "bmi",
             "answer": [
                 {
-                    "valueCoding": {
-                        "system": "http://www.snomed.org/",
-                        "code": "60621009",
-                        "display": "22,5"
-                    }
+                    "valueString": "> 25 to 30"
                 }
             ]
         },
@@ -38,11 +30,7 @@
             "linkId": "waistCircumference",
             "answer": [
                 {
-                    "valueCoding": {
-                        "system": "http://www.snomed.org/",
-                        "code": "276361009",
-                        "display": "28.6"
-                    }
+                    "valueString": "94 to < 102 cm"
                 }
             ]
         },
@@ -50,11 +38,7 @@
             "linkId": "medication-highBloodPressure",
             "answer": [
                 {
-                    "valueCoding": {
-                        "system": "http://www.snomed.org/",
-                        "code": "276361009",
-                        "display": "false"
-                    }
+                    "valueBoolean": false
                 }
             ]
         },
@@ -62,11 +46,7 @@
             "linkId": "history-highBloodGlucose",
             "answer": [
                 {
-                    "valueCoding": {
-                        "system": "http://www.snomed.org/",
-                        "code": "80394007",
-                        "display": "true"
-                    }
+                    "valueBoolean": true
                 }
             ]
         },
@@ -74,11 +54,7 @@
             "linkId": "physical-activity",
             "answer": [
                 {
-                    "valueCoding": {
-                        "system": "http://www.snomed.org/",
-                        "code": "68130003",
-                        "display": "true"
-                    }
+                    "valueString": "<4 hours/week"
                 }
             ]
         },
@@ -86,11 +62,7 @@
             "linkId": "daily-consume-veg-fruit",
             "answer": [
                 {
-                    "valueCoding": {
-                        "system": "http://www.snomed.org/",
-                        "code": "391129005",
-                        "display": "false"
-                    }
+                    "valueBoolean": true
                 }
             ]
         },
@@ -98,11 +70,7 @@
             "linkId": "family-history-diabetes",
             "answer": [
                 {
-                    "valueCoding": {
-                        "system": "http://www.snomed.org/",
-                        "code": "160303001",
-                        "display": "false"
-                    }
+                    "valueString": "Yes, 2nd degree relative"
                 }
             ]
         }

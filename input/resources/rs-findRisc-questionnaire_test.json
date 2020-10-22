@@ -1,0 +1,190 @@
+{
+    "resourceType" : "Questionnaire",
+    "id" : "rs-findRisc-questionnaire-test",
+    "status": "draft",
+    "url": "https://www.hl7belgium.org/fhir/manzana/resources/rs-findRisc-questionnaire-test",
+    "version": "0.1.0",
+    "name": "rs-findRisc-questionnaire-1",
+    "date": "2020-09-23T02:57:56+00:00",
+    "item": [
+        {
+            "linkId": "patientAge",
+            "definition": "PatientAge",
+            "text": "Please specify the patient's age?",
+            "required": true,
+            "type": "integer",
+            "answerOption": [
+                {
+                    "type":[
+                        {
+                            "code": "string"
+                        },
+                        {
+                            "code": "integer"
+                        }
+                    ]
+                }
+            ],
+            "code": [
+                {
+                    "system": "http://www.snomed.org",
+                    "code": "105727008"
+                }
+            ]
+        },
+        {
+            "linkId": "bmi",
+            "definition": "PatientBMI",
+            "text": "Please specify the patient's BMI (Kg/m²)?",
+            "required": true,
+            "type": "decimal",
+            "answerOption": [
+                {
+                    "type":[
+                        {
+                            "code": "string"
+                        }
+                    ]
+                }
+            ],
+            "code": [
+                {
+                    "system": "http://www.snomed.org",
+                    "code": "60621009"
+                }
+            ]
+        },
+        {
+            "linkId": "waistCircumference",
+            "definition": "PatientWaistCircumference",
+            "text": "Please specify the patient's waist circumference?",
+            "required": true,
+            "type": "decimal",
+            "answerOption": [
+                {
+                    "type":[
+                        {
+                            "code": "string"
+                        }
+                    ]
+                }
+            ],
+            "code": [
+                {
+                    "system": "http://www.snomed.org",
+                    "code": "276361009"
+                }
+            ]
+        },
+        {
+            "linkId": "medication-highBloodPressure",
+            "definition": "MedicationHighBloodPressure",
+            "text": "Has the patient ever used drugs for high blood pressure?",
+            "required": true,
+            "type": "boolean",
+            "answerOption": [
+                {
+                    "type":[
+                        {
+                            "code": "string"
+                        }
+                    ]
+                }
+            ],
+            "code": [
+                {
+                    "system": "http://www.snomed.org",
+                    "code": "276361009"
+                }
+            ]
+        },
+        {
+            "linkId": "history-highBloodGlucose",
+            "definition": "HistoryHighBloodGlucose",
+            "text": "Has the patient ever used drugs for high blood pressure?",
+            "required": true,
+            "type": "boolean",
+            "answerOption": [
+                {
+                    "type":[
+                        {
+                            "code": "string"
+                        }
+                    ]
+                }
+            ],
+            "code": [
+                {
+                    "system": "http://www.snomed.org",
+                    "code": "80394007"
+                }
+            ]
+        },
+        {
+            "linkId": "physical-activity",
+            "definition": "PhysicalActivity",
+            "text": "How much physical activity does the patient do?",
+            "required": true,
+            "type": "string",
+            "answerOption": [
+                {
+                    "type":[
+                        {
+                            "code": "string"
+                        }
+                    ]
+                }
+            ],
+            "code": [
+                {
+                    "system": "http://www.snomed.org",
+                    "code": "68130003"
+                }
+            ]
+        },
+        {
+            "linkId": "daily-consume-veg-fruit",
+            "definition": "ConsumeVegetablesFruitsBarries",
+            "text": "Does the patient consume daily vegetables, fruits, or berries?",
+            "required": true,
+            "type": "string",
+            "answerOption": [
+                {
+                    "type":[
+                        {
+                            "code": "string"
+                        }
+                    ]
+                }
+            ],
+            "code": [
+                {
+                    "system": "http://www.snomed.org",
+                    "code": "391129005"
+                }
+            ]
+        },
+        {
+            "linkId": "family-history-diabetes",
+            "definition": "FamilyHistoryDiabetes",
+            "text": "Does the patient's family have a history of diabetes?",
+            "required": true,
+            "type": "string",
+            "answerOption": [
+                {
+                    "type":[
+                        {
+                            "code": "string"
+                        }
+                    ]
+                }
+            ],
+            "code": [
+                {
+                    "system": "http://www.snomed.org",
+                    "code": "160303001"
+                }
+            ]
+        }
+    ]
+}

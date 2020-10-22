@@ -60,7 +60,7 @@
       <name value="Logical model Manzana FINDRISC Screening response"/>
       <description value="Manzana FINDRISC screening response"/>
     </resource>
-    <resource>
+    <!-- <resource>
       <reference>
         <reference value="StructureDefinition/model-parameter"/>
       </reference>
@@ -74,7 +74,7 @@
         <fhirVersion value="4.0.1" />
         <name value="Manzana T1D parameter profile" />
         <description value="The profile for Manazan observation parameter" />
-    </resource>
+    </resource> -->
     <resource>
       <reference>
         <reference value="StructureDefinition/ext-findRisc-device" />
@@ -90,6 +90,14 @@
         <fhirVersion value="4.0.1" />
         <name value="FINDRISC questionnaire instance" />
         <description value="The questionnaire instance for FINDRISC screening" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/rs-findRisc-questionnaire-test" />
+      </reference>
+        <fhirVersion value="4.0.1" />
+        <name value="FINDRISC questionnaire instance-test" />
+        <description value="The questionnaire instance for FINDRISC screening-test" />
     </resource>
     <resource>
       <reference>
@@ -147,14 +155,14 @@
       <name value="ValueSet - Manzana FINDRISC screening waist circumference"/>
       <description value="Value Set FINDRISC screening waist circumference"/>
     </resource>
-    <resource>
+    <!-- <resource>
       <reference>
         <reference value="ValueSet/vs-manzanaT1D-parameter"/>
       </reference>
       <fhirVersion value="4.0.1" />
       <name value="ValueSet - Manzana Observation T1D"/>
       <description value="Value Set Manzana Observation T1D"/>
-    </resource>
+    </resource> -->
     <resource>
       <reference>
         <reference value="CodeSystem/cs-findRisc-screening-bmi"/>
@@ -211,14 +219,14 @@
       <name value="CodeSystem - Manzana FINDRISC screening medication for high blood pressure"/>
       <description value="Code System Manzana FINDRISC screening medication for high blood pressure"/>
     </resource>
-    <resource>
+    <!-- <resource>
       <reference>
         <reference value="CodeSystem/cs-manzanaT1D-parameter"/>
       </reference>
       <fhirVersion value="4.0.1" />
       <name value="CodeSystem - Manzana T1D parameter"/>
       <description value="Code System Manzana T1D parameter"/>
-    </resource>
+    </resource> -->
     <resource>
       <reference>
         <reference value="QuestionnaireResponse/example-findRisc-screeningResponse" />
@@ -284,22 +292,5 @@
       <code value="path-liquid"/>
       <value value="templates\liquid"/>
     </parameter>
-<!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
-    <parameter>
-      <code value="excludexml"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="excludejson"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="excludettl"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="excludemap"/>
-      <value value="true"/>
-    </parameter>-->
   </definition>
 </ImplementationGuide>

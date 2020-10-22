@@ -28,28 +28,32 @@
         ],
         "text": "23.5"
     },
-    "subject": [
-        {
+    "subject": {
             "identifier": {
                 "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
                 "value": "111a-222b-333d"
             },
             "display": "Jane AAA"
-        }
-    ],
+    },
     "issued": "2020-10-06T13:28:17.239+02:00",
     "effectiveDateTime": "2020-10-06T13:28:17.239+02:00",
-    "performer": {
+    "derivedFrom": [
+        {
+          "identifier": {
+            "system": "https://www.hl7belgium.be/fhir/StructureDefinition/be-scoreresult"
+          }
+        }
+    ],
+    "performer": [
+      {
         "identifier": {
             "system":  "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi",
             "value": "111a-22b-33c"
         },
-        "dispaly": "AAAA BBBB"
-    },
-    "valueInteger": 
-    {
-        "integer": 18
-    },
+        "display": "AAAA BBBB"
+      }
+    ],
+    "valueInteger": 18,
     "interpretation": [
         {
             "coding": [
@@ -64,15 +68,14 @@
     ], 
     "note": [
         {
-            "author": {
-                "identifier": {
-                    "system":  "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi",
-                    "value": "111a-22b-33c"
-                },
-                "dispaly": "AAAA BBBB"
-            }, 
-            "time": "2020-10-06T13:28:17.239+02:00",
-            "text": "Remark: The patient's score is high since 3 months."
+          "author": [
+            {
+              "authorReference": "BePractitioner/111a-22b-33c",
+              "authorString": "AAAA BBBB"
+            }
+          ],
+          "time": "2020-10-06T13:28:17.239+02:00",
+          "text": "Remark: The patient's score is high since 3 months."
         }
     ],
     "referenceRange": [
