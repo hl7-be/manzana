@@ -8,7 +8,13 @@
     },
     "category": [
         {
-            "text":"Risk score"
+            "coding": [
+                {
+                    "system": "http://www.snomed.org/",
+                    "code": "763117005",
+                    "display": "FINDRISC"
+                }
+            ]
         }
     ],
     "status": "final",
@@ -19,11 +25,12 @@
                 "code": "763117005", 
                 "display": "FINDRISC score result"
             }
-        ]
+        ],
+        "text": "23.5"
     },
     "subject": {
             "identifier": {
-                "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+                "system": "https://www.hl7belgium.be/fhir/StructureDefinition/be-patient",
                 "value": "111a-222b-333d"
             },
             "display": "Jane AAA"
@@ -40,7 +47,7 @@
     "performer": [
       {
         "identifier": {
-            "system":  "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi",
+            "system":  "https://www.hl7belgium.be/fhir/StructureDefinition/be-practitioner",
             "value": "111a-22b-33c"
         },
         "display": "AAAA BBBB"
@@ -56,19 +63,12 @@
                 "display": "High"
               }
             ],
-            "text": "Score is high. The risk of the patient developing diabetes in the next 10 years is 33%. The patient should check for reduction measures."
+            "text": "Score is high. The paient need to check."
           }
     ], 
     "note": [
         {
-          "author": [
-            {
-              "authorReference": "BePractitioner/111a-22b-33c",
-              "authorString": "AAAA BBBB"
-            }
-          ],
-          "time": "2020-10-06T13:28:17.239+02:00",
-          "text": "Remark: The patient's score is high for 3 months."
+          "text": "Remark: The patient's score is high since 3 months."
         }
     ],
     "referenceRange": [

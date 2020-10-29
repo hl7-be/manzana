@@ -93,11 +93,11 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Questionnaire/rs-findRisc-questionnaire-test" />
+        <reference value="ValueSet/vs-findRisc-screening-age"/>
       </reference>
-        <fhirVersion value="4.0.1" />
-        <name value="FINDRISC questionnaire instance-test" />
-        <description value="The questionnaire instance for FINDRISC screening-test" />
+      <fhirVersion value="4.0.1" />
+      <name value="ValueSet - Manzana FINDRISC Screening patient age"/>
+      <description value="Value Set FINDRISC Screening patient age"/>
     </resource>
     <resource>
       <reference>
@@ -163,6 +163,14 @@
       <name value="ValueSet - Manzana Observation T1D"/>
       <description value="Value Set Manzana Observation T1D"/>
     </resource> -->
+    <resource>
+      <reference>
+        <reference value="CodeSystem/cs-findRisc-screening-age"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="CodeSystem - Manzana FINDRISC Screening patient age"/>
+      <description value="Code System Manzana FINDRISC Screening patient age"/>
+    </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/cs-findRisc-screening-bmi"/>

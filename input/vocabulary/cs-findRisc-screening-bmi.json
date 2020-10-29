@@ -10,24 +10,62 @@
     "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-bmi",
     "concept": [
         {
-            "code": "60621009",
-            "display": "Body mass index",
-            "definition": "<25, between 25 and 30, >30",
+            "code": "0-24",
+            "display": "The patient BMI is between 0 and 24",
+            "definition": "Patient BMI between 0 and 24 (24 inclusive)",
             "designation": [
                 {
                     "language": "en-EN",
-                    "value": "Body mass index"
+                    "value": "Patient BMI between 0 and 24 (24 inclusive)"
                 },
                 {
                     "language": "nl-BE",
-                    "value": "Body mass index"
+                    "value": "BMI van de patiënt tussen 0 en 24 (inclusief 24)"
                 },
                 {
                     "language": "fr-BE",
-                    "value": "Indice de masse corporelle"
+                    "value": "IMC du patient entre 0 et 24 (24 inclus)"
+                }
+            ]
+        },
+        {
+            "code": "25-30",
+            "display": "The patient BMI is between 25 and 30",
+            "definition": "Patient BMI between 25 and 30 (30 inclusive)",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "Patient BMI between 25 and 30 (30 inclusive)"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "BMI van de patiënt tussen 25 en 30 (inclusief 30)"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "IMC du patient entre 25 et 30 (30 inclus)"
+                }
+            ]
+        },
+        {
+            "code": "31-",
+            "display": "The patient BMI is greater than 31",
+            "definition": "Patient BMI greater than 31 (31 inclusive)",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "Patient BMI greater than 31 (31 inclusive)"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "BMI van de patiënt hoger dan 31 (inclusief 31)"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "IMC du patient supérieur à 31 (31 inclus)"
                 }
             ]
         }
     ],
-    "count": 1
+    "count": 3
 }

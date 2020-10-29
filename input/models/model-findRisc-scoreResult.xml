@@ -26,7 +26,7 @@
     <element id="FindRiscScoreResult.evaluationDate">
       <path value="FindRiscScoreResult.evaluationDate" />
       <short value="The date of the evaluation" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value='dateTime' />
@@ -66,11 +66,11 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
       </type>
     </element>
-    <element id="FindRiscScoreResult.observationCode">
-      <path value="FindRiscScoreResult.observationCode" />
+    <element id="FindRiscScoreResult.resultCode">
+      <path value="FindRiscScoreResult.resultCode" />
       <short value="The final result of the FINDRISC evaluation" />
       <definition value = "The final result of the FINDRISC evaluation. The code will be the same regardless the evaluation scale used"/>
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value='CodeableConcept' />
@@ -167,7 +167,7 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value='string' />
+        <code value='CodeableConcept' />
       </type>
     </element>
     <element id="FindRiscScoreResult.remark">

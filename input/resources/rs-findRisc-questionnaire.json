@@ -13,7 +13,7 @@
             "text": "Please specify the patient's age?",
             "required": true,
             "type": "open-choice",
-            "answerValueSet": "https://www.hl7.org/fhir/valueset-age-units",      
+            "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-age",      
             "code": [
                 {
                     "system": "http://www.snomed.org",

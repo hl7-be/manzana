@@ -69,26 +69,24 @@
     </element>
     <element id="FindRiscScreeningResponse.questionnaire">
       <path value="FindRiscScreeningResponse.questionnaire" />
-      <short value="" />
-      <definition value = ""/>
+      <short value="The resource of the questionnaire" />
+      <definition value = "The resource of the questionnaire"/>
       <min value="1" />
       <max value="1" />
       <type>
          <code value='Reference' />
-        <targetProfile value = "https://www.ehealth.fgov.be/standards/fhir/resources/rs-findRisc-questionnaire"/>
+        <targetProfile value = "https://www.hl7belgium.org/fhir/manzana/resources/rs-findRisc-questionnaire"/>
       </type>
     </element>
-
-    <!-- Start here -->
     <element id="FindRiscScreeningResponse.age">
       <path value="FindRiscScreeningResponse.age" />
       <short value="Question - Age" />
-      <definition value = "The patient age"/>
+      <definition value = "The patients age"/>
       <min value="1" />
       <max value="1" />
       <type>
-        <code value='Quantity' />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+        <code value='CodeableConcept' />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
       </type>
     </element>
     <element id="FindRiscScreeningResponse.bmi">
@@ -98,7 +96,7 @@
       <min value="1" />
       <max value="1" />
       <type>
-        <code value='decimal' />
+        <code value='CodeableConcept' />
       </type>
     </element>
     <element id="FindRiscScreeningResponse.waistCircumference">
@@ -108,7 +106,7 @@
       <min value="1" />
       <max value="1" />
       <type>
-        <code value='decimal' />
+        <code value='CodeableConcept' />
       </type>
     </element>
     <element id="FindRiscScreeningResponse.physicalActivity">
@@ -118,7 +116,7 @@
       <min value="1" />
       <max value="1" />
       <type>
-        <code value='boolean' />
+        <code value='CodeableConcept' />
 
       </type>
     </element>
@@ -129,10 +127,9 @@
       <min value="1" />
       <max value="1" />
       <type>
-        <code value='boolean' />
+        <code value='CodeableConcept' />
       </type>
     </element>
-
     <element id="FindRiscScreeningResponse.medicationBloodPressure">
       <path value="FindRiscScreeningResponse.medicationBloodPressure" />
       <short value="Question - Medication for blood pressure" />
@@ -140,7 +137,7 @@
       <min value="1" />
       <max value="1" />
       <type>
-        <code value='boolean' />
+        <code value='CodeableConcept' />
       </type>
     </element>
     <element id="FindRiscScreeningResponse.glycemyOrHbA1c">
@@ -150,7 +147,7 @@
       <min value="1" />
       <max value="1" />
       <type>
-        <code value="boolean" />
+        <code value="CodeableConcept" />
       </type>
     </element>
     <element id="FindRiscScreeningResponse.familyHistory">
@@ -160,11 +157,9 @@
       <min value="1" />
       <max value="1" />
       <type>
-        <code value='boolean' />
+        <code value='CodeableConcept' />
       </type>
     </element>
-
-    <!-- stop here -->
     <element id="FindRiscScreeningResponse.remark">
       <path value="FindRiscScreeningResponse.remark" />
       <short value="Possible remarks" />
@@ -172,7 +167,7 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value='string' />
+        <code value='CodeableConcept' />
       </type>
     </element>
 </differential>

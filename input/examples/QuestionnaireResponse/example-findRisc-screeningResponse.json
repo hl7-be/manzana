@@ -14,7 +14,7 @@
             "linkId": "patientAge",
             "answer": [
                 {
-                    "valueString": "45 - 54 years"
+                    "valueString": "45-54"
                 }
             ]
         },
@@ -22,7 +22,7 @@
             "linkId": "bmi",
             "answer": [
                 {
-                    "valueString": "> 25 to 30"
+                    "valueString": "25-30"
                 }
             ]
         },
@@ -30,7 +30,7 @@
             "linkId": "waistCircumference",
             "answer": [
                 {
-                    "valueString": "94 to < 102 cm"
+                    "valueString": "88-"
                 }
             ]
         },
@@ -54,7 +54,7 @@
             "linkId": "physical-activity",
             "answer": [
                 {
-                    "valueString": "<4 hours/week"
+                    "valueString": "more-4-hours"
                 }
             ]
         },
@@ -62,7 +62,7 @@
             "linkId": "daily-consume-veg-fruit",
             "answer": [
                 {
-                    "valueBoolean": true
+                    "valueString": "less-5-times" 
                 }
             ]
         },
@@ -70,7 +70,7 @@
             "linkId": "family-history-diabetes",
             "answer": [
                 {
-                    "valueString": "Yes, 2nd degree relative"
+                    "valueString": "first-degree"
                 }
             ]
         }

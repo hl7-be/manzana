@@ -10,24 +10,62 @@
     "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-familyHistoryDiabetes",
     "concept": [
         {
-            "code": "160303001",
-            "display": "Family history of diabetes",
-            "definition": "no, family 2d degree, family 1st degree",
+            "code": "no",
+            "display": "No family history",
+            "definition": "No family history of diabetes",
             "designation": [
                 {
                     "language": "en-EN",
-                    "value": "Family history of diabetes"
+                    "value": "No family history of diabetes"
                 },
                 {
                     "language": "nl-BE",
-                    "value": "Familiegeschiedenis van diabetes"
+                    "value": "Geen familiegeschiedenis van diabetes"
                 },
                 {
                     "language": "fr-BE",
-                    "value": "Antécédents familiaux de diabète"
+                    "value": "Pas d'antécédents familiaux de diabète"
+                }
+            ]
+        },
+        {
+            "code": "first-degree",
+            "display": "1st degree family history",
+            "definition": "1st degree family history of diabetes",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "1st degree family history of diabetes"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "1e graads familiegeschiedenis van diabetes"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Antécédents familiaux de diabète au 1er degré"
+                }
+            ]
+        },
+        {
+            "code": "second-degree",
+            "display": "2nd degree family history",
+            "definition": "2nd degree family history of diabetes",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "2nd degree family history of diabetes"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "2e graads familiegeschiedenis van diabetes"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Antécédents familiaux de diabète au 2e degré"
                 }
             ]
         }
     ],
-    "count": 1
+    "count": 3
 }

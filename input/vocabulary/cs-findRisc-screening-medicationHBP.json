@@ -11,20 +11,20 @@
     "concept": [
         {
             "code": "302192008",
-            "display": "Medication for high blood pressure",
-            "definition": "yes, no",
+            "display": "Used the medication for high blood pressure",
+            "definition": "yes or no",
             "designation": [
                 {
                     "language": "en-EN",
-                    "value": "Medication for high blood pressure"
+                    "value": "Used the medication for high blood pressure"
                 },
                 {
                     "language": "nl-BE",
-                    "value": "médication contre l'hypertension artérielle"
+                    "value": "Verwendet das Medikament gegen Bluthochdruck"
                 },
                 {
                     "language": "fr-BE",
-                    "value": "Medicatie tegen hoge bloeddruk"
+                    "value": "Utilisé le médicament pour l'hypertension artérielle"
                 }
             ]
         }

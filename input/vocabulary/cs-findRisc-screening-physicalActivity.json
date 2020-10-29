@@ -10,24 +10,43 @@
     "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-physicalActivity",
     "concept": [
         {
-            "code": "68130003",
-            "display": "Physical activity",
-            "definition": "yes, no",
+            "code": "more-4-hours",
+            "display": "Physical activity for more than 4 hours per week",
+            "definition": "Physical activity time more than 4 hours per week",
             "designation": [
                 {
                     "language": "en-EN",
-                    "value": "Physical activity"
+                    "value": "Physical activity time more than 4 hours per week"
                 },
                 {
                     "language": "nl-BE",
-                    "value": "Fysieke activiteit"
+                    "value": "Lichamelijke activiteitstijd meer dan 4 uur per week"
                 },
                 {
                     "language": "fr-BE",
-                    "value": "Activité physique"
+                    "value": "Temps d'activité physique plus de 4 heures par semaine"
+                }
+            ]
+        },
+        {
+            "code": "less-4-hours",
+            "display": "Physical activity for less than 4 hours per week",
+            "definition": "Physical activity time less than 4 hours per week",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "Physical activity time smaller than 4 hours per week"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Lichamelijke activiteit gedurende minder dan 4 uur per week"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Activité physique moins de 4 heures par semaine"
                 }
             ]
         }
     ],
-    "count": 1
+    "count": 2
 }
