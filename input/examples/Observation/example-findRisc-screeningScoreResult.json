@@ -8,13 +8,7 @@
     },
     "category": [
         {
-            "coding": [
-                {
-                    "system": "http://www.snomed.org/",
-                    "code": "No code",
-                    "display": "FINDRISC"
-                }
-            ]
+            "text":"Risk score"
         }
     ],
     "status": "final",
@@ -25,8 +19,7 @@
                 "code": "763117005", 
                 "display": "FINDRISC score result"
             }
-        ],
-        "text": "23.5"
+        ]
     },
     "subject": {
             "identifier": {
@@ -63,7 +56,7 @@
                 "display": "High"
               }
             ],
-            "text": "Score is high. The paient need to check."
+            "text": "Score is high. The risk of the patient developing diabetes in the next 10 years is 33%. The patient should check for reduction measures."
           }
     ], 
     "note": [
@@ -75,7 +68,7 @@
             }
           ],
           "time": "2020-10-06T13:28:17.239+02:00",
-          "text": "Remark: The patient's score is high since 3 months."
+          "text": "Remark: The patient's score is high for 3 months."
         }
     ],
     "referenceRange": [
