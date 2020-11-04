@@ -93,22 +93,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/vs-findRisc-screening-age"/>
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="ValueSet - Manzana FINDRISC Screening patient age"/>
-      <description value="Value Set FINDRISC Screening patient age"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/vs-findRisc-screening-bmi"/>
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="ValueSet - Manzana FINDRISC Screening body mass index"/>
-      <description value="Value Set FINDRISC Screening body mass index"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="ValueSet/vs-findRisc-screening-consumeVegFrBa"/>
       </reference>
       <fhirVersion value="4.0.1" />
@@ -163,22 +147,6 @@
       <name value="ValueSet - Manzana Observation T1D"/>
       <description value="Value Set Manzana Observation T1D"/>
     </resource> -->
-    <resource>
-      <reference>
-        <reference value="CodeSystem/cs-findRisc-screening-age"/>
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="CodeSystem - Manzana FINDRISC Screening patient age"/>
-      <description value="Code System Manzana FINDRISC Screening patient age"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/cs-findRisc-screening-bmi"/>
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="CodeSystem - Manzana FINDRISC Screening body mass index"/>
-      <description value="Code System Manzana FINDRISC Screening body mass index"/>
-    </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/cs-findRisc-screening-consumeVegFrBa"/>
@@ -252,6 +220,33 @@
       <name value="Example Manzana FINDRISC screening score result"/>
       <exampleBoolean value="true" />
       <description value="Manzana FINDRISC screening score result"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/example-findRisc-bmi" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example Manzana FINDRISC patient body mass index"/>
+      <exampleBoolean value="true" />
+      <description value="Manzana FINDRISC patient body mass index"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/example-findRisc-height" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example Manzana FINDRISC patient height"/>
+      <exampleBoolean value="true" />
+      <description value="Manzana FINDRISC screening patient height"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/example-findRisc-weight" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example Manzana FINDRISC patient weight"/>
+      <exampleBoolean value="true" />
+      <description value="Manzana FINDRISC screening patient weight"/>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->

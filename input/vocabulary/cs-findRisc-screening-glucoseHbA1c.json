@@ -10,24 +10,43 @@
     "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-glucoseHbA1c",
     "concept": [
         {
-            "code": "32016-8/4548-4 (Loinc)",
-            "display": "History of high Glucose in blood or glycated hemoglobine (HbA1c)",
-            "definition": "yes or no",
+            "code": "Y",
+            "display": "Yes",
+            "definition": "Yes",
             "designation": [
                 {
                     "language": "en-EN",
-                    "value": "History of high Glucose in blood or glycated hemoglobine (HbA1c)"
+                    "value": "Yes"
                 },
                 {
                     "language": "nl-BE",
-                    "value": "Geschiedenis van hoge glucose in bloed of geglyceerd hemoglobine (HbA1c)"
+                    "value": "Ja"
                 },
                 {
                     "language": "fr-BE",
-                    "value": "Antécédents de glycémie élevée ou d'hémoglobine glyquée (HbA1c)"
+                    "value": "Qui"
+                }
+            ]
+        },
+        {
+            "code": "N",
+            "display": "No",
+            "definition": "No",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "No"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Nee"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Non"
                 }
             ]
         }
     ],
-    "count": 1
+    "count": 2
 }

@@ -10,24 +10,43 @@
     "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-medicationHBP",
     "concept": [
         {
-            "code": "302192008",
-            "display": "Used the medication for high blood pressure",
-            "definition": "yes or no",
+            "code": "Y",
+            "display": "Yes",
+            "definition": "Yes",
             "designation": [
                 {
                     "language": "en-EN",
-                    "value": "Used the medication for high blood pressure"
+                    "value": "Yes"
                 },
                 {
                     "language": "nl-BE",
-                    "value": "Verwendet das Medikament gegen Bluthochdruck"
+                    "value": "Ja"
                 },
                 {
                     "language": "fr-BE",
-                    "value": "Utilisé le médicament pour l'hypertension artérielle"
+                    "value": "Oui"
+                }
+            ]
+        },
+        {
+            "code": "N",
+            "display": "No",
+            "definition": "No",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "No"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Nee"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Non"
                 }
             ]
         }
     ],
-    "count": 1
+    "count": 2
 }

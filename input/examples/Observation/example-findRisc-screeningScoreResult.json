@@ -39,9 +39,7 @@
     "effectiveDateTime": "2020-10-06T13:28:17.239+02:00",
     "derivedFrom": [
         {
-          "identifier": {
-            "system": "https://www.hl7belgium.be/fhir/StructureDefinition/be-scoreresult"
-          }
+          "reference": "https://www.ehealth.fgov.be/standards/fhir/QuestionnaireResponse/example-findRisc-screeningResponse"
         }
     ],
     "performer": [

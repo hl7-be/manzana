@@ -12,8 +12,7 @@
             "definition": "PatientAge",
             "text": "Please specify the patient's age?",
             "required": true,
-            "type": "open-choice",
-            "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-age",      
+            "type": "integer",    
             "code": [
                 {
                     "system": "http://www.snomed.org",
@@ -26,8 +25,7 @@
             "definition": "PatientBMI",
             "text": "Please specify the patient's BMI (Kg/m²)?",
             "required": true,
-            "type": "open-choice",
-            "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-bmi",
+            "type": "decimal",
             "code": [
                 {
                     "system": "http://www.snomed.org",
