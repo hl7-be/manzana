@@ -4,10 +4,10 @@
     "content": "complete",
     "name": "CSFindRiscScreeningFamilyHistoryDiabetes",
     "id": "cs-findRisc-screening-familyHistoryDiabetes",
-    "title": "Code System Manzana findRisc screening family history diabetes",
-    "description": "Code system for Manzana findRisc screening family history diabetes",
+    "title": "Code System - FINDRISC screening family history diabetes",
+    "description": "Manzana findRisc screening question family history diabetes",
     "version": "0.1.0",
-    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-familyHistoryDiabetes",
+    "url": "https://www.hl7belgium.org/fhir/manzana/CodeSystem/cs-findRisc-screening-familyHistoryDiabetes",
     "concept": [
         {
             "code": "no",

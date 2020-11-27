@@ -4,10 +4,10 @@
     "content": "complete",
     "name": "CSFindRiscScreeningBmi",
     "id": "cs-findRisc-screening-bmi",
-    "title": "Code System Manzana findRisc screening BMI",
-    "description": "Code system for Manzana findRisc screening BMI",
+    "title": "Code System - FINDRISC screening BMI",
+    "description": "Manzana findRisc screening question patient BMI",
     "version": "0.1.0",
-    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-bmi",
+    "url": "https://www.hl7belgium.org/fhir/manzana/CodeSystem/cs-findRisc-screening-bmi",
     "concept": [
         {
             "code": "0-24",

@@ -4,10 +4,10 @@
     "content": "complete",
     "name": "CSFindRiscScreeningConsumeVegFrBa",
     "id": "cs-findRisc-screening-consumeVegFrBa",
-    "title": "Code System Manzana findRisc screening daily consumption of vegetables, fruits and berries",
-    "description": "Code system for Manzana findRisc screening daily consumption of vegetables, fruits and berries",
+    "title": "Code System - FINDRISC screening daily consumption of vegetables, fruits and berries",
+    "description": "Manzana findRisc screening question daily consumption of vegetables, fruits and berries",
     "version": "0.1.0",
-    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-consumeVegFrBa",
+    "url": "https://www.hl7belgium.org/fhir/manzana/CodeSystem/cs-findRisc-screening-consumeVegFrBa",
     "concept": [
         {
             "code": "more-5-times",

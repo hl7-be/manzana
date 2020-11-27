@@ -4,10 +4,10 @@
     "content": "complete",
     "name": "CSFindRiscScreeningWaistCircumference",
     "id": "cs-findRisc-screening-waistCircumference",
-    "title": "Code System Manzana findRisc screening waist Circumference",
-    "description": "Code system for Manzana findRisc screening waist circumference",
+    "title": "Code System - FINDRISC screening waist Circumference",
+    "description": "Manzana findRisc screening question waist circumference",
     "version": "0.1.0",
-    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-waistCircumference",
+    "url": "https://www.hl7belgium.org/fhir/manzana/CodeSystem/cs-findRisc-screening-waistCircumference",
     "concept": [
         {
             "code": "0-93",

@@ -1,0 +1,71 @@
+{
+    "resourceType": "CodeSystem",
+    "status": "draft",
+    "content": "complete",
+    "name": "CsMonitoringMealTime",
+    "id": "cs-monitoring-meal-intaken-time",
+    "title": "Code System - Monitoring meal intaken time",
+    "description": "Manzana monitoring meal intaken time for the type 1 diabetes",
+    "version": "0.1.0",
+    "url": "https://www.hl7belgium.org/fhir/manzana/CodeSystem/cs-monitoring-meal-intaken-time",
+    "concept": [
+        {
+            "code": "Breakfast-time",
+            "display": "Breakfast time",
+            "definition": "Breakfast time",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "Breakfast time"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Ontbijttijd"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "L'heure du déjeuner"
+                }
+            ]
+        },
+        {
+            "code": "Lunch-time",
+            "display": "Lunch time",
+            "definition": "Lunch time",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "Lunch time"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Lunchtijd"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "l'heure du déjeuner"
+                }
+            ]
+        },
+        {
+            "code": "dinner-time",
+            "display": "Dinner time",
+            "definition": "Dinner time",
+            "designation": [
+                {
+                    "language": "en-EN",
+                    "value": "Dinner time"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "etens tijd"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "l'heure du dîner"
+                }
+            ]
+        }
+    ],
+    "count": 3
+}

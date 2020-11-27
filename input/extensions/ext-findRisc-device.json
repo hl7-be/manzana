@@ -1,7 +1,7 @@
 {
     "resourceType": "StructureDefinition",
     "id": "ext-findRisc-device",
-    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/ext-findRisc-device",
+    "url": "https://www.hl7belgium.org/fhir/manzana/StructureDefinition/ext-findRisc-device",
     "version": "0.1.0",
     "text": {
         "status": "extensions"

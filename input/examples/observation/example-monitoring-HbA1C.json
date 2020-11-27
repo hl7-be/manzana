@@ -1,0 +1,84 @@
+{
+    "resourceType": "Observation",
+    "id": "example-monitoring-HbA1C",
+    "meta": {
+        "profile": [
+            "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
+        ]
+    },
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "vital-signs",
+                    "display": "Vital Signs"
+                }
+            ],
+            "text": "Vital Signs"
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "4548-4",
+                "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+        ],
+        "text": "Hemoglobin A1c"
+    },
+    "subject": {
+        "identifier": {
+            "system": "https://www.hl7belgium.be/fhir/StructureDefinition/be-patient",
+            "value": "111a-222b-333c"
+        }
+    },
+    "issued": "2020-09-23T02:57:56+00:00",
+    "effectiveDateTime": "2020-09-23T02:57:56+00:00",
+    "device": {
+        "identifier": {
+            "system": "https://www.hl7belgium.org/fhir/manzana/StructureDefinition/ext-findRisc-device"
+        }
+    },
+    "performer": [
+        {
+          "identifier": {
+              "system":  "https://www.hl7belgium.be/fhir/manzana/StructureDefinition/be-practitioner",
+              "value": "111a-22b-33c"
+          },
+          "display": "AAAA BBBB"
+        }
+    ],
+    "derivedFrom": [
+        {
+            "identifier": {
+                "system": "https://www.hl7belgium.org/fhir/manzana/QuestionnaireResponse/example-findRisc-screeningResponse"
+            }
+        }
+    ],
+    "interpretation": [
+        {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ],
+            "text": "Level is high. The paient need to check."
+          }
+    ],
+    "note": [
+        {
+          "text": "Remark: The patient's score is high since 3 months."
+        }
+    ],
+    "valueQuantity" : {
+        "value" : 6.6,
+        "unit" : "%",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "%"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "resourceType": "ValueSet",
+    "status": "active",
+    "name": "VsMonitoringHbA1C",
+    "id": "vs-monitoring-HbA1C",
+    "title": "Value Set - Monitoring glycated haemoglobin (HbA1C) T1D",
+    "description": "Manzana monitoring glycated haemoglobin (HbA1C) for the type 1 diabetes",
+    "version": "0.1.0",
+    "url": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-monitoring-HbA1C",
+    "compose": {
+        "include": [
+            {
+                "system": "https://www.hl7belgium.org/fhir/manzana/CodeSystem/cs-monitoring-HbA1C"
+            } 
+        ]
+    }
+}

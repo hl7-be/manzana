@@ -2,7 +2,7 @@
     "resourceType" : "Questionnaire",
     "id" : "rs-findRisc-questionnaire",
     "status": "draft",
-    "url": "https://www.hl7belgium.org/fhir/manzana/resources/rs-findRisc-questionnaire",
+    "url": "https://www.hl7belgium.org/fhir/manzana/Questionnaire/rs-findRisc-questionnaire",
     "version": "0.1.0",
     "name": "rs-findRisc-questionnaire",
     "date": "2020-09-23T02:57:56+00:00",
@@ -12,7 +12,8 @@
             "definition": "PatientAge",
             "text": "Please specify the patient's age?",
             "required": true,
-            "type": "integer",    
+            "type": "open-choice", 
+            "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-age",   
             "code": [
                 {
                     "system": "http://www.snomed.org",
@@ -25,7 +26,8 @@
             "definition": "PatientBMI",
             "text": "Please specify the patient's BMI (Kg/m²)?",
             "required": true,
-            "type": "decimal",
+            "type": "open-choice",
+            "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-bmi", 
             "code": [
                 {
                     "system": "http://www.snomed.org",
@@ -39,7 +41,7 @@
             "text": "Please specify the patient's waist circumference?",
             "required": true,
             "type": "open-choice",
-            "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-waistCircumference", 
+            "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-waistCircumference", 
             "code": [
                 {
                     "system": "http://www.snomed.org",
@@ -53,7 +55,7 @@
             "text": "Has the patient ever used drugs for high blood pressure?",
             "required": true,
             "type": "open-choice",
-            "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-medicationHBP", 
+            "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-medicationHBP", 
             "code": [
                 {
                     "system": "http://www.snomed.org",
@@ -64,10 +66,10 @@
         {
             "linkId": "history-highBloodGlucose",
             "definition": "HistoryHighBloodGlucose",
-            "text": "Has the patient ever used drugs for high blood pressure?",
+            "text": "Does the customer have a history of high blood glucose??",
             "required": true,
             "type": "open-choice",
-            "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-glucoseHbA1c",   
+            "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-glucoseHbA1c",   
             "code": [
                 {
                     "system": "http://www.snomed.org",
@@ -81,7 +83,7 @@
             "text": "How much physical activity does the patient do?",
             "required": true,
             "type": "open-choice",
-            "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-physicalActivity", 
+            "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-physicalActivity", 
             "code": [
                 {
                     "system": "http://www.snomed.org",
@@ -95,7 +97,7 @@
             "text": "Does the patient consume daily vegetables, fruits, or berries?",
             "required": true,
             "type": "open-choice",
-            "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-consumeVegFrBa",
+            "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-consumeVegFrBa",
             "code": [
                 {
                     "system": "http://www.snomed.org",
@@ -109,7 +111,7 @@
             "text": "Does the patient's family have a history of diabetes?",
             "required": true,
             "type": "open-choice",
-            "answerValueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/vs-findRisc-screening-familyHistoryDiabetes",
+            "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-familyHistoryDiabetes",
             "code": [
                 {
                     "system": "http://www.snomed.org",

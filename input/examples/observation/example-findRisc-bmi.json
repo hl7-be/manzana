@@ -29,12 +29,18 @@
       ]
     },
     "subject" : {
-      "reference" : "BePatient/111a-222b-333c"
+      "identifier": {
+        "system": "https://www.hl7belgium.be/fhir/StructureDefinition/be-patient",
+        "value": "111a-222b-333d"
+      }
     },
     "effectiveDateTime" : "2020-09-23T02:57:56+00:00",
     "performer" : [
       {
-        "reference" : "BePractitioner/333a-444b-555c"
+        "identifier": {
+          "system": "https://www.hl7belgium.be/fhir/StructureDefinition/be-practitioner",
+          "value": "333a-444b-555d"
+        }
       }
     ],
     "valueQuantity" : {

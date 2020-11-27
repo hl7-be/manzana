@@ -4,10 +4,10 @@
     "content": "complete",
     "name": "CSFindRiscScreeningPhysicalActivity",
     "id": "cs-findRisc-screening-physicalActivity",
-    "title": "Code System Manzana findRisc screening physical activity",
-    "description": "Code system for Manzana findRisc screening physical activity",
+    "title": "Code System - FINDRISC screening physical activity",
+    "description": "Manzana findRisc screening question physical activity",
     "version": "0.1.0",
-    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cs-findRisc-screening-physicalActivity",
+    "url": "https://www.hl7belgium.org/fhir/manzana/CodeSystem/cs-findRisc-screening-physicalActivity",
     "concept": [
         {
             "code": "more-4-hours",

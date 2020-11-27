@@ -41,7 +41,7 @@
       <max value="1" />
       <type>
         <code value='Reference' />
-        <targetProfile value = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+        <targetProfile value = "https://www.hl7belgium.org/fhir/manzana/StructureDefinition/be-practitioner"/>
       </type>
     </element>
     <element id="FindRiscScoreResult.patient">
@@ -52,7 +52,7 @@
       <max value="1" />
       <type>
         <code value='Reference' />
-        <targetProfile value = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+        <targetProfile value = "https://www.hl7belgium.org/fhir/manzana/StructureDefinition/be-patient"/>
       </type>
     </element>
     <element id="FindRiscScoreResult.category">
@@ -157,13 +157,13 @@
       <max value="1" />
       <type>
         <code value='Reference' />
-        <targetProfile value = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+        <targetProfile value = "https://www.hl7belgium.org/fhir/manzana/StructureDefinition/be-practitioner"/>
       </type>
     </element>
     <element id="FindRiscScoreResult.conclusion">
       <path value="FindRiscScoreResult.conclusion" />
       <short value="An interpretation to help the patient understanding of the result" />
-      <definition value = "Text based interpretation in an observation" />
+      <definition value="Text based interpretation in an observation" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -172,8 +172,8 @@
     </element>
     <element id="FindRiscScoreResult.remark">
       <path value="FindRiscScoreResult.remark" />
-      <short value="Text based recommendation of the practitionner " />
-      <definition value = "Text based recommendation of the practitionner " />
+      <short value="Text based recommendation of the practitionner" />
+      <definition value="Text based recommendation of the practitionner" />
       <min value="0" />
       <max value="1" />
       <type>

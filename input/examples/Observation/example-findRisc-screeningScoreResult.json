@@ -39,7 +39,7 @@
     "effectiveDateTime": "2020-10-06T13:28:17.239+02:00",
     "derivedFrom": [
         {
-          "reference": "https://www.ehealth.fgov.be/standards/fhir/QuestionnaireResponse/example-findRisc-screeningResponse"
+          "reference": "QuestionnaireResponse/example-findRisc-screeningResponse"
         }
     ],
     "performer": [

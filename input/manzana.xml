@@ -46,35 +46,38 @@
       <name value="Simple library example"/>
       <description value="A simple example showing how library is pre-loaded"/>
     </resource> -->
+    <grouping id="findRiscScreening">
+      <name value="FINDRISC-Finnish Diabetes Risk Score" />
+      <description value="Identifies patients at high risk for type 2 diabetes"/>
+    </grouping>
+    <grouping id="monitoring">
+      <name value="Monitoring of blood glucose for type 1 diabetes"/>
+      <description value="Monitoring patient's blood glucose or HbA1c for type 1 diabetes"/>
+    </grouping>
     <resource>
       <reference>
         <reference value="StructureDefinition/model-findRisc-scoreResult"/>
       </reference>
-      <name value="Logical model Manzana FINDRISC Score result"/>
+      <name value="Logical model - FINDRISC screening Score result"/>
       <description value="Manzana FINDRISC Score result"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/model-findRisc-screeningResponse"/>
       </reference>
-      <name value="Logical model Manzana FINDRISC Screening response"/>
+      <name value="Logical model - FINDRISC Screening response"/>
       <description value="Manzana FINDRISC screening response"/>
-    </resource>
-    <!-- <resource>
-      <reference>
-        <reference value="StructureDefinition/model-parameter"/>
-      </reference>
-      <name value="Logical model Manzana T1D parameter"/>
-      <description value="Manzana T1D parameter"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/manzanaT1D-ObservationParameter" />
+        <reference value="StructureDefinition/model-monitoring"/>
       </reference>
-        <fhirVersion value="4.0.1" />
-        <name value="Manzana T1D parameter profile" />
-        <description value="The profile for Manazan observation parameter" />
-    </resource> -->
+      <name value="Logical model - Monitoring parameter"/>
+      <description value="Manzana monitoring parameters for the type 1 diabetes"/>
+      <groupingId value="monitoring"/>
+    </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/ext-findRisc-device" />
@@ -82,6 +85,7 @@
         <fhirVersion value="4.0.1" />
         <name value="Extension - FINDRISC screening device" />
         <description value="Extension FINDRISC screening device" />
+        <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
@@ -90,163 +94,321 @@
         <fhirVersion value="4.0.1" />
         <name value="FINDRISC questionnaire instance" />
         <description value="The questionnaire instance for FINDRISC screening" />
+        <groupingId value="findRiscScreening"/>
+    </resource>
+
+    <!-- VALUE SET -->
+    
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-findRisc-screening-age"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="ValueSet - FINDRISC Screening Age"/>
+      <description value="FINDRISC Screening question about the patient's age"/>
+      <groupingId value="findRiscScreening"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-findRisc-screening-bmi"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="ValueSet - FINDRISC Screening BMI"/>
+      <description value="FINDRISC Screening question about the patient's BMI"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
         <reference value="ValueSet/vs-findRisc-screening-consumeVegFrBa"/>
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="ValueSet - Manzana FINDRISC Screening daily consume of vegetable, fruits and barries"/>
-      <description value="Value Set FINDRISC Screening daily consume of vegetables, fruits an barries"/>
+      <name value="ValueSet - FINDRISC Screening daily consume of vegetable, fruits and barries"/>
+      <description value="FINDRISC Screening question about the patient consumes daily the vegetables, fruits an barries"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
         <reference value="ValueSet/vs-findRisc-screening-familyHistoryDiabetes"/>
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="ValueSet - Manzana FINDRISC screening family history diabetes"/>
-      <description value="Value Set FINDRISC screening family history diabetes"/>
+      <name value="ValueSet - FINDRISC screening family history diabetes"/>
+      <description value="FINDRISC screening about the patient family history of having diabetes"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/vs-findRisc-screening-glucoseHbA1c"/>
+        <reference value="ValueSet/vs-findRisc-screening-hyperglycemia"/>
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="ValueSet - Manzana FINDRISC screening glucose or HbA1c level"/>
-      <description value="Value Set FINDRISC screening glucose or HbA1c level"/>
+      <name value="ValueSet - FINDRISC screening hyperglycemia"/>
+      <description value="FINDRISC screening question whether the patient has history of hyperglycemia"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
         <reference value="ValueSet/vs-findRisc-screening-medicationHBP"/>
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="ValueSet - Manzana FINDRISC screening medication for high blood pressure"/>
-      <description value="Value Set FINDRISC screening medication for high blood pressure"/>
+      <name value="ValueSet - FINDRISC screening medication for high blood pressure"/>
+      <description value="FINDRISC screening question whether the patient has taken the medication for high blood pressure"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
         <reference value="ValueSet/vs-findRisc-screening-physicalActivity"/>
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="ValueSet - Manzana FINDRISC screening physical activity"/>
-      <description value="Value Set FINDRISC screening physical activity"/>
+      <name value="ValueSet - FINDRISC screening physical activity"/>
+      <description value="FINDRISC screening question about the physical activity of the patient"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
         <reference value="ValueSet/vs-findRisc-screening-waistCircumference"/>
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="ValueSet - Manzana FINDRISC screening waist circumference"/>
-      <description value="Value Set FINDRISC screening waist circumference"/>
+      <name value="ValueSet - FINDRISC screening waist circumference"/>
+      <description value="FINDRISC screening question about the patient's waist circumference"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
-    <!-- <resource>
+    <resource>
       <reference>
-        <reference value="ValueSet/vs-manzanaT1D-parameter"/>
+        <reference value="ValueSet/vs-monitoring-HbA1C"/>
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="ValueSet - Manzana Observation T1D"/>
-      <description value="Value Set Manzana Observation T1D"/>
-    </resource> -->
+      <name value="ValueSet - Monitoring HbA1C level"/>
+      <description value="Monitoring of the HbA1C level for the type 1 diatebetes"/>
+      <groupingId value="monitoring"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-monitoring-carbohydrate-intake"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="ValueSet - Monitoring meal intaken carbohydrate"/>
+      <description value="Monitoring of the meal intaken carbohydrate for the type 1 diatebetes"/>
+      <groupingId value="monitoring"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-monitoring-insulinInjection"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="ValueSet - Monitoring insulin injection T1D"/>
+      <description value="Monitoring of the insulin injection for the type 1 diatebetes"/>
+      <groupingId value="monitoring"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-monitoring-meal-intaken-time"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="ValueSet - Monitoring meal intaken time"/>
+      <description value="Monitoring of meal intaken time for the type 1 diatebetes"/>
+      <groupingId value="monitoring"/>
+    </resource>
+
+    <!--CODE SYSTEM -->
+    
+    <resource>
+      <reference>
+        <reference value="CodeSystem/cs-findRisc-screening-age"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="CodeSystem - FINDRISC screening Age"/>
+      <description value="FINDRISC Screening question about the patient's age"/>
+      <groupingId value="findRiscScreening"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/cs-findRisc-screening-bmi"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="CodeSystem - FINDRISC Screening BMI"/>
+      <description value="FINDRISC Screening question about the patient's BMI"/>
+      <groupingId value="findRiscScreening"/>
+    </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/cs-findRisc-screening-consumeVegFrBa"/>
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="CodeSystem - Manzana FINDRISC Screening daily consume of vegetables, fruits and barries"/>
-      <description value="Code System Manzana FINDRISC Screening daily consume of vegetables, fruits and barries"/>
+      <name value="CodeSystem - FINDRISC Screening daily consume of vegetables, fruits and barries"/>
+      <description value="FINDRISC Screening question about the patient consumes daily the vegetables, fruits an barries"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/cs-findRisc-screening-familyHistoryDiabetes"/>
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="CodeSystem - Manzana FINDRISC screening family history diabetes"/>
-      <description value="Code System Manzana FINDRISC screening family history diabetes"/>
+      <name value="CodeSystem - FINDRISC screening family history diabetes"/>
+      <description value="FINDRISC screening about the patient family history of having diabetes"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
-        <reference value="CodeSystem/cs-findRisc-screening-glucoseHbA1c"/>
+        <reference value="CodeSystem/cs-findRisc-screening-hyperglycemia"/>
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="CodeSystem - Manzana FINDRISC screening glucose or HbA1c level"/>
-      <description value="Code System Manzana FINDRISC screening glucose or HbA1c level"/>
+      <name value="CodeSystem - FINDRISC screening hyperglycemia"/>
+      <description value="FINDRISC screening question whether the patient has history of hyperglycemia"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/cs-findRisc-screening-physicalActivity"/>
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="CodeSystem - Manzana FINDRISC screening physical activity"/>
-      <description value="Code System Manzana FINDRISC screening physical activity"/>
+      <name value="CodeSystem - FINDRISC screening physical activity"/>
+      <description value="FINDRISC screening question about the physical activity of the patient"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/cs-findRisc-screening-waistCircumference"/>
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="CodeSystem - Manzana FINDRISC screening waist circumference"/>
-      <description value="Code System Manzana FINDRISC screening waist circumference"/>
+      <name value="CodeSystem - FINDRISC screening waist circumference"/>
+      <description value="FINDRISC screening question about the patient's waist circumference"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/cs-findRisc-screening-medicationHBP"/>
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="CodeSystem - Manzana FINDRISC screening medication for high blood pressure"/>
-      <description value="Code System Manzana FINDRISC screening medication for high blood pressure"/>
+      <name value="CodeSystem - FINDRISC screening medication for high blood pressure"/>
+      <description value="FINDRISC screening question whether the patient has taken the medication for high blood pressure"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
-    <!-- <resource>
+    <resource>
       <reference>
-        <reference value="CodeSystem/cs-manzanaT1D-parameter"/>
+        <reference value="CodeSystem/cs-monitoring-HbA1C"/>
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="CodeSystem - Manzana T1D parameter"/>
-      <description value="Code System Manzana T1D parameter"/>
-    </resource> -->
+      <name value="CodeSystem - Monitoring HbA1C level"/>
+      <description value="Monitoring of the HbA1C level for the type 1 diabetes"/>
+      <groupingId value="monitoring"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/cs-monitoring-carbohydrate-intake"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="CodeSystem - Monitoring meal intaken carbohydrate"/>
+      <description value="Monitoring of the meal intaken carbohydrate for the type 1 diabetes"/>
+      <groupingId value="monitoring"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/cs-monitoring-insulinInjection"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="CodeSystem - Monitoring insulin injection"/>
+      <description value="Monitoring of the insulin injection for the type 1 diabetes"/>
+      <groupingId value="monitoring"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/cs-monitoring-meal-intaken-time"/>
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="CodeSystem - Monitoring meal intaken time"/>
+      <description value="Monitoring of the meal intaken time for the type 1 diabetes"/>
+      <groupingId value="monitoring"/>
+    </resource>
+
+    <!-- EXAMPLES -->
+    <resource>
+      <reference>
+        <reference value="Observation/example-monitoring-meal-intaken-time" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example - Monitoring meal intaken time"/>
+      <exampleBoolean value="true" />
+      <description value="Monitoring of the meal intaken time for the type 1 diabetes"/>
+      <groupingId value="monitoring"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/example-monitoring-carbohydrate-intake" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example - Monitoring carbohydrate intake"/>
+      <exampleBoolean value="true" />
+      <description value="Monitoring of the carbohydrate intake for the type 1 diabetes"/>
+      <groupingId value="monitoring"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/example-monitoring-insulin-injection" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example - Monitoring insulin injection"/>
+      <exampleBoolean value="true" />
+      <description value="Monitoring of the insulin injection for the type 1 diabetes"/>
+      <groupingId value="monitoring"/>
+    </resource>
     <resource>
       <reference>
         <reference value="QuestionnaireResponse/example-findRisc-screeningResponse" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Example Manzana FINDRISC screening response "/>
+      <name value="Example - FINDRISC screening response "/>
       <exampleBoolean value="true" />
-      <description value="Manzana FINDRISC screening response (QuestionnaireResponse)"/>
+      <description value="FINDRISC screening response (QuestionnaireResponse)"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
         <reference value="Observation/example-findRisc-screeningScoreResult" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Example Manzana FINDRISC screening score result"/>
+      <name value="Example - FINDRISC screening score result"/>
       <exampleBoolean value="true" />
-      <description value="Manzana FINDRISC screening score result"/>
+      <description value="FINDRISC screening score result"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
         <reference value="Observation/example-findRisc-bmi" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Example Manzana FINDRISC patient body mass index"/>
+      <name value="Example - FINDRISC patient body mass index"/>
       <exampleBoolean value="true" />
-      <description value="Manzana FINDRISC patient body mass index"/>
+      <description value="FINDRISC question about the patient body mass index"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
         <reference value="Observation/example-findRisc-height" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Example Manzana FINDRISC patient height"/>
+      <name value="Example - FINDRISC patient height"/>
       <exampleBoolean value="true" />
-      <description value="Manzana FINDRISC screening patient height"/>
+      <description value="FINDRISC screening patient height"/>
+      <groupingId value="findRiscScreening"/>
     </resource>
     <resource>
       <reference>
         <reference value="Observation/example-findRisc-weight" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Example Manzana FINDRISC patient weight"/>
+      <name value="Example - FINDRISC patient weight"/>
       <exampleBoolean value="true" />
-      <description value="Manzana FINDRISC screening patient weight"/>
+      <description value="FINDRISC screening patient weight"/>
+      <groupingId value="findRiscScreening"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/example-monitoring-HbA1C" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example - Monitoring HbA1C level"/>
+      <exampleBoolean value="true" />
+      <description value="Monitoring of the HbA1C level for the type 1 diabetes"/>
+      <groupingId value="monitoring"/>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->

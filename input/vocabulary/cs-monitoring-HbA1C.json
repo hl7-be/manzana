@@ -1,0 +1,33 @@
+{
+    "resourceType": "CodeSystem",
+    "status": "draft",
+    "content": "complete",
+    "name": "CsMonitoringHbA1c",
+    "id": "cs-monitoring-HbA1C",
+    "title": "Code System - Monitoring glycated haemoglobin (HbA1c) T1D",
+    "description": "Manzana monitoring glycated haemoglobin (HbA1c) for the type 1 diabetes",
+    "version": "0.1.0",
+    "url": "https://www.hl7belgium.org/fhir/manzana/CodeSystem/cs-monitoring-HbA1C",
+    "concept": [
+        {
+            "code": "4548-4 (LOINC)",
+            "display": "Glycated haemoglobin (HbA1C)",
+            "definition": "The term HbA1c refers to glycated haemoglobin. It develops when haemoglobin, a protein within red blood cells that carries oxygen throughout your body, joins with glucose in the blood, becoming ‘glycated’.",
+            "designation":[
+                {
+                    "language": "en-EN",
+                    "value": "Glycated haemoglobin (HbA1C)"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Geglyceerd hemoglobine (HbA1C)"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Hémoglobine glyquée (HbA1C)"
+                }
+            ] 
+        }
+    ],
+    "count": 1
+}
