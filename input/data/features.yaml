@@ -1,7 +1,7 @@
 ---
 feedback:
   active: true
-  formUrl: https://docs.google.com/forms/d/e/1FAIpQLSfX-t0XU78zf5iRAQMElYEeH6IauD9aOx8FZDFNislCp-bZDw/viewform?usp=pp_url
+  formUrl: https://docs.google.com/forms/d/e/1FAIpQLSeHtfxdrs29CtgUFI-HYlAJZ8BktQqCAcb32MYR0Bcbna3odg/viewform?usp=pp_url
   dashboard: https://github.com/hl7-be/manzana-ig/projects/1
   parameters:
   - name: "'entry.1353807103'"
