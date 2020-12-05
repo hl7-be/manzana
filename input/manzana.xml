@@ -306,7 +306,7 @@
         <reference value="Questionnaire/rs-findRisc-questionnaire" />
       </reference>
         <fhirVersion value="4.0.1" />
-        <name value="FINDRISC questionnaire instance" />
+        <name value="Questionnaire - FINDRISC screening questionnaire instance" />
         <description value="The questionnaire instance for FINDRISC screening" />
         <groupingId value="questionnaire"/>
     </resource>
