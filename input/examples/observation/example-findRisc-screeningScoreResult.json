@@ -1,0 +1,129 @@
+{
+    "resourceType" : "Observation",
+    "id": "example-findRisc-screeningScoreResult",
+    "meta": {
+        "profile" : [
+            "https://www.hl7belgium.be/fhir/StructureDefinition/be-scoreresult"
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://www.snomed.org/",
+                    "code": "763117005",
+                    "display": "FINDRISC"
+                }
+            ]
+        }
+    ],
+    "status": "final",
+    "code": {
+        "coding": [
+            {
+                "system": "http://www.snomed.org/",
+                "code": "763117005", 
+                "display": "FINDRISC score result"
+            }
+        ],
+        "text": "23.5"
+    },
+    "subject": {
+            "identifier": {
+                "system": "https://www.hl7belgium.be/fhir/StructureDefinition/be-patient",
+                "value": "111a-222b-333d"
+            },
+            "display": "Jane AAA"
+    },
+    "issued": "2020-10-06T13:28:17.239+02:00",
+    "effectiveDateTime": "2020-10-06T13:28:17.239+02:00",
+    "derivedFrom": [
+        {
+          "reference": "QuestionnaireResponse/example-findRisc-screeningResponse"
+        }
+    ],
+    "performer": [
+      {
+        "identifier": {
+            "system":  "https://www.hl7belgium.be/fhir/StructureDefinition/be-practitioner",
+            "value": "111a-22b-33c"
+        },
+        "display": "AAAA BBBB"
+      }
+    ],
+    "valueInteger": 18,
+    "interpretation": [
+        {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ],
+            "text": "Score is high. The paient need to check."
+          }
+    ], 
+    "note": [
+        {
+          "text": "Remark: The patient's score is high since 3 months."
+        }
+    ],
+    "referenceRange": [
+        {
+            "low": {
+              "value": 0
+            },
+            "high": {
+              "value": 3
+            },
+            "type": {
+              "text": "Very low"
+            }
+        },
+        {
+            "low": {
+              "value": 4
+            },
+            "high": {
+              "value": 8
+            },
+            "type": {
+              "text": "Low"
+            }
+        },
+        {
+            "low": {
+              "value": 9
+            },
+            "high": {
+              "value": 12
+            },
+            "type": {
+              "text": "Moderate"
+            }
+        },
+        {
+            "low": {
+              "value": 13
+            },
+            "high": {
+              "value": 20
+            },
+            "type": {
+              "text": "High"
+            }
+        },
+        {
+            "low": {
+              "value": 21
+            },
+            "high": {
+              "value": 26
+            },
+            "type": {
+              "text": "Very high"
+            }
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 {
     "resourceType" : "Observation",
-    "id" : "example-findRisc-bmi",
+    "id" : "example-findRisc-weight",
     "meta" : {
       "profile" : [
         "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
@@ -23,30 +23,30 @@
       "coding" : [
         {
           "system" : "http://www.snomed.org",
-          "code" : "60621009",
-          "display" : "FHIR Body Mass index (observation entity)"
+          "code" : "27113001",
+          "display" : "Measured body weight (observation entity)"
         }
       ]
     },
     "subject" : {
       "identifier": {
         "system": "https://www.hl7belgium.be/fhir/StructureDefinition/be-patient",
-        "value": "111a-222b-333d"
+        "value": "111a-222b-333c"
       }
     },
     "effectiveDateTime" : "2020-09-23T02:57:56+00:00",
     "performer" : [
       {
         "identifier": {
-          "system": "https://www.hl7belgium.be/fhir/StructureDefinition/be-practitioner",
-          "value": "333a-444b-555d"
+          "system": "https://www.hl7belgium.be/fhir/StructureDefinition/be-patient",
+          "value": "111a-222b-333c"
         }
       }
     ],
     "valueQuantity" : {
-      "value" : 30,
-      "unit" : "kg/m2",
-      "system" : "http://unitsofmeasure.org",
-      "code" : "kg/m2"
+        "value" : 60,
+        "unit" : "kg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "kg"
     }
   }

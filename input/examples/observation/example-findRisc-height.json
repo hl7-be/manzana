@@ -1,6 +1,6 @@
 {
     "resourceType" : "Observation",
-    "id" : "example-findRisc-bmi",
+    "id" : "example-findRisc-height",
     "meta" : {
       "profile" : [
         "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
@@ -23,8 +23,8 @@
       "coding" : [
         {
           "system" : "http://www.snomed.org",
-          "code" : "60621009",
-          "display" : "FHIR Body Mass index (observation entity)"
+          "code" : "50373000",
+          "display" : "Height/growth measure (observable entity)"
         }
       ]
     },
@@ -44,9 +44,9 @@
       }
     ],
     "valueQuantity" : {
-      "value" : 30,
-      "unit" : "kg/m2",
+      "value" : 165,
+      "unit" : "cm",
       "system" : "http://unitsofmeasure.org",
-      "code" : "kg/m2"
-    }
+      "code" : "cm"
+  }
   }
