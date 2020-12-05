@@ -295,7 +295,7 @@
         <reference value="StructureDefinition/ext-findRisc-device" />
       </reference>
         <fhirVersion value="4.0.1" />
-        <name value="Extension - FINDRISC screening device/software" />
+        <name value="Extension - FINDRISC screening device or software" />
         <description value="Extension FINDRISC screening device" />
         <groupingId value="extensibility"/>
     </resource>
