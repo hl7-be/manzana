@@ -38,13 +38,9 @@
         "event": [ 
             "2020-09-23T02:57:56+00:00" 
         ],
-        "code": {
-            "coding": [
-                {
-                    "system": "http://hl7.org/fhir/event-timing",
-                    "code": "CD",
-                    "display": "Lunch"
-                }
+        "repeat": {
+            "when": [
+                "CD"
             ]
         }
     },        
