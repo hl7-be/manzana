@@ -403,6 +403,11 @@
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="functionaloverview.html"/>
+        <title value="Manzana - Functional Overview"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="downloads.html"/>
         <title value="Useful Downloads"/>
         <generation value="html"/>
