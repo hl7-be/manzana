@@ -324,7 +324,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Observation/example-monitoring-insulin-injection" />
+        <reference value="MedicationAdministration/example-monitoring-insulin-injection" />
       </reference>
       <fhirVersion value="4.0.1" />
       <name value="Example - Monitoring insulin injection"/>
@@ -392,6 +392,16 @@
       <description value="Monitoring of the HbA1C level for the type 1 diabetes"/>
       <groupingId value="examples"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="OperationOutcome/example-monitoring-response-badrequest" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example - Monitoring operation statistic requst outcome"/>
+      <exampleBoolean value="true" />
+      <description value="Monitoring operation operation outcome"/>
+      <groupingId value="examples"/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -401,11 +411,6 @@
         <nameUrl value="index.html"/>
         <title value="MyIG Home Page"/>
         <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="functionaloverview.html"/>
-        <title value="Manzana - Functional Overview"/>
-        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="downloads.html"/>
