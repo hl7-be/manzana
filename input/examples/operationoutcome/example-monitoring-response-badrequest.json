@@ -1,1 +1,16 @@
-
+{
+    "resourceType": "OperationOutcome",
+    "id": "example-monitoring-response-badrequest",
+    "text": {
+      "status": "generated"
+    },
+    "issue": [
+      {
+        "severity": "error",
+        "code": "not-found",
+        "details": {
+          "text": "Not Found"
+        }
+      }
+  ]
+}
