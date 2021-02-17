@@ -1,0 +1,84 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id" : "example-findRisc-screeningResponse",
+    "status": "completed",
+    "questionnaire": "https://www.hl7belgium.org/fhir/manzana/Questionnaire/rs-findRisc-questionnaire",
+    "subject": {
+        "identifier": {
+            "system": "https://www.hl7belgium.be/fhir/StructureDefinition/be-patient",
+            "value": "222a-456b-557c"
+        }
+    },
+    "source": {
+        "identifier": {
+            "system": "https://www.hl7belgium.be/fhir/StructureDefinition/be-practitioner",
+            "value": "1111a-33a-555e"
+        }
+    },
+    "item": [
+        {
+            "linkId": "patientAge",
+            "answer": [
+                {
+                    "valueString": ">=45-54"
+                }
+            ]
+        },
+        {
+            "linkId": "bmi",
+            "answer": [
+                {
+                    "valueString": "<25"
+                }
+            ]
+        },
+        {
+            "linkId": "waistCircumference",
+            "answer": [
+                {
+                    "valueString": ">=88"
+                }
+            ]
+        },
+        {
+            "linkId": "medication-highBloodPressure",
+            "answer": [
+                {
+                    "valueString": "false"
+                }
+            ]
+        },
+        {
+            "linkId": "history-highBloodGlucose",
+            "answer": [
+                {
+                    "valueString": "true"
+                }
+            ]
+        },
+        {
+            "linkId": "physical-activity",
+            "answer": [
+                {
+                    "valueString": ">=4-hours-week"
+                }
+            ]
+        },
+        {
+            "linkId": "daily-consume-veg-fruit",
+            "answer": [
+                {
+                    "valueString": ">=5-times-day" 
+                }
+            ]
+        },
+        {
+            "linkId": "family-history-diabetes",
+            "answer": [
+                {
+                    "valueString": "first-degree"
+                }
+            ]
+        }
+    ]
+}
