@@ -20,7 +20,7 @@
             "linkId": "patientAge",
             "answer": [
                 {
-                    "valueString": "45-54"
+                    "valueString": ">=45-54"
                 }
             ]
         },
@@ -28,7 +28,7 @@
             "linkId": "bmi",
             "answer": [
                 {
-                    "valueString": "25-30"
+                    "valueString": "<25"
                 }
             ]
         },
@@ -36,7 +36,7 @@
             "linkId": "waistCircumference",
             "answer": [
                 {
-                    "valueString": "88-"
+                    "valueString": ">=88"
                 }
             ]
         },
@@ -44,7 +44,7 @@
             "linkId": "medication-highBloodPressure",
             "answer": [
                 {
-                    "valueBoolean": false
+                    "valueString": "false"
                 }
             ]
         },
@@ -52,7 +52,7 @@
             "linkId": "history-highBloodGlucose",
             "answer": [
                 {
-                    "valueBoolean": true
+                    "valueString": "true"
                 }
             ]
         },
@@ -60,7 +60,7 @@
             "linkId": "physical-activity",
             "answer": [
                 {
-                    "valueString": "more-4-hours"
+                    "valueString": ">=4-hours-week"
                 }
             ]
         },
@@ -68,7 +68,7 @@
             "linkId": "daily-consume-veg-fruit",
             "answer": [
                 {
-                    "valueString": "less-5-times" 
+                    "valueString": ">=5-times-day" 
                 }
             ]
         },
