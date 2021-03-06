@@ -1,17 +1,20 @@
 {
     "resourceType": "QuestionnaireResponse",
     "id" : "example-findRisc-screeningResponse",
+    "meta": {
+        "profile": ["http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"]
+    },
     "status": "completed",
     "questionnaire": "https://www.hl7belgium.org/fhir/manzana/Questionnaire/rs-findRisc-questionnaire",
     "subject": {
         "identifier": {
-            "system": "https://www.hl7belgium.be/fhir/StructureDefinition/be-patient",
+            "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
             "value": "222a-456b-557c"
         }
     },
     "source": {
         "identifier": {
-            "system": "https://www.hl7belgium.be/fhir/StructureDefinition/be-practitioner",
+            "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi",
             "value": "1111a-33a-555e"
         }
     },
