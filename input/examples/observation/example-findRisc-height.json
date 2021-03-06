@@ -30,7 +30,7 @@
     },
     "subject" : {
       "identifier": {
-        "system": "https://www.hl7belgium.be/fhir/StructureDefinition/be-patient",
+        "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
         "value": "111a-222b-333d"
       }
     },
@@ -38,7 +38,7 @@
     "performer" : [
       {
         "identifier": {
-          "system": "https://www.hl7belgium.be/fhir/StructureDefinition/be-practitioner",
+          "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi",
           "value": "333a-444b-555d"
         }
       }
