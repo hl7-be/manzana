@@ -1,0 +1,218 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "model-covid19-test",
+    "url": "http://hl7belgium.org/fhir/model-covid19-test",
+    "version": "version",
+    "name": "COVID19RapidTest",
+    "status": "draft",
+    "date": "2021-01-07",
+    "publisher": "HL7 Belgium",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://hl7belgium.org"
+                }
+            ]
+        }
+    ],
+    "description": "This logical model representing the data captured for a rapid COVID-19 test",
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+                    "code": "056"
+                }
+            ]
+        }
+    ],
+    "fhirVersion": "4.0.1",
+    "kind": "logical",
+    "abstract": false,
+    "type": "COVID19RapidTest",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+    "derivation": "specialization",
+    "differential": {
+        "element": [
+            {
+                "id": "COVID19RapidTest.patient",
+                "path": "COVID19RapidTest.patient",
+                "short": "The patient that has taken the test",
+                "definition": "The patient that has taken the test",
+                "min": "1",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "BackboneElement"
+                    }
+                ]
+            },
+            {
+                "id": "COVID19RapidTest.patient.identifier",
+                "path": "COVID19RapidTest.patient.identifier",
+                "short": "Patient Identifier",
+                "definition": "Patient Identifier, e.g. SSIN, or other identifier",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Identifier"
+                    }
+                ]
+            },
+            {
+                "id": "COVID19RapidTest.patient.name",
+                "path": "COVID19RapidTest.patient.name",
+                "short": "Name of the patient",
+                "definition": "Name of the patient, usually full name. May be absent or anonymized if required",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "id": "COVID19RapidTest.result",
+                "path": "COVID19RapidTest.result",
+                "short": "Test result",
+                "definition": "The results of the test as given by the device - positive, negative, or inconclusive.",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "code"
+                    }
+                ],
+                "binding": {
+                    "strength": "required",
+                    "valueSet": "COVID19FastTestResult"
+                }
+            },
+            {
+                "id": "COVID19RapidTest.device",
+                "path": "COVID19RapidTest.device",
+                "short": "Device",
+                "definition": "The device used to perform the test",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "BackboneElement"
+                    }
+                ]
+            },
+            {
+                "id": "COVID19RapidTest.device.manufacturer",
+                "path": "COVID19RapidTest.device.manufacturer",
+                "short": "Device manufacturer or representative",
+                "definition": "Device manufacturer or representative",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Identifier"
+                    }
+                ]
+            },
+            {
+                "id": "COVID19RapidTest.device.code",
+                "path": "COVID19RapidTest.device.code",
+                "short": "Code of the device e.g. GTIN",
+                "definition": "Code of the device. This is not a serial number, but rather a 'catalog' device number like the GTIN. This is compatible with the UDI.",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Identifier"
+                    }
+                ]
+            },
+            {
+                "id": "COVID19RapidTest.device.lot_number",
+                "path": "COVID19RapidTest.device.lot_number",
+                "short": "Lot number of the device",
+                "definition": "Lot number of the device",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "id": "COVID19RapidTest.device.expiry_date",
+                "path": "COVID19RapidTest.device.expiry_date",
+                "short": "Expiration date of the device",
+                "definition": "Expiration date of the device",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "date"
+                    }
+                ]
+            },
+            {
+                "id": "COVID19RapidTest.specimen_collection_type",
+                "path": "COVID19RapidTest.specimen_collection_type",
+                "short": "The method of specimen collection",
+                "definition": "The method of specimen collection, i.e. oral, nasopharingeal, nasal.",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "code"
+                    }
+                ],
+                "binding": {
+                    "strength": "required",
+                    "valueSet": "COVID19FastTestCollectionType"
+                }
+            },
+            {
+                "id": "COVID19RapidTest.performer",
+                "path": "COVID19RapidTest.performer",
+                "short": "The person performing the test other than the patient",
+                "definition": "The person performing the test other than the patient, e.g. a pharmacist or nurse.",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "BackboneElement"
+                    }
+                ]
+            },
+            {
+                "id": "COVID19RapidTest.performer.identifier",
+                "path": "COVID19RapidTest.performer.identifier",
+                "short": "Performer identifier",
+                "definition": "The identifier for the professional, e.g. NIHDI number, SSIN.",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Identifier"
+                    }
+                ]
+            },
+            {
+                "id": "COVID19RapidTest.performer.name",
+                "path": "COVID19RapidTest.performer.name",
+                "short": "Performer name",
+                "definition": "The name of the performer",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            }
+        ]
+    }
+}
