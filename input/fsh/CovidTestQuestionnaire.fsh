@@ -48,6 +48,9 @@ Title: "Covid Test Questionnaire"
 * item[=].answerOption[+].valueString = "Negative" 
 * item[=].answerOption[+].valueString = "Inconclusive" 
 
+* insert Question(,evidence, Evidence, attachment, false)
+* item[=].required = true
+
 * insert Question(,performer, Professional, group, false)
 * insert Question(item[=].,professional_id, Professional SSIN, string, false)
 * insert Question(item[=].,professional_name, Professional name, string, false)

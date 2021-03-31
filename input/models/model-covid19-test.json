@@ -93,6 +93,23 @@
                 }
             },
             {
+                "id": "COVID19RapidTest.evidence",
+                "path": "COVID19RapidTest.evidence",
+                "short": "Test result",
+                "definition": "The evidence results of the test as given by the device - a photo of the result.",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Attachment"
+                    }
+                ],
+                "binding": {
+                    "strength": "required",
+                    "valueSet": "COVID19FastTestResult"
+                }
+            },
+            {
                 "id": "COVID19RapidTest.device",
                 "path": "COVID19RapidTest.device",
                 "short": "Device",
