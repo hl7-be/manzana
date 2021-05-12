@@ -7,16 +7,10 @@
     "status": "completed",
     "questionnaire": "https://www.hl7belgium.org/fhir/manzana/Questionnaire/rs-findRisc-questionnaire",
     "subject": {
-        "identifier": {
-            "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-            "value": "222a-456b-557c"
-        }
+        "reference": "Patient/74f3b78a-e6a1-994a-8cbb-f77f3472b34d"
     },
     "source": {
-        "identifier": {
-            "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi",
-            "value": "1111a-33a-555e"
-        }
+        "reference": "Patient/74f3b78a-e6a1-994a-8cbb-f77f3472b34d"
     },
     "item": [
         {
