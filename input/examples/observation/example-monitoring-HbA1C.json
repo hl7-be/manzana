@@ -30,10 +30,7 @@
         "text": "Hemoglobin A1c"
     },
     "subject": {
-        "identifier": {
-            "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-            "value": "111a-222b-333c"
-        }
+        "reference": "Patient/74f3b78a-e6a1-994a-8cbb-f77f3472b34d"
     },
     "issued": "2020-09-23T02:57:56+00:00",
     "effectiveDateTime": "2020-09-23T02:57:56+00:00",
@@ -44,11 +41,7 @@
     },
     "performer": [
         {
-          "identifier": {
-              "system":  "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi",
-              "value": "111a-22b-33c"
-          },
-          "display": "AAAA BBBB"
+            "reference": "Patient/74f3b78a-e6a1-994a-8cbb-f77f3472b34d"
         }
     ],
     "derivedFrom": [

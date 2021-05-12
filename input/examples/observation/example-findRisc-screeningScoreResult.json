@@ -29,26 +29,24 @@
         "text": "23.5"
     },
     "subject": {
-            "identifier": {
-                "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-                "value": "111a-222b-333d"
-            },
-            "display": "Jane AAA"
+      "reference": "Patient/74f3b78a-e6a1-994a-8cbb-f77f3472b34d"
     },
     "issued": "2020-10-06T13:28:17.239+02:00",
     "effectiveDateTime": "2020-10-06T13:28:17.239+02:00",
+    "effectivePeriod": [
+      {
+        "start": "2020-10-06T13:28:17.239+02:00",
+        "end": "2020-10-06T13:32:17.239+02:00"
+      }
+    ],
     "derivedFrom": [
         {
-          "reference": "QuestionnaireResponse/example-findRisc-screeningResponse"
+          "reference": "QuestionnaireResponse/111111-22222a-444bb-45dd"
         }
     ],
     "performer": [
       {
-        "identifier": {
-            "system":  "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi",
-            "value": "111a-22b-33c"
-        },
-        "display": "AAAA BBBB"
+        "reference": "Patient/74f3b78a-e6a1-994a-8cbb-f77f3472b34d"
       }
     ],
     "valueInteger": 18,

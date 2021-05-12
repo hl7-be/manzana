@@ -29,10 +29,7 @@
         ]
     },
     "subject": {
-        "identifier": {
-            "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
-            "value": "111a-222b-333c"
-        }
+        "reference": "Patient/74f3b78a-e6a1-994a-8cbb-f77f3472b34d"
     },
     "effectiveTiming": {
         "event": [ 
