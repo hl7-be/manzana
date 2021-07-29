@@ -13,7 +13,7 @@
             "text": "Please specify the patient's age?",
             "required": true,
             "type": "open-choice", 
-            "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-age",   
+            "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-age",  
             "code": [
                 {
                     "system": "http://www.snomed.org",
@@ -69,7 +69,7 @@
             "text": "Does the customer have a history of high blood glucose??",
             "required": true,
             "type": "open-choice",
-            "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-glucoseHbA1c",   
+            "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-hyperglycemia",   
             "code": [
                 {
                     "system": "http://www.snomed.org",
