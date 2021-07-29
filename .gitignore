@@ -1,9 +1,10 @@
 # Temporary folders #
 #####################
-temp
-template
-output
-fsh-generated
+/input-cache
+/temp
+/template
+/output
+/fsh-generated
 
 # Don't commit this because it's so large #
 ###########################################
