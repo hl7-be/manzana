@@ -22,7 +22,7 @@
     "code" : {
       "coding" : [
         {
-          "system" : "http://www.snomed.org",
+          "system" : "http://snomed.info/sct",
           "code" : "50373000",
           "display" : "Height/growth measure (observable entity)"
         }

@@ -16,7 +16,7 @@
             "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-age",  
             "code": [
                 {
-                    "system": "http://www.snomed.org",
+                    "system": "http://snomed.info/sct",
                     "code": "105727008"
                 }
             ]
@@ -30,7 +30,7 @@
             "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-bmi", 
             "code": [
                 {
-                    "system": "http://www.snomed.org",
+                    "system": "http://snomed.info/sct",
                     "code": "60621009"
                 }
             ]
@@ -44,7 +44,7 @@
             "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-waistCircumference", 
             "code": [
                 {
-                    "system": "http://www.snomed.org",
+                    "system": "http://snomed.info/sct",
                     "code": "276361009"
                 }
             ]
@@ -58,7 +58,7 @@
             "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-medicationHBP", 
             "code": [
                 {
-                    "system": "http://www.snomed.org",
+                    "system": "http://snomed.info/sct",
                     "code": "276361009"
                 }
             ]
@@ -72,7 +72,7 @@
             "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-hyperglycemia",   
             "code": [
                 {
-                    "system": "http://www.snomed.org",
+                    "system": "http://snomed.info/sct",
                     "code": "80394007"
                 }
             ]
@@ -86,7 +86,7 @@
             "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-physicalActivity", 
             "code": [
                 {
-                    "system": "http://www.snomed.org",
+                    "system": "http://snomed.info/sct",
                     "code": "68130003"
                 }
             ]
@@ -100,7 +100,7 @@
             "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-consumeVegFrBa",
             "code": [
                 {
-                    "system": "http://www.snomed.org",
+                    "system": "http://snomed.info/sct",
                     "code": "391129005"
                 }
             ]
@@ -114,7 +114,7 @@
             "answerValueSet": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-familyHistoryDiabetes",
             "code": [
                 {
-                    "system": "http://www.snomed.org",
+                    "system": "http://snomed.info/sct",
                     "code": "160303001"
                 }
             ]
