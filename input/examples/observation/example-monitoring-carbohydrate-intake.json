@@ -22,7 +22,7 @@
     "code": {
         "coding": [
             {
-                "system": "http://www.snomed.org/",
+                "system": "http://snomed.info/sct",
                 "code": "23182003",
                 "display": "Cereal (substance)"
             }

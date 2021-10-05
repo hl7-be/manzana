@@ -5,7 +5,7 @@
     "medicationCodeableConcept": {
         "coding": [
             {
-                "system": "http://www.snomed.org/",
+                "system": "http://snomed.info/sct",
                 "code": "308755006",
                 "display": "Subcutaneous injection of insulin"
             }
@@ -32,7 +32,7 @@
         "route": {
             "coding": [
                 {
-                    "system": "http://www.snomed.org/",
+                    "system": "http://snomed.info/sct",
                     "code": "263887005",
                     "display": "Subcutaneous (qualifier value)"
                 }
