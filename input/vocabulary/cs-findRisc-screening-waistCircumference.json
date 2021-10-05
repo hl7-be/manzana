@@ -15,7 +15,7 @@
             "display": "The Waist Circumference is between 0 and 93 (man)",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "Waist Circumference between 0 and 93 (man, 93 inclusive)"
                 },
                 {
@@ -34,7 +34,7 @@
             "display": "The Waist Circumference is between 94 and 101 (man)",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "Waist Circumference between 94 and 101 (man, 94 inclusive)"
                 },
                 {
@@ -53,7 +53,7 @@
             "display": "The Waist Circumference is larger than 102cm (man)",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "Waist Circumference larger than 102cm (man, 102 inclusive)"
                 },
                 {
@@ -72,7 +72,7 @@
             "display": "The Waist Circumference is between 0 and 79 (woman, 70 inclusive)",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "Waist Circumference between 0 and 79 (woman, 79 inclusive)"
                 },
                 {
@@ -91,7 +91,7 @@
             "display": "The Waist Circumference is between 80 and 87 (woman)",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "Waist Circumference between 80 and 87 (woman, 87 inclusive)"
                 },
                 {
@@ -110,7 +110,7 @@
             "display": "The Waist Circumference is larger than 88 (woman)",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "Waist Circumference is larger than 88 (woman, 88 inclusive)"
                 },
                 {

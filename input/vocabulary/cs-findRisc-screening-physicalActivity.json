@@ -15,7 +15,7 @@
             "definition": "Physical activity time more than 4 hours per week",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "Physical activity time more than 4 hours per week"
                 },
                 {
@@ -34,7 +34,7 @@
             "definition": "Physical activity time less than 4 hours per week",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "Physical activity time smaller than 4 hours per week"
                 },
                 {

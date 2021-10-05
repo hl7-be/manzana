@@ -15,7 +15,7 @@
             "definition": "Patient BMI between 0 and 24 (24 inclusive)",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "Patient BMI between 0 and 24 (24 inclusive)"
                 },
                 {
@@ -34,7 +34,7 @@
             "definition": "Patient BMI between 25 and 30 (30 inclusive)",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "Patient BMI between 25 and 30 (30 inclusive)"
                 },
                 {
@@ -53,7 +53,7 @@
             "definition": "Patient BMI greater than 31 (31 inclusive)",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "Patient BMI greater than 31 (31 inclusive)"
                 },
                 {

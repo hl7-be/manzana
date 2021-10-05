@@ -15,7 +15,7 @@
             "definition": "No family history of diabetes",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "No family history of diabetes"
                 },
                 {
@@ -34,7 +34,7 @@
             "definition": "1st degree family history of diabetes",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "1st degree family history of diabetes"
                 },
                 {
@@ -53,7 +53,7 @@
             "definition": "2nd degree family history of diabetes",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "2nd degree family history of diabetes"
                 },
                 {

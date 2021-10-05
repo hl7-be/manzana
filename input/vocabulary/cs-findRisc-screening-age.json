@@ -15,7 +15,7 @@
             "definition": "Patient age between 0 and 44 years (44 inclusive)",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "Patient age between 0 and 44 years (44 inclusive)"
                 },
                 {
@@ -34,7 +34,7 @@
             "definition": "Patient age between 45 and 54 years (54 inclusive)",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "Patient age between 45 and 54 years (54 inclusive)"
                 },
                 {
@@ -53,7 +53,7 @@
             "definition": "Patient age between 55 and 64 years (64 inclusive)",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "Patient age between 55 and 64 years (64 inclusive)"
                 },
                 {
@@ -72,7 +72,7 @@
             "definition": "Patient age older than 65 years (65 inclusive)",
             "designation": [
                 {
-                    "language": "en-EN",
+                    "language": "en-GB",
                     "value": "Patient age older than 65 years (65 inclusive)"
                 },
                 {
