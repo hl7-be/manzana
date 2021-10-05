@@ -41,7 +41,7 @@
       <max value="1" />
       <type>
         <code value='Reference' />
-        <targetProfile value = "https://www.hl7belgium.org/fhir/manzana/StructureDefinition/be-practitioner"/>
+        <targetProfile value = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
       </type>
     </element>
     <element id="FindRiscScoreResult.patient">
@@ -52,7 +52,7 @@
       <max value="1" />
       <type>
         <code value='Reference' />
-        <targetProfile value = "https://www.hl7belgium.org/fhir/manzana/StructureDefinition/be-patient"/>
+        <targetProfile value = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
       </type>
     </element>
     <element id="FindRiscScoreResult.category">
@@ -157,7 +157,7 @@
       <max value="1" />
       <type>
         <code value='Reference' />
-        <targetProfile value = "https://www.hl7belgium.org/fhir/manzana/StructureDefinition/be-practitioner"/>
+        <targetProfile value = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
       </type>
     </element>
     <element id="FindRiscScoreResult.conclusion">
