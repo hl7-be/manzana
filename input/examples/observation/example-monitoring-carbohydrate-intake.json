@@ -22,14 +22,17 @@
     "code": {
         "coding": [
             {
-                "system": "http://snomed.info/sct",
+                "system": "http://www.snomed.org/",
                 "code": "23182003",
                 "display": "Cereal (substance)"
             }
         ]
     },
     "subject": {
-        "reference": "Patient/74f3b78a-e6a1-994a-8cbb-f77f3472b34d"
+        "identifier": {
+            "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+            "value": "111a-222b-333c"
+        }
     },
     "effectiveTiming": {
         "event": [ 
