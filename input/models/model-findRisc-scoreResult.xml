@@ -116,7 +116,7 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value='' />
+        <code value='BackboneElement' />
       </type>
     </element>
     <element id="FindRiscScoreResult.referenceRange.low">
