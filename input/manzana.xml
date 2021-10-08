@@ -78,14 +78,6 @@
       <description value="Manzana FINDRISC screening response"/>
       <groupingId value="logicalModel"/>
     </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/model-monitoring"/>
-      </reference>
-      <name value="Logical model - Monitoring parameter"/>
-      <description value="Manzana monitoring parameters for the type 1 diabetes"/>
-      <groupingId value="logicalModel"/>
-    </resource>
 
     <!-- Code system -->
     <resource>
@@ -158,33 +150,6 @@
       <fhirVersion value="4.0.1" />
       <name value="CodeSystem - FINDRISC screening medication for high blood pressure"/>
       <description value="FINDRISC screening question whether the patient has taken the medication for high blood pressure"/>
-      <groupingId value="codeSystem"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/cs-monitoring-HbA1C"/>
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="CodeSystem - Monitoring HbA1C level"/>
-      <description value="Monitoring of the HbA1C level for the type 1 diabetes"/>
-      <groupingId value="codeSystem"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/cs-monitoring-carbohydrate-intake"/>
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="CodeSystem - Monitoring meal intaken carbohydrate"/>
-      <description value="Monitoring of the meal intaken carbohydrate for the type 1 diabetes"/>
-      <groupingId value="codeSystem"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/cs-monitoring-insulinInjection"/>
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="CodeSystem - Monitoring insulin injection"/>
-      <description value="Monitoring of the insulin injection for the type 1 diabetes"/>
       <groupingId value="codeSystem"/>
     </resource>
 
@@ -261,34 +226,7 @@
       <description value="FINDRISC screening question about the patient's waist circumference"/>
       <groupingId value="valueSet"/>
     </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/vs-monitoring-HbA1C"/>
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="ValueSet - Monitoring HbA1C level"/>
-      <description value="Monitoring of the HbA1C level for the type 1 diatebetes"/>
-      <groupingId value="valueSet"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/vs-monitoring-carbohydrate-intake"/>
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="ValueSet - Monitoring meal intaken carbohydrate"/>
-      <description value="Monitoring of the meal intaken carbohydrate for the type 1 diatebetes"/>
-      <groupingId value="valueSet"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/vs-monitoring-insulinInjection"/>
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="ValueSet - Monitoring insulin injection T1D"/>
-      <description value="Monitoring of the insulin injection for the type 1 diatebetes"/>
-      <groupingId value="valueSet"/>
-    </resource>
-
+    
     <!-- Extension -->
     <resource>
       <reference>
@@ -312,26 +250,6 @@
     </resource>
 
     <!-- Example/instance -->
-     <resource>
-      <reference>
-        <reference value="Observation/example-monitoring-carbohydrate-intake" />
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="Example - Monitoring carbohydrate intake"/>
-      <exampleBoolean value="true" />
-      <description value="Monitoring of the carbohydrate intake for the type 1 diabetes"/>
-      <groupingId value="examples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="MedicationAdministration/example-monitoring-insulin-injection" />
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="Example - Monitoring insulin injection"/>
-      <exampleBoolean value="true" />
-      <description value="Monitoring of the insulin injection for the type 1 diabetes"/>
-      <groupingId value="examples"/>
-    </resource>
     <resource>
       <reference>
         <reference value="QuestionnaireResponse/example-findRisc-screeningResponse" />
@@ -380,26 +298,6 @@
       <name value="Example - FINDRISC patient weight"/>
       <exampleBoolean value="true" />
       <description value="FINDRISC screening patient weight"/>
-      <groupingId value="examples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/example-monitoring-HbA1C" />
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="Example - Monitoring HbA1C level"/>
-      <exampleBoolean value="true" />
-      <description value="Monitoring of the HbA1C level for the type 1 diabetes"/>
-      <groupingId value="examples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="OperationOutcome/example-monitoring-response-badrequest" />
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="Example - Monitoring operation statistic requst outcome"/>
-      <exampleBoolean value="true" />
-      <description value="Monitoring operation operation outcome"/>
       <groupingId value="examples"/>
     </resource>
     <page>
