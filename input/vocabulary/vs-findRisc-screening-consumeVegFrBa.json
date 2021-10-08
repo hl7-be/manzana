@@ -1,0 +1,17 @@
+{
+    "resourceType": "ValueSet",
+    "status": "active",
+    "name": "VSFindRiscScreeningConsumeVegFrBa",
+    "id": "vs-findRisc-screening-consumeVegFrBa",
+    "title": "Value Set - FINDRISC screening daily consume of vegetabes, fruits and barries",
+    "description": "Manzana Finnish Diabetes screening question daily consume of vegetabes, fruits and barries",
+    "version": "0.1.0",
+    "url": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-consumeVegFrBa",
+    "compose": {
+        "include": [
+            {
+                "system": "https://www.hl7belgium.org/fhir/manzana/CodeSystem/cs-findRisc-screening-consumeVegFrBa"
+            }
+        ]
+    }
+}

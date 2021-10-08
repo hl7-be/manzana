@@ -1,0 +1,52 @@
+{
+    "resourceType": "CodeSystem",
+    "status": "draft",
+    "content": "complete",
+    "name": "CSFindRiscScreeningConsumeVegFrBa",
+    "id": "cs-findRisc-screening-consumeVegFrBa",
+    "title": "Code System - FINDRISC screening daily consumption of vegetables, fruits and berries",
+    "description": "Manzana findRisc screening question daily consumption of vegetables, fruits and berries",
+    "version": "0.1.0",
+    "url": "https://www.hl7belgium.org/fhir/manzana/CodeSystem/cs-findRisc-screening-consumeVegFrBa",
+    "concept": [
+        {
+            "code": "more-5-times",
+            "display": "More than 5 times per day of daily consumption of vegetables, fruits and berries",
+            "definition": "More than 5 times per day of daily consumption of vegetables, fruits and berries",
+            "designation": [
+                {
+                    "language": "en-GB",
+                    "value": "More than 5 times per day of daily consumption of vegetables, fruits and berries"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Meer dan 5 keer per dag dagelijkse consumptie van groenten, fruit en bessen"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Plus de 5 fois par jour de consommation quotidienne de légumes, fruits et baies (5 inclus)"
+                }
+            ]
+        },
+        {
+            "code": "less-5-times",
+            "display": "Less than 5 times per day of daily consumption of vegetables, fruits and berries",
+            "definition": "Less than 5 times per day of daily consumption of vegetables, fruits and berries",
+            "designation": [
+                {
+                    "language": "en-GB",
+                    "value": "Less than 5 times per day of daily consumption of vegetables, fruits and berries"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Minder dan 5 keer per dag dagelijkse consumptie van groenten, fruit en bessen"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Moins de 5 fois par jour de consommation quotidienne de légumes, fruits et baies"
+                }
+            ]
+        }
+    ],
+    "count": 2
+}

@@ -1,0 +1,17 @@
+{
+    "resourceType": "ValueSet",
+    "status": "active",
+    "name": "VSFindRiscScreeningWaistPhysicalActivity",
+    "id": "vs-findRisc-screening-physicalActivity",
+    "title": "Value Set - FINDRISC screening physical activity",
+    "description": "Manzana Finnish diabetes screening question physical activity",
+    "version": "0.1.0",
+    "url": "https://www.hl7belgium.org/fhir/manzana/ValueSet/vs-findRisc-screening-physicalActivity",
+    "compose": {
+        "include": [
+            {
+                "system": "https://www.hl7belgium.org/fhir/manzana/CodeSystem/cs-findRisc-screening-physicalActivity"
+            }
+        ]
+    }
+}

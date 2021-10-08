@@ -1,0 +1,128 @@
+{
+    "resourceType": "CodeSystem",
+    "status": "draft",
+    "content": "complete",
+    "name": "CSFindRiscScreeningWaistCircumference",
+    "id": "cs-findRisc-screening-waistCircumference",
+    "title": "Code System - FINDRISC screening waist Circumference",
+    "description": "Manzana findRisc screening question waist circumference",
+    "version": "0.1.0",
+    "url": "https://www.hl7belgium.org/fhir/manzana/CodeSystem/cs-findRisc-screening-waistCircumference",
+    "concept": [
+        {
+            "code": "0-93",
+            "definition": "Waist Circumference between 0 and 93(man, 93 inclusive)",
+            "display": "The Waist Circumference is between 0 and 93 (man)",
+            "designation": [
+                {
+                    "language": "en-GB",
+                    "value": "Waist Circumference between 0 and 93 (man, 93 inclusive)"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Tailleomtrek tussen 0 en 93 (man, 93 inclusief)"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Tour de taille entre 0 et 93 (homme, 93 inclus)"
+                }
+            ]
+        },
+        {
+            "code": "94-101",
+            "definition": "Waist Circumference between 94 and 101 (man, 94 inclusive)",
+            "display": "The Waist Circumference is between 94 and 101 (man)",
+            "designation": [
+                {
+                    "language": "en-GB",
+                    "value": "Waist Circumference between 94 and 101 (man, 94 inclusive)"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Tailleomtrek tussen 94 en 101 (man, 94 inclusief)"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Tour de taille entre 94 et 101 (homme, 94 inclus)"
+                }
+            ]
+        },
+        {
+            "code": "102-",
+            "definition": "Waist Circumference larger than 102cm (man, 102 inclusive)",
+            "display": "The Waist Circumference is larger than 102cm (man)",
+            "designation": [
+                {
+                    "language": "en-GB",
+                    "value": "Waist Circumference larger than 102cm (man, 102 inclusive)"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Tailleomtrek groter dan 102cm (man, 102 inclusief)"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Tour de taille supérieur à 102cm (homme, 102 inclus)"
+                }
+            ]
+        },
+        {
+            "code": "0-79",
+            "definition": "Waist Circumference between 0 and 79 (woman, 79 inclusive)",
+            "display": "The Waist Circumference is between 0 and 79 (woman, 70 inclusive)",
+            "designation": [
+                {
+                    "language": "en-GB",
+                    "value": "Waist Circumference between 0 and 79 (woman, 79 inclusive)"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Tailleomtrek tussen 0 en 79 (vrouw, inclusief 79)"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Tour de taille entre 0 et 79 (femme, 79 inclus)"
+                }
+            ]
+        },
+        {
+            "code": "80-87",
+            "definition": "Waist Circumference between 80 and 87 (woman, 87 inclusive)",
+            "display": "The Waist Circumference is between 80 and 87 (woman)",
+            "designation": [
+                {
+                    "language": "en-GB",
+                    "value": "Waist Circumference between 80 and 87 (woman, 87 inclusive)"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Tailleomtrek tussen 80 en 87 (vrouw, 87 inclusief)"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "Tour de taille entre 80 et 87 (femme, 87 inclus)"
+                }
+            ]
+        },
+        {
+            "code": "88-",
+            "definition": "Waist Circumference is larger than 88 (woman, 88 inclusive)",
+            "display": "The Waist Circumference is larger than 88 (woman)",
+            "designation": [
+                {
+                    "language": "en-GB",
+                    "value": "Waist Circumference is larger than 88 (woman, 88 inclusive)"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Tailleomtrek is groter dan 88 (vrouw, 88 inclusief)"
+                },
+                {
+                    "language": "fr-BE",
+                    "value": "La circonférence de la taille est supérieure à 88 (femme, 88 inclus)"
+                }
+            ]
+        }
+    ],
+    "count": 6
+}
