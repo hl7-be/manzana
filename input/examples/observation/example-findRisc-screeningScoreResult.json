@@ -29,18 +29,18 @@
         "text": "23.5"
     },
     "subject": {
-      "reference": "Patient/74f3b78a-e6a1-994a-8cbb-f77f3472b34d"
+      "reference": "Patient/rs-findRisk-patient"
     },
     "issued": "2020-10-06T13:28:17.239+02:00",
     "effectiveDateTime": "2020-10-06T13:28:17.239+02:00",
     "derivedFrom": [
         {
-          "reference": "QuestionnaireResponse/111111-22222a-444bb-45dd"
+          "reference": "QuestionnaireResponse/rs-findRisc-questionnaire"
         }
     ],
     "performer": [
       {
-        "reference": "Patient/74f3b78a-e6a1-994a-8cbb-f77f3472b34d"
+        "reference": "Practitioner/rs-findRisk-pharmacist"
       }
     ],
     "valueInteger": 18,

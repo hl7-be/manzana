@@ -7,10 +7,13 @@
     "status": "completed",
     "questionnaire": "https://www.hl7belgium.org/fhir/manzana/Questionnaire/rs-findRisc-questionnaire",
     "subject": {
-        "reference": "Patient/74f3b78a-e6a1-994a-8cbb-f77f3472b34d"
+        "reference": "Patient/rs-findRisk-patient"
+    },
+    "author": {
+        "reference": "Practitioner/rs-findRisk-pharmacist"
     },
     "source": {
-        "reference": "Patient/74f3b78a-e6a1-994a-8cbb-f77f3472b34d"
+        "reference": "Patient/rs-findRisk-patient"
     },
     "item": [
         {
