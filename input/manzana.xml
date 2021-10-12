@@ -250,6 +250,36 @@
     </resource>
 
     <!-- Example/instance -->
+        <resource>
+      <reference>
+        <reference value="Patient/rs-FindRisk-patient" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example - FINDRISC Test Patient "/>
+      <exampleBoolean value="true" />
+      <description value="Test Patient"/>
+      <groupingId value="examples"/>
+    </resource>
+        <resource>
+      <reference>
+        <reference value="Practitioner/rs-FindRisk-pharmacist" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example - FINDRISC Test pharmacist "/>
+      <exampleBoolean value="true" />
+      <description value="Test pharmacist"/>
+      <groupingId value="examples"/>
+    </resource>
+        <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/example-findRisc-screeningResponse-patient-author" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example - FINDRISC patient screening response  "/>
+      <exampleBoolean value="true" />
+      <description value="FINDRISC screening response (QuestionnaireResponse) with a patient as author"/>
+      <groupingId value="examples"/>
+    </resource>
     <resource>
       <reference>
         <reference value="QuestionnaireResponse/example-findRisc-screeningResponse" />

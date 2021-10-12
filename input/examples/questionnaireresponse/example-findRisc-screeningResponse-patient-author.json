@@ -1,6 +1,6 @@
 {
     "resourceType": "QuestionnaireResponse",
-    "id" : "example-findRisc-screeningResponse",
+    "id" : "example-findRisc-screeningResponse-patient-author",
     "meta": {
         "profile": ["http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"]
     },
