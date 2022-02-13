@@ -29,12 +29,12 @@
       ]
     },
     "subject" : {
-      "reference": "Patient/rs-findRisk-patient"
+      "reference": "Patient/rs-findRisc-patient"
     },
     "effectiveDateTime" : "2020-09-23T02:57:56+00:00",
     "performer" : [
       {
-        "reference": "Patient/rs-findRisk-patient"
+        "reference": "Patient/rs-findRisc-patient"
       }
     ],
     "valueQuantity" : {

@@ -29,7 +29,7 @@
         "text": "23.5"
     },
     "subject": {
-      "reference": "Patient/rs-findRisk-patient"
+      "reference": "Patient/rs-findRisc-patient"
     },
     "issued": "2020-10-06T13:28:17.239+02:00",
     "effectiveDateTime": "2020-10-06T13:28:17.239+02:00",
@@ -40,7 +40,7 @@
     ],
     "performer": [
       {
-        "reference": "Practitioner/rs-findRisk-pharmacist"
+        "reference": "Practitioner/rs-findRisc-pharmacist"
       }
     ],
     "valueInteger": 18,

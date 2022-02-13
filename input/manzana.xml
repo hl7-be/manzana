@@ -252,7 +252,7 @@
     <!-- Example/instance -->
         <resource>
       <reference>
-        <reference value="Patient/rs-FindRisk-patient" />
+        <reference value="Patient/rs-findRisc-patient" />
       </reference>
       <fhirVersion value="4.0.1" />
       <name value="Example - FINDRISC Test Patient "/>
@@ -262,7 +262,7 @@
     </resource>
         <resource>
       <reference>
-        <reference value="Practitioner/rs-FindRisk-pharmacist" />
+        <reference value="Practitioner/rs-findRisc-pharmacist" />
       </reference>
       <fhirVersion value="4.0.1" />
       <name value="Example - FINDRISC Test pharmacist "/>
