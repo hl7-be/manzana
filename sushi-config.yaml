@@ -1,0 +1,21 @@
+canonical: https://www.hl7belgium.org/fhir/manzana
+fhirVersion: 4.0.1
+FSHOnly: true
+applyExtensionMetadataToRoot: false
+id: hl7.be.fhir.manzana
+name: ManzanaProjectIG
+status: draft
+version: 0.2.0
+dependencies:
+  hl7.terminology.r4:
+    version: 3.1.0
+    uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
+    id: hl7tx
+  hl7.fhir.be.core: 2.0.0
+jurisdiction: urn:iso:std:iso:3166#BE
+parameters:
+  shownav: 'true'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'

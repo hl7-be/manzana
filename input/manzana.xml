@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
-  <id value="hl7.be.fhir.manzana"/>
-  <url value="https://www.hl7belgium.org/fhir/manzana/ImplementationGuide/hl7.be.fhir.manzana"/>
+  <id value="hl7.fhir.be.manzana"/>
+  <url value="https://www.hl7belgium.org/fhir/manzana/ImplementationGuide/hl7.fhir.be.manzana"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="0.2.0"/>
+  <version value="1.0.0"/>
   <name value="ManzanaProjectIG"/>
   <title value="Manzana Project FHIR Specifications"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
       <system value="url"/>
-      <value value="http://example.com"/>
+      <value value="http://www.hl7belgium.org"/>
     </telecom>
   </contact>
   <description value="A brief description of the Manzana project"/>
@@ -22,15 +22,25 @@
     <!-- This will drive SNOMED release used -->
     <coding>
       <!-- This is the code for universal -->
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="056"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
     </coding>
   </jurisdiction>
-  <packageId value="hl7.be.fhir.manzana"/>
+  <packageId value="hl7.fhir.be.manzana"/>
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
   <license value="CC0-1.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="4.0.1"/>
+  <dependsOn>
+    <uri value="https://www.ehealth.fgov.be/standards/fhir/core-clinical"></uri>
+    <packageId value="hl7.fhir.be.core-clinical"></packageId>
+    <version value="1.0.0"></version>
+  </dependsOn>
+  <dependsOn>
+    <uri value="https://www.ehealth.fgov.be/standards/fhir/core"/>
+    <packageId value = "hl7.fhir.be.core"></packageId>
+    <version value="2.0.0"></version>
+  </dependsOn>
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
@@ -49,7 +59,7 @@
       <description value="Extensibility is a fundamental part of the design of this specification. Every element in a resource can have extension child elements to represent additional information that is not part of the basic definition of the resource."/>
     </grouping>
     <grouping id="valueSet">
-      <name value="Value set "/>
+      <name value="Value set"/>
       <description value="Value sets use CodeSystem resources by referring to them via their canonical reference."/>
     </grouping>
     <grouping id="questionnaire">
@@ -255,7 +265,7 @@
         <reference value="Patient/rs-findRisc-patient" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Example - FINDRISC Test Patient "/>
+      <name value="Example - FINDRISC Test Patient"/>
       <exampleBoolean value="true" />
       <description value="Test Patient"/>
       <groupingId value="examples"/>
@@ -265,7 +275,7 @@
         <reference value="Practitioner/rs-findRisc-pharmacist" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Example - FINDRISC Test pharmacist "/>
+      <name value="Example - FINDRISC Test pharmacist"/>
       <exampleBoolean value="true" />
       <description value="Test pharmacist"/>
       <groupingId value="examples"/>
@@ -275,7 +285,7 @@
         <reference value="QuestionnaireResponse/example-findRisc-screeningResponse-patient-author" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Example - FINDRISC patient screening response  "/>
+      <name value="Example - FINDRISC patient screening response"/>
       <exampleBoolean value="true" />
       <description value="FINDRISC screening response (QuestionnaireResponse) with a patient as author"/>
       <groupingId value="examples"/>
@@ -285,7 +295,7 @@
         <reference value="QuestionnaireResponse/example-findRisc-screeningResponse" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Example - FINDRISC screening response "/>
+      <name value="Example - FINDRISC screening response"/>
       <exampleBoolean value="true" />
       <description value="FINDRISC screening response (QuestionnaireResponse)"/>
       <groupingId value="examples"/>
@@ -298,36 +308,6 @@
       <name value="Example - FINDRISC screening score result"/>
       <exampleBoolean value="true" />
       <description value="FINDRISC screening score result"/>
-      <groupingId value="examples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/example-findRisc-bmi" />
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="Example - FINDRISC patient body mass index"/>
-      <exampleBoolean value="true" />
-      <description value="FINDRISC question about the patient body mass index"/>
-      <groupingId value="examples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/example-findRisc-height" />
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="Example - FINDRISC patient height"/>
-      <exampleBoolean value="true" />
-      <description value="FINDRISC screening patient height"/>
-      <groupingId value="examples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/example-findRisc-weight" />
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="Example - FINDRISC patient weight"/>
-      <exampleBoolean value="true" />
-      <description value="FINDRISC screening patient weight"/>
       <groupingId value="examples"/>
     </resource>
     <page>
