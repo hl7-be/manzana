@@ -14,7 +14,7 @@ Usage: #example
 * extension[=].url = "http://hl7.org/fhir/StructureDefinition/patient-nationality"
 * identifier.use = #official
 * identifier.type = $v2-0203#SB "Social Beneficiary Identifier"
-* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * identifier.value = "99010100118"
 * active = true
 * name.use = #official

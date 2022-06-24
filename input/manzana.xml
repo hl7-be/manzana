@@ -59,7 +59,7 @@
       <description value="Extensibility is a fundamental part of the design of this specification. Every element in a resource can have extension child elements to represent additional information that is not part of the basic definition of the resource."/>
     </grouping>
     <grouping id="valueSet">
-      <name value="Value set "/>
+      <name value="Value set"/>
       <description value="Value sets use CodeSystem resources by referring to them via their canonical reference."/>
     </grouping>
     <grouping id="questionnaire">
@@ -265,7 +265,7 @@
         <reference value="Patient/rs-findRisc-patient" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Example - FINDRISC Test Patient "/>
+      <name value="Example - FINDRISC Test Patient"/>
       <exampleBoolean value="true" />
       <description value="Test Patient"/>
       <groupingId value="examples"/>
@@ -275,7 +275,7 @@
         <reference value="Practitioner/rs-findRisc-pharmacist" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Example - FINDRISC Test pharmacist "/>
+      <name value="Example - FINDRISC Test pharmacist"/>
       <exampleBoolean value="true" />
       <description value="Test pharmacist"/>
       <groupingId value="examples"/>
@@ -285,7 +285,7 @@
         <reference value="QuestionnaireResponse/example-findRisc-screeningResponse-patient-author" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Example - FINDRISC patient screening response  "/>
+      <name value="Example - FINDRISC patient screening response"/>
       <exampleBoolean value="true" />
       <description value="FINDRISC screening response (QuestionnaireResponse) with a patient as author"/>
       <groupingId value="examples"/>
@@ -295,7 +295,7 @@
         <reference value="QuestionnaireResponse/example-findRisc-screeningResponse" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="Example - FINDRISC screening response "/>
+      <name value="Example - FINDRISC screening response"/>
       <exampleBoolean value="true" />
       <description value="FINDRISC screening response (QuestionnaireResponse)"/>
       <groupingId value="examples"/>
@@ -308,36 +308,6 @@
       <name value="Example - FINDRISC screening score result"/>
       <exampleBoolean value="true" />
       <description value="FINDRISC screening score result"/>
-      <groupingId value="examples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/example-findRisc-bmi" />
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="Example - FINDRISC patient body mass index"/>
-      <exampleBoolean value="true" />
-      <description value="FINDRISC question about the patient body mass index"/>
-      <groupingId value="examples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/example-findRisc-height" />
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="Example - FINDRISC patient height"/>
-      <exampleBoolean value="true" />
-      <description value="FINDRISC screening patient height"/>
-      <groupingId value="examples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/example-findRisc-weight" />
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="Example - FINDRISC patient weight"/>
-      <exampleBoolean value="true" />
-      <description value="FINDRISC screening patient weight"/>
       <groupingId value="examples"/>
     </resource>
     <page>
