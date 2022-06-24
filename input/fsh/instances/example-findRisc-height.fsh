@@ -3,7 +3,7 @@ InstanceOf: Observation
 Title: "Example - FINDRISC patient height"
 Description: "FINDRISC screening patient height"
 Usage: #example
-* meta.profile = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-scoreresult"
+* meta.profile = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * category.text = "Vital Signs"

@@ -3,7 +3,7 @@ InstanceOf: Observation
 Title: "Example - FINDRISC patient body mass index"
 Description: "FINDRISC question about the patient body mass index"
 Usage: #example
-* meta.profile = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-scoreresult"
+* meta.profile = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-observation"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * category.text = "Vital Signs"

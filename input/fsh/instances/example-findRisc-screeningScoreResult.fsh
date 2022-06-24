@@ -5,11 +5,12 @@ Description: "FINDRISC screening score result"
 Usage: #example
 * meta.profile = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-scoreresult"
 * status = #final
-* category = $sct#763117005 "FINDRISC"
+* category = https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score-category#risk
 * code = $sct#763117005 "FINDRISC score result"
 * code.text = "23.5"
 * subject = Reference(rs-findRisc-patient)
-* effectiveDateTime = "2020-10-06T13:28:17.239+02:00"
+* effectivePeriod.start = "2020-10-06T13:28:17.239+02:00"
+* effectivePeriod.end = "2020-10-06T13:28:17.239+02:00"
 * issued = "2020-10-06T13:28:17.239+02:00"
 * performer = Reference(rs-findRisc-pharmacist)
 * valueInteger = 18
