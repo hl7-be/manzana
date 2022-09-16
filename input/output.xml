@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root xmlns:fhir="http://hl7.org/fhir">
-   <canonical>https://hl7belgium.org/profiles/fhir/manzana</canonical>
+   <canonical>http://hl7belgium.org/profiles/fhir/manzana</canonical>
    <copyrightYear>2019+</copyrightYear>
    <releaseLabel>CI Build</releaseLabel>
    <id>hl7.fhir.be.manzana</id>
-   <url>https://hl7belgium.org/profiles/fhir/manzana/ImplementationGuide/hl7.fhir.be.manzana</url>
+   <url>http://hl7belgium.org/profiles/fhir/manzana/ImplementationGuide/hl7.fhir.be.manzana</url>
    <version>1.0.0</version>
    <name>ManzanaProjectIG</name>
    <title>Manzana Project FHIR Specifications</title>
