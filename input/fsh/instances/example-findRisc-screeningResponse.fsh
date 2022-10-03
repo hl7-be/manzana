@@ -3,7 +3,7 @@ InstanceOf: QuestionnaireResponse
 Title: "Example - FINDRISC screening response "
 Description: "FINDRISC screening response (QuestionnaireResponse)"
 Usage: #example
-* questionnaire = "https://www.hl7belgium.org/fhir/manzana/Questionnaire/rs-findRisc-questionnaire"
+* questionnaire = "http://hl7belgium.org/profiles/fhir/manzana/Questionnaire/rs-findRisc-questionnaire"
 * status = #completed
 * subject = Reference(rs-findRisc-patient)
 * author = Reference(rs-findRisc-pharmacist)
