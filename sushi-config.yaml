@@ -243,4 +243,5 @@
       Extensions: artifacts.html#3
       Value Sets: artifacts.html#4
     Downloads: downloads.html
-    History: changes.html
+    Changes: changes.html
+    History: 'http://hl7belgium.org/profiles/fhir/manzana/history.html'
