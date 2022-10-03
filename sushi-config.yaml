@@ -44,6 +44,10 @@
       generation: html
     functionaloverview.md:
       title: Guidance
+    background.xml:
+      title: Background
+    functionalDescription.xml:
+      title: Description
   dependencies:
     hl7.fhir.be.core-clinical:
       uri: 'https://www.ehealth.fgov.be/standards/fhir/core-clinical'
@@ -231,7 +235,9 @@
         conforming with this implementation guide might look like.
   menu:
     Home: index.html
-    Guidance: functionaloverview.html
+    Guidance: 
+      Overview: functionaloverview.html
+      Description: functionalDescription.html
     Artifacts:
       Profiles: artifacts.html#2
       Extensions: artifacts.html#3
