@@ -35,7 +35,7 @@
     </ol>
     <p>We are committed to developing interconnectivity between Manzana and the federal network. To realize the objective, Manzana used the REST API provided by Abrumet. This API provides basic operations to exchange data in a secure and privacy-respecting way.
 
-    The interoperability on data level is achieved by following the FHIR standard. The FHIR standard by HL7 defines an architecture based on resources consisting of data elements descriping healthcare concepts. We defined the FHIR resources necessary for the Manzana application in Belgium based on the FHIR standard: Patient, Observation, Questionnaire Response. We use standard terminologies and codes (LOINC, SNOMED) to identify medical information. You can find the defined resources for Belgium in 'Specifications/Artifact Index'.
+    The interoperability on data level is achieved by following the FHIR standard. The FHIR standard by HL7 defines an architecture based on resources consisting of data elements describing healthcare concepts. We defined the FHIR resources necessary for the Manzana application in Belgium based on the FHIR standard: Patient, Observation, Questionnaire Response. We use standard terminologies and codes (LOINC, SNOMED) to identify medical information. You can find the defined resources for Belgium in 'Specifications/Artifact Index'.
     </p>
   </p>
   <h3>Manzana Features</h3>
@@ -57,6 +57,6 @@
   </ol>
   <h3>Solution Overview</h3>
   <a name="solutionoverview"></a>
-  <p>The following graph shows the communication between Manzana and BruSafe/Abrumet:</p>
+  <p>The following graph shows the communication between Manzana and BruSafe+/Abrumet:</p>
   <img src="manzanaabrumet.png" style="display: block; margin-left: 60px; margin-right: auto; width: 70%;"/>
 </div>

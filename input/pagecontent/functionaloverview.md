@@ -13,6 +13,4 @@ Each patient's answer is stored in a single QuestionnaireResponse, and each Ques
 
 
 ### Calculated
-The automated calculation of score from the EHR, uses different types of elements :
-The Body Measurements, Observations and Meal Intakes (stored as Observation resources with specific scores), and insulin administration (stored as MedicationAdministration resources).
-All these can be calculated via a predefined Operation that is defined with the corresponding OperationDefinition.
+As future work, we plan to extend the standard by the possiblity to automatically calculate the score from the information stored in an EHR, that is the Body Measurements, Oberservations and Meal Intakes (stored as Observation resources with specific scores), and Insulin adminstration (stored as MedicationAdminstration resources). To this end, we want to introduce a predefined Operation with corresponding OperationDefinition. 
