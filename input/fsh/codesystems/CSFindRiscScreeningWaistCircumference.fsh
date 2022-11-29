@@ -10,6 +10,8 @@ Description: "Manzana findRisc screening question waist circumference"
 * ^contact.telecom.value = "http://example.com"
 * ^jurisdiction = $m49.htm#056
 * ^content = #complete
+* ^caseSensitive = false
+* ^experimental = false
 * ^count = 6
 * #0-93 "The Waist Circumference is between 0 and 93 (man)" "Waist Circumference between 0 and 93(man, 93 inclusive)"
 * #0-93 ^designation[0].language = #en-GB
