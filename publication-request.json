@@ -1,0 +1,14 @@
+{
+    "package-id": "hl7.fhir.be.manzana",
+    "version": "1.0.0",
+    "path": "http://hl7belgium.org/profiles/fhir/manzana/1.0.0",
+    "milestone" : true,
+    "status": "release",
+    "sequence": "Trial Use",
+    "desc": "HL7 FHIR IG for Manazana (Abrumet)",
+    "desccmd": "HL7 FHIR IG for Manazana (Abrumet)",
+    "title": "HL7 FHIR IG for Manazana (Abrumet)",
+    "ci-build" : "https://build.fhir.org/ig/hl7-be/manzana",
+    "category": "HL7 Belgium",
+    "introduction": "HL7 FHIR IG for Manazana (Abrumet)"    
+  }
