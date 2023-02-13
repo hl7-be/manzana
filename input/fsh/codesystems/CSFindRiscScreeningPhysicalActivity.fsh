@@ -9,6 +9,8 @@ Description: "Manzana findRisc screening question physical activity"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://example.com"
 * ^jurisdiction = $m49.htm#056
+* ^experimental = false
+* ^caseSensitive = true
 * ^content = #complete
 * ^caseSensitive = false
 * ^experimental = false
