@@ -5,4 +5,3 @@ the continuous build of this IG can be found on:
 
 __http://build.fhir.org/ig/hl7-be/manzana-ig__
  
-
